@@ -1,0 +1,20 @@
+module contador (iCLK, iRST_n, iENABLE, iUP_DOWN, oCOUNT, oTC);
+
+	parameter fin_cuenta = 20;
+	
+	`include "MathFun.vh"
+	parameter n = CLogB2(fin_cuenta-1);
+	
+	input iCLK, iRST, iENABLE, iUP_DOWN;
+	output reg [n-1:0] oCOUNT;
+	output oTC;
+	
+	
+	
+	
+
+	
+	
+	
+endmodule
+

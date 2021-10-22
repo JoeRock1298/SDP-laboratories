@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "oCOUNT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "oCOUNT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "oCOUNT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "oCOUNT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "oCOUNT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "iCLK",
+					"strict" : false
+				},
+				{
+					"name" : "iUP_DOWN",
+					"strict" : false
+				},
+				{
+					"name" : "iRST_n",
+					"strict" : false
+				},
+				{
+					"name" : "iENABLE",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

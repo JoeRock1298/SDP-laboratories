@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dW:/www/MUISE/Sistemas digitales programables/Prácticas de Laboratorio/Práctica1/simulation/qsim
+vcontador
+Z0 !s110 1634662769
+!i10b 1
+!s100 99Hn?a@;998BI5OUOM^f62
+I9=``@cnnioGJO4k5b=QhT1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dW:/www/MUISE/Sistemas digitales programables/Practicas de Laboratorio/Practica1/simulation/qsim
+Z3 w1634662768
+Z4 8Practica1.vo
+Z5 FPractica1.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1634662769.000000
+Z8 !s107 Practica1.vo|
+Z9 !s90 -work|work|Practica1.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vcontador_vlg_vec_tst
+R0
+!i10b 1
+!s100 Acod2bbA0j5IOO>I<>lml2
+Ij3Vfd?hOR6zm;d<eY]=N93
+R1
+R2
+w1634662767
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vhard_block
+R0
+!i10b 1
+!s100 TJXHCcJCk7kibX:WWkNL`3
+I>[X6^CJkEL;E`eA>G4QSH3
+R1
+R2
+R3
+R4
+R5
+L0 636
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
