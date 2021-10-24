@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Practica1 -c Practica1 --vector_source="W:/www/MUISE/Sistemas digitales programables/Practicas de Laboratorio/Practica1/Waveform.vwf" --testbench_file="W:/www/MUISE/Sistemas digitales programables/Practicas de Laboratorio/Practica1/simulation/qsim/Waveform.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Practica1 -c Practica1 --vector_source="W:/www/MUISE/Sistemas digitales programables/Prácticas de Laboratorio/Práctica1/Waveform.vwf" --testbench_file="W:/www/MUISE/Sistemas digitales programables/Prácticas de Laboratorio/Práctica1/simulation/qsim/Waveform.vwf.vt"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="W:/www/MUISE/Sistemas digitales programables/Practicas de Laboratorio/Practica1/simulation/qsim/" Practica1 -c Practica1</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="W:/www/MUISE/Sistemas digitales programables/Prácticas de Laboratorio/Práctica1/simulation/qsim/" Practica1 -c Practica1</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Practica1 -c Practica1 --vector_source="C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1\Waveform.vwf" --testbench_file="C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/qsim/Waveform.vwf.vt"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Practica1 -c Practica1 --vector_source="C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/Waveform.vwf" --testbench_file="C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/qsim/Waveform.vwf.vt"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/qsim/" Practica1 -c Practica1</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/qsim/" Practica1 -c Practica1</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vlog -work work Practica1.vo
@@ -216,7 +216,9 @@ TRANSITION_LIST("iRST_n")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 1 FOR 620.0;
+		LEVEL 0 FOR 360.0;
+		LEVEL 1 FOR 20.0;
 	}
 }
 
@@ -225,7 +227,11 @@ TRANSITION_LIST("iUP_DOWN")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 290.0;
+		LEVEL 0 FOR 490.0;
+		LEVEL 1 FOR 10.0;
 	}
 }
 

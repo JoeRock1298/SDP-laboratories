@@ -48,7 +48,7 @@ module contador (iCLK, iRST_n, iENABLE, iUP_DOWN, oCOUNT, oTC);
 
 		end
 		
-		assign TC =(oCOUNT == fin_cuenta-1)?1'b1:1'b0;
+		assign oTC =(oCOUNT == fin_cuenta-1)?1'b1:1'b0;
 	
 endmodule
 

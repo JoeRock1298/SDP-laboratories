@@ -1,12 +1,12 @@
-Fitter Status : Successful - Tue Oct 19 18:59:04 2021
-Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Fitter Status : Successful - Sun Oct 24 22:54:55 2021
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 Revision Name : Practica1
 Top-level Entity Name : contador
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 16 / 114,480 ( < 1 % )
-    Total combinational functions : 16 / 114,480 ( < 1 % )
+Total logic elements : 17 / 114,480 ( < 1 % )
+    Total combinational functions : 17 / 114,480 ( < 1 % )
     Dedicated logic registers : 5 / 114,480 ( < 1 % )
 Total registers : 5
 Total pins : 10 / 529 ( 2 % )

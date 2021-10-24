@@ -24,6 +24,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "oTC",
+					"strict" : false
+				},
+				{
 					"name" : "iCLK",
 					"strict" : false
 				},

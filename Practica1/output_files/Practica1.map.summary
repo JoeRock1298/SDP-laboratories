@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Tue Oct 19 18:58:51 2021
-Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Analysis & Synthesis Status : Successful - Sun Oct 24 22:54:43 2021
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 Revision Name : Practica1
 Top-level Entity Name : contador
 Family : Cyclone IV E
-Total logic elements : 16
-    Total combinational functions : 16
+Total logic elements : 17
+    Total combinational functions : 17
     Dedicated logic registers : 5
 Total registers : 5
 Total pins : 10

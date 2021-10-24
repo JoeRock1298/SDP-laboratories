@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/19/2021 18:59:27"
+// Generated on "10/24/2021 22:59:04"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          contador
 // 
@@ -71,12 +71,18 @@ end
 initial
 begin
 	iRST_n = 1'b1;
+	iRST_n = #620000 1'b0;
+	iRST_n = #360000 1'b1;
 end 
 
 // iUP_DOWN
 initial
 begin
-	iUP_DOWN = 1'b0;
+	iUP_DOWN = 1'b1;
+	iUP_DOWN = #10000 1'b0;
+	iUP_DOWN = #200000 1'b1;
+	iUP_DOWN = #290000 1'b0;
+	iUP_DOWN = #490000 1'b1;
 end 
 endmodule
 
