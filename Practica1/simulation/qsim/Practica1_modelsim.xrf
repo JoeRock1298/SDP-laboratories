@@ -3,6 +3,7 @@ source_file = 1, C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/M
 source_file = 1, C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/contador.v
 source_file = 1, C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/Waveform.vwf
 source_file = 1, C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/registro7.v
+source_file = 1, C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/Test_Shift_Register.vwf
 source_file = 1, C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/db/Practica1.cbx.xml
 design_name = registro7
 instance = comp, \oPR[0]~output , oPR[0]~output, registro7, 1
