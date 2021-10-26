@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Practica1
-Sun Oct 24 23:38:30 2021
+Tue Oct 26 17:14:23 2021
 Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 
 
@@ -15,9 +15,10 @@ Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |contador
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +44,16 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                              ;
 +------------------------------------+------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 24 23:38:30 2021                ;
+; Analysis & Synthesis Status        ; Successful - Tue Oct 26 17:14:23 2021                ;
 ; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition ;
 ; Revision Name                      ; Practica1                                            ;
-; Top-level Entity Name              ; registro7                                            ;
+; Top-level Entity Name              ; contador                                             ;
 ; Family                             ; Cyclone IV E                                         ;
-; Total logic elements               ; 9                                                    ;
-;     Total combinational functions  ; 9                                                    ;
-;     Dedicated logic registers      ; 7                                                    ;
-; Total registers                    ; 7                                                    ;
-; Total pins                         ; 12                                                   ;
+; Total logic elements               ; 17                                                   ;
+;     Total combinational functions  ; 17                                                   ;
+;     Dedicated logic registers      ; 5                                                    ;
+; Total registers                    ; 5                                                    ;
+; Total pins                         ; 10                                                   ;
 ; Total virtual pins                 ; 0                                                    ;
 ; Total memory bits                  ; 0                                                    ;
 ; Embedded Multiplier 9-bit elements ; 0                                                    ;
@@ -66,7 +67,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; registro7          ; Practica1          ;
+; Top-level entity name                                                      ; contador           ; Practica1          ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -163,45 +164,46 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                            ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                              ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
-; registro7.v                      ; yes             ; User Verilog HDL File  ; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/registro7.v ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                             ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------+---------+
+; MathFun.vh                       ; yes             ; User Unspecified File  ; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/MathFun.vh ;         ;
+; contador.v                       ; yes             ; User Verilog HDL File  ; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/contador.v ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 9            ;
-;                                             ;              ;
-; Total combinational functions               ; 9            ;
-; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 0            ;
-;     -- 3 input functions                    ; 0            ;
-;     -- <=2 input functions                  ; 9            ;
-;                                             ;              ;
-; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 9            ;
-;     -- arithmetic mode                      ; 0            ;
-;                                             ;              ;
-; Total registers                             ; 7            ;
-;     -- Dedicated logic registers            ; 7            ;
-;     -- I/O registers                        ; 0            ;
-;                                             ;              ;
-; I/O pins                                    ; 12           ;
-;                                             ;              ;
-; Embedded Multiplier 9-bit elements          ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; iRST_n~input ;
-; Maximum fan-out                             ; 9            ;
-; Total fan-out                               ; 59           ;
-; Average fan-out                             ; 1.48         ;
-+---------------------------------------------+--------------+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 17             ;
+;                                             ;                ;
+; Total combinational functions               ; 17             ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 3              ;
+;     -- 3 input functions                    ; 2              ;
+;     -- <=2 input functions                  ; 12             ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 9              ;
+;     -- arithmetic mode                      ; 8              ;
+;                                             ;                ;
+; Total registers                             ; 5              ;
+;     -- Dedicated logic registers            ; 5              ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 10             ;
+;                                             ;                ;
+; Embedded Multiplier 9-bit elements          ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; oCOUNT[4]~reg0 ;
+; Maximum fan-out                             ; 7              ;
+; Total fan-out                               ; 86             ;
+; Average fan-out                             ; 2.05           ;
++---------------------------------------------+----------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -209,7 +211,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |registro7                 ; 9 (9)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |registro7          ; registro7   ; work         ;
+; |contador                  ; 17 (17)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |contador           ; contador    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -219,12 +221,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 7     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Total registers                              ; 5     ;
+; Number of registers using Synchronous Clear  ; 5     ;
+; Number of registers using Synchronous Load   ; 5     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 7     ;
+; Number of registers using Clock Enable       ; 5     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -234,8 +236,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |registro7|oPR[0]~reg0     ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |contador|oCOUNT[0]~reg0   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |contador ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; fin_cuenta     ; 20    ; Signed Integer                                  ;
+; n              ; 5     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------+
@@ -243,15 +256,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 12                          ;
-; cycloneiii_ff         ; 7                           ;
-;     ENA               ; 7                           ;
-; cycloneiii_lcell_comb ; 9                           ;
+; boundary_port         ; 10                          ;
+; cycloneiii_ff         ; 5                           ;
+;     ENA SCLR SLD      ; 5                           ;
+; cycloneiii_lcell_comb ; 17                          ;
+;     arith             ; 8                           ;
+;         2 data inputs ; 8                           ;
 ;     normal            ; 9                           ;
-;         2 data inputs ; 9                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 3                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.95                        ;
+; Max LUT depth         ; 2.30                        ;
+; Average LUT depth     ; 1.59                        ;
 +-----------------------+-----------------------------+
 
 
@@ -270,7 +288,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
-    Info: Processing started: Sun Oct 24 23:38:21 2021
+    Info: Processing started: Tue Oct 26 17:14:14 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Practica1 -c Practica1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -278,18 +296,23 @@ Info (12021): Found 1 design units, including 1 entities, in source file contado
     Info (12023): Found entity 1: contador File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/contador.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registro7.v
     Info (12023): Found entity 1: registro7 File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/registro7.v Line: 1
-Info (12127): Elaborating entity "registro7" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at registro7.v(15): truncated value with size 32 to match size of target (1) File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/registro7.v Line: 15
+Info (12021): Found 1 design units, including 1 entities, in source file tb_count.v
+    Info (12023): Found entity 1: tb_count File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/tb_count.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at tb_count.v(17): created implicit net for "clk" File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/tb_count.v Line: 17
+Info (12127): Elaborating entity "contador" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at contador.v(32): truncated value with size 32 to match size of target (5) File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/contador.v Line: 32
+Warning (10230): Verilog HDL assignment warning at contador.v(38): truncated value with size 32 to match size of target (5) File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/contador.v Line: 38
+Warning (10230): Verilog HDL assignment warning at contador.v(43): truncated value with size 32 to match size of target (5) File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/contador.v Line: 43
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 21 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 27 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 9 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4783 megabytes
-    Info: Processing ended: Sun Oct 24 23:38:30 2021
+    Info (21059): Implemented 6 output pins
+    Info (21061): Implemented 17 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4784 megabytes
+    Info: Processing ended: Tue Oct 26 17:14:23 2021
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:18
 

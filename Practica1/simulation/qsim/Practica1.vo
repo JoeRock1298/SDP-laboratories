@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition"
 
-// DATE "10/25/2021 14:03:06"
+// DATE "10/26/2021 16:39:59"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -43,18 +43,18 @@ output 	[6:0] oPR;
 output 	oSR;
 
 // Design Ports Information
-// oPR[0]	=>  Location: PIN_M7,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// oPR[1]	=>  Location: PIN_M1,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// oPR[2]	=>  Location: PIN_L2,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// oPR[3]	=>  Location: PIN_M2,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// oPR[4]	=>  Location: PIN_N3,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// oPR[5]	=>  Location: PIN_L1,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// oPR[6]	=>  Location: PIN_L7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// oPR[0]	=>  Location: PIN_L1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// oPR[1]	=>  Location: PIN_L2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// oPR[2]	=>  Location: PIN_M7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// oPR[3]	=>  Location: PIN_M1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// oPR[4]	=>  Location: PIN_M2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// oPR[5]	=>  Location: PIN_N3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// oPR[6]	=>  Location: PIN_N4,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // oSR	=>  Location: PIN_M8,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // iRST_n	=>  Location: PIN_P1,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // iCLK	=>  Location: PIN_J1,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// iENABLE	=>  Location: PIN_P2,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// iSR	=>  Location: PIN_N8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// iENABLE	=>  Location: PIN_N8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// iSR	=>  Location: PIN_P2,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -97,6 +97,7 @@ wire \oPR[1]~reg0_q ;
 wire \oPR~0_combout ;
 wire \oPR[0]~reg0_q ;
 wire \oSR~0_combout ;
+wire \oSR~reg0_q ;
 
 
 hard_block auto_generated_inst(
@@ -104,7 +105,7 @@ hard_block auto_generated_inst(
 	.devclrn(devclrn),
 	.devoe(devoe));
 
-// Location: IOOBUF_X0_Y45_N23
+// Location: IOOBUF_X0_Y44_N9
 cycloneive_io_obuf \oPR[0]~output (
 	.i(\oPR[0]~reg0_q ),
 	.oe(vcc),
@@ -117,7 +118,7 @@ defparam \oPR[0]~output .bus_hold = "false";
 defparam \oPR[0]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X0_Y44_N23
+// Location: IOOBUF_X0_Y44_N2
 cycloneive_io_obuf \oPR[1]~output (
 	.i(\oPR[1]~reg0_q ),
 	.oe(vcc),
@@ -130,7 +131,7 @@ defparam \oPR[1]~output .bus_hold = "false";
 defparam \oPR[1]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X0_Y44_N2
+// Location: IOOBUF_X0_Y45_N23
 cycloneive_io_obuf \oPR[2]~output (
 	.i(\oPR[2]~reg0_q ),
 	.oe(vcc),
@@ -143,7 +144,7 @@ defparam \oPR[2]~output .bus_hold = "false";
 defparam \oPR[2]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X0_Y44_N16
+// Location: IOOBUF_X0_Y44_N23
 cycloneive_io_obuf \oPR[3]~output (
 	.i(\oPR[3]~reg0_q ),
 	.oe(vcc),
@@ -156,7 +157,7 @@ defparam \oPR[3]~output .bus_hold = "false";
 defparam \oPR[3]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X0_Y46_N23
+// Location: IOOBUF_X0_Y44_N16
 cycloneive_io_obuf \oPR[4]~output (
 	.i(\oPR[4]~reg0_q ),
 	.oe(vcc),
@@ -169,7 +170,7 @@ defparam \oPR[4]~output .bus_hold = "false";
 defparam \oPR[4]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X0_Y44_N9
+// Location: IOOBUF_X0_Y46_N23
 cycloneive_io_obuf \oPR[5]~output (
 	.i(\oPR[5]~reg0_q ),
 	.oe(vcc),
@@ -182,7 +183,7 @@ defparam \oPR[5]~output .bus_hold = "false";
 defparam \oPR[5]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X0_Y47_N16
+// Location: IOOBUF_X0_Y46_N16
 cycloneive_io_obuf \oPR[6]~output (
 	.i(\oPR[6]~reg0_q ),
 	.oe(vcc),
@@ -197,7 +198,7 @@ defparam \oPR[6]~output .open_drain_output = "false";
 
 // Location: IOOBUF_X0_Y45_N16
 cycloneive_io_obuf \oSR~output (
-	.i(\oSR~0_combout ),
+	.i(\oSR~reg0_q ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -241,7 +242,7 @@ defparam \iRST_n~input .bus_hold = "false";
 defparam \iRST_n~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X0_Y42_N8
+// Location: IOIBUF_X0_Y43_N15
 cycloneive_io_ibuf \iSR~input (
 	.i(iSR),
 	.ibar(gnd),
@@ -251,7 +252,7 @@ defparam \iSR~input .bus_hold = "false";
 defparam \iSR~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LCCOMB_X1_Y44_N20
+// Location: LCCOMB_X1_Y44_N28
 cycloneive_lcell_comb \oPR~7 (
 // Equation(s):
 // \oPR~7_combout  = (\iRST_n~input_o  & \iSR~input_o )
@@ -268,7 +269,7 @@ defparam \oPR~7 .lut_mask = 16'hF000;
 defparam \oPR~7 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: IOIBUF_X0_Y43_N15
+// Location: IOIBUF_X0_Y42_N8
 cycloneive_io_ibuf \iENABLE~input (
 	.i(iENABLE),
 	.ibar(gnd),
@@ -278,7 +279,7 @@ defparam \iENABLE~input .bus_hold = "false";
 defparam \iENABLE~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LCCOMB_X1_Y44_N4
+// Location: LCCOMB_X1_Y44_N16
 cycloneive_lcell_comb \oPR[0]~1 (
 // Equation(s):
 // \oPR[0]~1_combout  = (\iENABLE~input_o ) # (!\iRST_n~input_o )
@@ -295,7 +296,7 @@ defparam \oPR[0]~1 .lut_mask = 16'hFF0F;
 defparam \oPR[0]~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: FF_X1_Y44_N21
+// Location: FF_X1_Y44_N29
 dffeas \oPR[6]~reg0 (
 	.clk(\iCLK~inputclkctrl_outclk ),
 	.d(\oPR~7_combout ),
@@ -350,7 +351,7 @@ defparam \oPR[5]~reg0 .is_wysiwyg = "true";
 defparam \oPR[5]~reg0 .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X1_Y44_N28
+// Location: LCCOMB_X1_Y44_N24
 cycloneive_lcell_comb \oPR~5 (
 // Equation(s):
 // \oPR~5_combout  = (\iRST_n~input_o  & \oPR[5]~reg0_q )
@@ -367,7 +368,7 @@ defparam \oPR~5 .lut_mask = 16'hF000;
 defparam \oPR~5 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: FF_X1_Y44_N29
+// Location: FF_X1_Y44_N25
 dffeas \oPR[4]~reg0 (
 	.clk(\iCLK~inputclkctrl_outclk ),
 	.d(\oPR~5_combout ),
@@ -422,7 +423,7 @@ defparam \oPR[3]~reg0 .is_wysiwyg = "true";
 defparam \oPR[3]~reg0 .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X1_Y44_N12
+// Location: LCCOMB_X1_Y44_N0
 cycloneive_lcell_comb \oPR~3 (
 // Equation(s):
 // \oPR~3_combout  = (\iRST_n~input_o  & \oPR[3]~reg0_q )
@@ -439,7 +440,7 @@ defparam \oPR~3 .lut_mask = 16'hF000;
 defparam \oPR~3 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: FF_X1_Y44_N13
+// Location: FF_X1_Y44_N1
 dffeas \oPR[2]~reg0 (
 	.clk(\iCLK~inputclkctrl_outclk ),
 	.d(\oPR~3_combout ),
@@ -494,7 +495,7 @@ defparam \oPR[1]~reg0 .is_wysiwyg = "true";
 defparam \oPR[1]~reg0 .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X1_Y44_N0
+// Location: LCCOMB_X1_Y44_N12
 cycloneive_lcell_comb \oPR~0 (
 // Equation(s):
 // \oPR~0_combout  = (\iRST_n~input_o  & \oPR[1]~reg0_q )
@@ -511,7 +512,7 @@ defparam \oPR~0 .lut_mask = 16'hF000;
 defparam \oPR~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: FF_X1_Y44_N1
+// Location: FF_X1_Y44_N13
 dffeas \oPR[0]~reg0 (
 	.clk(\iCLK~inputclkctrl_outclk ),
 	.d(\oPR~0_combout ),
@@ -545,6 +546,25 @@ cycloneive_lcell_comb \oSR~0 (
 // synopsys translate_off
 defparam \oSR~0 .lut_mask = 16'hF000;
 defparam \oSR~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X1_Y44_N15
+dffeas \oSR~reg0 (
+	.clk(\iCLK~inputclkctrl_outclk ),
+	.d(\oSR~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\oPR[0]~1_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\oSR~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \oSR~reg0 .is_wysiwyg = "true";
+defparam \oSR~reg0 .power_up = "low";
 // synopsys translate_on
 
 assign oPR[0] = \oPR[0]~output_o ;

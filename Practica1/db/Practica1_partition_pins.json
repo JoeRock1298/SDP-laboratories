@@ -4,39 +4,27 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "oPR[0]",
+					"name" : "oCOUNT[0]",
 					"strict" : false
 				},
 				{
-					"name" : "oPR[1]",
+					"name" : "oCOUNT[1]",
 					"strict" : false
 				},
 				{
-					"name" : "oPR[2]",
+					"name" : "oCOUNT[2]",
 					"strict" : false
 				},
 				{
-					"name" : "oPR[3]",
+					"name" : "oCOUNT[3]",
 					"strict" : false
 				},
 				{
-					"name" : "oPR[4]",
+					"name" : "oCOUNT[4]",
 					"strict" : false
 				},
 				{
-					"name" : "oPR[5]",
-					"strict" : false
-				},
-				{
-					"name" : "oPR[6]",
-					"strict" : false
-				},
-				{
-					"name" : "oSR",
-					"strict" : false
-				},
-				{
-					"name" : "iRST_n",
+					"name" : "oTC",
 					"strict" : false
 				},
 				{
@@ -44,11 +32,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "iENABLE",
+					"name" : "iUP_DOWN",
 					"strict" : false
 				},
 				{
-					"name" : "iSR",
+					"name" : "iRST_n",
+					"strict" : false
+				},
+				{
+					"name" : "iENABLE",
 					"strict" : false
 				}
 			]

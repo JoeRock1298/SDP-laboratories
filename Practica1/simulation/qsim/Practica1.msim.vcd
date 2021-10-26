@@ -3,7 +3,7 @@ $comment
 		vcd file Practica1.msim.vcd -direction
 $end
 $date
-	Mon Oct 25 14:03:09 2021
+	Tue Oct 26 16:40:02 2021
 $end
 $version
 	ModelSim Version 10.5b
@@ -62,6 +62,7 @@ $var wire 1 L oPR[1]~reg0_q $end
 $var wire 1 M oPR~0_combout $end
 $var wire 1 N oPR[0]~reg0_q $end
 $var wire 1 O oSR~0_combout $end
+$var wire 1 P oSR~reg0_q $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -114,6 +115,7 @@ x/
 0M
 0N
 0O
+0P
 $end
 #10000
 1!
@@ -281,8 +283,6 @@ $end
 0G
 1E
 0C
-1:
-1,
 #140000
 0$
 0!
@@ -294,6 +294,7 @@ $end
 1!
 1;
 1<
+1P
 0N
 1L
 0H
@@ -304,6 +305,8 @@ $end
 06
 14
 03
+1:
+1,
 0+
 1*
 0(
@@ -314,8 +317,6 @@ $end
 0I
 1G
 0E
-0:
-0,
 #160000
 0!
 0;
@@ -324,6 +325,7 @@ $end
 1!
 1;
 1<
+0P
 1N
 0J
 1H
@@ -332,6 +334,8 @@ $end
 16
 05
 13
+0:
+0,
 1+
 0)
 1(
@@ -340,8 +344,6 @@ $end
 0K
 1I
 0G
-1:
-1,
 #180000
 0!
 0;
@@ -353,12 +355,15 @@ $end
 1;
 1<
 1?
+1P
 0L
 1J
 0H
 06
 15
 04
+1:
+1,
 0*
 1)
 0(
@@ -392,8 +397,6 @@ $end
 1M
 0K
 1C
-0:
-0,
 #220000
 1$
 0!
@@ -408,20 +411,21 @@ $end
 1;
 1<
 0?
+0P
 1N
 0L
 1D
 18
 04
 13
+0:
+0,
 1+
 0*
 1&
 1O
 0M
 1E
-1:
-1,
 #240000
 0!
 0;
@@ -433,20 +437,21 @@ $end
 1;
 1<
 1?
+1P
 0N
 1F
 0B
 09
 17
 03
+1:
+1,
 0+
 1'
 0%
 0O
 1G
 0C
-0:
-0,
 #260000
 0!
 0;
@@ -455,12 +460,15 @@ $end
 1!
 1;
 1<
+0P
 1H
 0D
 1B
 19
 08
 16
+0:
+0,
 1(
 0&
 1%

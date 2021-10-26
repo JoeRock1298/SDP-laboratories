@@ -35,6 +35,7 @@ instance = comp, \oPR[1]~reg0 , oPR[1]~reg0, registro7, 1
 instance = comp, \oPR~0 , oPR~0, registro7, 1
 instance = comp, \oPR[0]~reg0 , oPR[0]~reg0, registro7, 1
 instance = comp, \oSR~0 , oSR~0, registro7, 1
+instance = comp, \oSR~reg0 , oSR~reg0, registro7, 1
 design_name = hard_block
 instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
 instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
