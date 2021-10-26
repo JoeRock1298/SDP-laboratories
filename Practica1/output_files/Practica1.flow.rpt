@@ -1,5 +1,5 @@
 Flow report for Practica1
-Sun Oct 24 22:59:05 2021
+Tue Oct 26 17:14:42 2021
 Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------------------+
 ; Flow Summary                                                                              ;
 +------------------------------------+------------------------------------------------------+
-; Flow Status                        ; Successful - Sun Oct 24 22:59:05 2021                ;
+; Flow Status                        ; Successful - Tue Oct 26 17:14:42 2021                ;
 ; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition ;
 ; Revision Name                      ; Practica1                                            ;
 ; Top-level Entity Name              ; contador                                             ;
@@ -64,26 +64,37 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/24/2021 22:54:30 ;
+; Start date & time ; 10/26/2021 17:14:15 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Practica1           ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                        ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 49410870802600.163510886902360         ; --            ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; contador    ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; contador    ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; contador    ; Top        ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
-; TOP_LEVEL_ENTITY                    ; contador                               ; Practica1     ; --          ; --         ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                             ;
++--------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
++--------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 49410870802600.163526125403596         ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; contador                               ; --            ; --          ; tb_count       ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_count                               ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; tb_count.v                             ; --            ; --          ; tb_count       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_count                               ; --            ; --          ; tb_count       ;
+; EDA_TEST_BENCH_NAME                  ; tb_count                               ; --            ; --          ; eda_simulation ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --             ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; contador    ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; contador    ; Top            ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; contador    ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                     ; contador                               ; Practica1     ; --          ; --             ;
++--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -91,15 +102,12 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:13     ; 1.0                     ; 4783 MB             ; 00:00:18                           ;
-; Fitter                    ; 00:00:12     ; 1.0                     ; 5814 MB             ; 00:00:17                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4676 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4858 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4626 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4626 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:32     ; --                      ; --                  ; 00:00:43                           ;
+; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 4784 MB             ; 00:00:18                           ;
+; Fitter                    ; 00:00:10     ; 1.0                     ; 5813 MB             ; 00:00:16                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4675 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4856 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4644 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:24     ; --                      ; --                  ; 00:00:39                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -113,9 +121,6 @@ refer to the applicable agreement for further details.
 ; Assembler                 ; DESKTOP-LV6HA8E  ; Windows 10 ; 10.0       ; x86_64         ;
 ; TimeQuest Timing Analyzer ; DESKTOP-LV6HA8E  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer        ; DESKTOP-LV6HA8E  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-LV6HA8E  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-LV6HA8E  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-LV6HA8E  ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 
@@ -126,10 +131,7 @@ quartus_map --read_settings_files=on --write_settings_files=off Practica1 -c Pra
 quartus_fit --read_settings_files=off --write_settings_files=off Practica1 -c Practica1
 quartus_asm --read_settings_files=off --write_settings_files=off Practica1 -c Practica1
 quartus_sta Practica1 -c Practica1
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Practica1 -c Practica1 --vector_source=C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1\Waveform.vwf --testbench_file=C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/qsim/Waveform.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/qsim/ Practica1 -c Practica1
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Practica1 -c Practica1 --vector_source=C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1\Waveform.vwf --testbench_file=C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/qsim/Waveform.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/qsim/ Practica1 -c Practica1
+quartus_eda --read_settings_files=off --write_settings_files=off Practica1 -c Practica1
 
 
 
