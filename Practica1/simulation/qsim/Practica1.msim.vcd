@@ -3,7 +3,7 @@ $comment
 		vcd file Practica1.msim.vcd -direction
 $end
 $date
-	Tue Oct 26 16:40:02 2021
+	Tue Oct 26 18:27:53 2021
 $end
 $version
 	ModelSim Version 10.5b
@@ -45,24 +45,22 @@ $var wire 1 ; iCLK~input_o $end
 $var wire 1 < iCLK~inputclkctrl_outclk $end
 $var wire 1 = iRST_n~input_o $end
 $var wire 1 > iSR~input_o $end
-$var wire 1 ? oPR~7_combout $end
+$var wire 1 ? x~7_combout $end
 $var wire 1 @ iENABLE~input_o $end
-$var wire 1 A oPR[0]~1_combout $end
-$var wire 1 B oPR[6]~reg0_q $end
-$var wire 1 C oPR~6_combout $end
-$var wire 1 D oPR[5]~reg0_q $end
-$var wire 1 E oPR~5_combout $end
-$var wire 1 F oPR[4]~reg0_q $end
-$var wire 1 G oPR~4_combout $end
-$var wire 1 H oPR[3]~reg0_q $end
-$var wire 1 I oPR~3_combout $end
-$var wire 1 J oPR[2]~reg0_q $end
-$var wire 1 K oPR~2_combout $end
-$var wire 1 L oPR[1]~reg0_q $end
-$var wire 1 M oPR~0_combout $end
-$var wire 1 N oPR[0]~reg0_q $end
-$var wire 1 O oSR~0_combout $end
-$var wire 1 P oSR~reg0_q $end
+$var wire 1 A x[0]~1_combout $end
+$var wire 1 B x~6_combout $end
+$var wire 1 C x~5_combout $end
+$var wire 1 D x~4_combout $end
+$var wire 1 E x~3_combout $end
+$var wire 1 F x~2_combout $end
+$var wire 1 G x~0_combout $end
+$var wire 1 H x [6] $end
+$var wire 1 I x [5] $end
+$var wire 1 J x [4] $end
+$var wire 1 K x [3] $end
+$var wire 1 L x [2] $end
+$var wire 1 M x [1] $end
+$var wire 1 N x [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -107,15 +105,13 @@ x/
 0E
 0F
 0G
-0H
-0I
-0J
-0K
-0L
-0M
 0N
-0O
-0P
+0M
+0L
+0K
+0J
+0I
+0H
 $end
 #10000
 1!
@@ -124,10 +120,10 @@ $end
 0>
 1<
 0?
-1B
+1H
 19
 1%
-1C
+1B
 #20000
 0!
 0;
@@ -136,14 +132,14 @@ $end
 1!
 1;
 1<
-1D
-0B
+1I
+0H
 09
 18
 1&
 0%
-1E
-0C
+1C
+0B
 #40000
 1$
 0!
@@ -155,18 +151,18 @@ $end
 1!
 1;
 1<
-1F
-0D
-1B
+1J
+0I
+1H
 19
 08
 17
 1'
 0&
 1%
-1G
-0E
-1C
+1D
+0C
+1B
 #60000
 0!
 0;
@@ -178,18 +174,18 @@ $end
 1;
 1<
 0?
-1H
-0F
-1D
+1K
+0J
+1I
 18
 07
 16
 1(
 0'
 1&
-1I
-0G
 1E
+0D
+1C
 #80000
 0!
 0;
@@ -198,10 +194,10 @@ $end
 1!
 1;
 1<
+1L
+0K
 1J
 0H
-1F
-0B
 09
 17
 06
@@ -210,10 +206,10 @@ $end
 0(
 1'
 0%
-1K
-0I
-1G
-0C
+1F
+0E
+1D
+0B
 #100000
 1$
 0!
@@ -225,11 +221,11 @@ $end
 1!
 1;
 1<
-1L
-0J
+1M
+0L
+1K
+0I
 1H
-0D
-1B
 19
 08
 16
@@ -240,11 +236,11 @@ $end
 1(
 0&
 1%
-1M
-0K
-1I
-0E
-1C
+1G
+0F
+1E
+0C
+1B
 #120000
 0$
 0!
@@ -260,29 +256,30 @@ $end
 1<
 1?
 1N
-0L
-1J
-0F
-1D
-0B
+0M
+1L
+0J
+1I
+0H
 09
 18
 07
 15
 04
 13
+1:
+1,
 1+
 0*
 1)
 0'
 1&
 0%
-1O
-0M
-1K
 0G
-1E
-0C
+1F
+0D
+1C
+0B
 #140000
 0$
 0!
@@ -294,29 +291,27 @@ $end
 1!
 1;
 1<
-1P
 0N
-1L
-0H
-1F
-0D
+1M
+0K
+1J
+0I
 08
 17
 06
 14
 03
-1:
-1,
+0:
+0,
 0+
 1*
 0(
 1'
 0&
-0O
-1M
-0I
 1G
 0E
+1D
+0C
 #160000
 0!
 0;
@@ -325,25 +320,23 @@ $end
 1!
 1;
 1<
-0P
 1N
+0L
+1K
 0J
-1H
-0F
 07
 16
 05
 13
-0:
-0,
+1:
+1,
 1+
 0)
 1(
 0'
-1O
-0K
-1I
-0G
+0F
+1E
+0D
 #180000
 0!
 0;
@@ -355,21 +348,18 @@ $end
 1;
 1<
 1?
-1P
-0L
-1J
-0H
+0M
+1L
+0K
 06
 15
 04
-1:
-1,
 0*
 1)
 0(
-0M
-1K
-0I
+0G
+1F
+0E
 #200000
 0!
 0;
@@ -382,21 +372,22 @@ $end
 1<
 0?
 0N
-1L
-0J
-1B
+1M
+0L
+1H
 19
 05
 14
 03
+0:
+0,
 0+
 1*
 0)
 1%
-0O
-1M
-0K
-1C
+1G
+0F
+1B
 #220000
 1$
 0!
@@ -411,21 +402,19 @@ $end
 1;
 1<
 0?
-0P
 1N
-0L
-1D
+0M
+1I
 18
 04
 13
-0:
-0,
+1:
+1,
 1+
 0*
 1&
-1O
-0M
-1E
+0G
+1C
 #240000
 0!
 0;
@@ -437,21 +426,19 @@ $end
 1;
 1<
 1?
-1P
 0N
-1F
-0B
+1J
+0H
 09
 17
 03
-1:
-1,
+0:
+0,
 0+
 1'
 0%
-0O
-1G
-0C
+1D
+0B
 #260000
 0!
 0;
@@ -460,21 +447,18 @@ $end
 1!
 1;
 1<
-0P
+1K
+0I
 1H
-0D
-1B
 19
 08
 16
-0:
-0,
 1(
 0&
 1%
-1I
-0E
-1C
+1E
+0C
+1B
 #280000
 0!
 0;
@@ -486,36 +470,36 @@ $end
 1;
 1<
 0?
-1J
-0F
-1D
+1L
+0J
+1I
 18
 07
 15
 1)
 0'
 1&
-1K
-0G
-1E
+1F
+0D
+1C
 #300000
 0#
 0!
 0=
 0;
 0<
-0K
-0I
+0F
 0E
 0C
+0B
 #310000
 1!
 1;
 1<
-0J
+0L
+0K
+0I
 0H
-0D
-0B
 09
 08
 06
@@ -557,10 +541,10 @@ $end
 1!
 1;
 1<
-1B
+1H
 19
 1%
-1C
+1B
 #380000
 0$
 0!
@@ -575,14 +559,14 @@ $end
 1;
 1<
 1?
-1D
-0B
+1I
+0H
 09
 18
 1&
 0%
-1E
-0C
+1C
+0B
 #400000
 0$
 0!
@@ -594,14 +578,14 @@ $end
 1!
 1;
 1<
-1F
-0D
+1J
+0I
 08
 17
 1'
 0&
-1G
-0E
+1D
+0C
 #420000
 0!
 0;
@@ -613,14 +597,14 @@ $end
 1;
 1<
 1?
-1H
-0F
+1K
+0J
 07
 16
 1(
 0'
-1I
-0G
+1E
+0D
 #440000
 0"
 0!

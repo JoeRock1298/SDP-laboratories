@@ -37,6 +37,27 @@ module tb_count ();
 			//Esperamos 2*20ns
 			#(T*24)
 			
+			RST_n = 1'b0;
+			#(T*2)
+			RST_n = 1'b1;
+			UP_DOWN = 1'b0;
+			#(T*24)
+			RST_n = 1'b0;
+			#(T*2)
+			
+			RST_n = 1'b1;
+			#(T*2)
+			
+			ENABLE = 1'b0;
+			#(T*2)
+			
+			
+			ENABLE = 1'b1;
+			UP_DOWN = 1'b1;
+			#(T*2)
+			
+			UP_DOWN = 1'b0;
+			#(T*5)
 			$display("Fin Simulación!!!");
 			$stop;
 		end

@@ -9,13 +9,13 @@ z2
 cModel Technology
 dW:/www/MUISE/Sistemas digitales programables/Prácticas de Laboratorio/Práctica1/simulation/qsim
 vcontador
-Z0 !s110 1635109146
+Z0 !s110 1635265600
 !i10b 1
 !s100 nEg<9>QDdLg@zgl76?QZK2
 I=JBe7NSFN3Gh`Qd5TK?o@1
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/qsim
-w1635109145
+Z2 dC:/Users/rama2/Desktop/P1/SDP-laboratories-main/Practica1/simulation/qsim
+w1635265600
 Z3 8Practica1.vo
 Z4 FPractica1.vo
 Z5 L0 31
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1635109146.000000
+Z7 !s108 1635265600.000000
 Z8 !s107 Practica1.vo|
 Z9 !s90 -work|work|Practica1.vo|
 !i113 1
@@ -32,53 +32,53 @@ Z11 tCvgOpt 0
 vcontador_vlg_vec_tst
 R0
 !i10b 1
-!s100 TaoVe`=B5DeV88glQZI1Q3
-IX511T2k`baIj<FMicY1h81
+!s100 HgYH_nG>Yjd8;L_19YRfm2
+IN;4`FKI@D9Pb^lnBJI@f:2
 R1
 R2
-w1635109144
-8Waveform.vwf.vt
-FWaveform.vwf.vt
-Z12 L0 29
+w1635265599
+Z12 8Test_Shift_Register.vwf.vt
+Z13 FTest_Shift_Register.vwf.vt
+Z14 L0 29
 R6
 r1
 !s85 0
 31
 R7
-!s107 Waveform.vwf.vt|
-!s90 -work|work|Waveform.vwf.vt|
+!s107 Test_Shift_Register.vwf.vt|
+Z15 !s90 -work|work|Test_Shift_Register.vwf.vt|
 !i113 1
 R10
 R11
 vhard_block
-Z13 !s110 1635259201
+Z16 !s110 1635265673
 !i10b 1
-!s100 cg`P:;Q9Pl6FA`;mG[4[Z1
-I6>0Qdj27W7YAoS[aXlX1M1
+!s100 U:5QBCnTXU1Iel^8]oFV?3
+IDlj^C4Rh>J8<7Bl6JP6G:0
 R1
 R2
-Z14 w1635259199
+Z17 w1635265672
 R3
 R4
-L0 588
+L0 544
 R6
 r1
 !s85 0
 31
-Z15 !s108 1635259200.000000
+Z18 !s108 1635265673.000000
 R8
 R9
 !i113 1
 R10
 R11
 vregistro7
-R13
+R16
 !i10b 1
-!s100 ]Af4zZ?a9_hm?2ClUU=9b2
-IS3g81cjF>O2`SO_AUX;lN0
+!s100 V8Q2MQna^j]ZD<[7@ihUI0
+I<c`GT[X[di`l]KeObL9k80
 R1
 R2
-R14
+R17
 R3
 R4
 R5
@@ -86,30 +86,30 @@ R6
 r1
 !s85 0
 31
-R15
+R18
 R8
 R9
 !i113 1
 R10
 R11
 vregistro7_vlg_vec_tst
-R13
+R16
 !i10b 1
 !s100 eVMOKR8>1SFT0FW>_;T@T3
 IFfSR5A^NdXMZ6be>W1>VH1
 R1
 R2
-w1635259198
-8Test_Shift_Register.vwf.vt
-FTest_Shift_Register.vwf.vt
+w1635265671
 R12
+R13
+R14
 R6
 r1
 !s85 0
 31
-!s108 1635259201.000000
+R18
 !s107 Test_Shift_Register.vwf.vt|
-!s90 -work|work|Test_Shift_Register.vwf.vt|
+R15
 !i113 1
 R10
 R11
