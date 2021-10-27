@@ -45,40 +45,40 @@ r1
 !s85 0
 31
 R7
-!s107 Test_Shift_Register.vwf.vt|
-Z15 !s90 -work|work|Test_Shift_Register.vwf.vt|
+Z15 !s107 Test_Shift_Register.vwf.vt|
+Z16 !s90 -work|work|Test_Shift_Register.vwf.vt|
 !i113 1
 R10
 R11
 vhard_block
-Z16 !s110 1635265673
+Z17 !s110 1635365142
 !i10b 1
-!s100 U:5QBCnTXU1Iel^8]oFV?3
-IDlj^C4Rh>J8<7Bl6JP6G:0
+!s100 c<_XOPIWM[Nc6KD[DO=EJ3
+IiVYhb`J_dCWOCbh`bDJe21
 R1
-R2
-Z17 w1635265672
+Z18 dC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/qsim
+Z19 w1635365141
 R3
 R4
-L0 544
+L0 236
 R6
 r1
 !s85 0
 31
-Z18 !s108 1635265673.000000
+Z20 !s108 1635365142.000000
 R8
 R9
 !i113 1
 R10
 R11
-vregistro7
-R16
-!i10b 1
-!s100 V8Q2MQna^j]ZD<[7@ihUI0
-I<c`GT[X[di`l]KeObL9k80
-R1
-R2
+vLights_set
 R17
+!i10b 1
+!s100 <hf:EbRa>I0RmFaDA1]5e3
+I;R_3[J=]]giaXVUi8HMK80
+R1
+R18
+R19
 R3
 R4
 R5
@@ -86,14 +86,58 @@ R6
 r1
 !s85 0
 31
+R20
+R8
+R9
+!i113 1
+R10
+R11
+n@lights_set
+vLights_set_vlg_vec_tst
+R17
+!i10b 1
+!s100 7Emdb89FNSG_>@ocRZ3<]0
+IQI[kDemeTQZ4Nc[4II>i03
+R1
 R18
+w1635365140
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+R14
+R6
+r1
+!s85 0
+31
+R20
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+R11
+n@lights_set_vlg_vec_tst
+vregistro7
+Z21 !s110 1635265673
+!i10b 1
+!s100 V8Q2MQna^j]ZD<[7@ihUI0
+I<c`GT[X[di`l]KeObL9k80
+R1
+R2
+w1635265672
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z22 !s108 1635265673.000000
 R8
 R9
 !i113 1
 R10
 R11
 vregistro7_vlg_vec_tst
-R16
+R21
 !i10b 1
 !s100 eVMOKR8>1SFT0FW>_;T@T3
 IFfSR5A^NdXMZ6be>W1>VH1
@@ -107,9 +151,9 @@ R6
 r1
 !s85 0
 31
-R18
-!s107 Test_Shift_Register.vwf.vt|
+R22
 R15
+R16
 !i113 1
 R10
 R11

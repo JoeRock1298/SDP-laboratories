@@ -1,3 +1,28 @@
+// -------------------------------------------------------------------------------------------------------------------------
+// Universitat Politècnica de València
+// Escuela Técnica Superior de Ingenieros de Telecomunicación
+// -------------------------------------------------------------------------------------------------------------------------
+// Sistemas Digitales Programables
+// Curso 2021 - 2022
+// -------------------------------------------------------------------------------------------------------------------------
+// Nombre del archivo: contador.v
+//
+// Descripción: Este código Verilog implementa un contador parametrizable correspondiente a la subtarea 1 de la tarea 1.
+// Sus funcionalidades son:
+//      - RST_n, activo a nivel bajo
+//      - iCLK, Reloj activo por flanco de subida
+//      - ENABLE
+//      - iUP_DOWN, pin de dirección de conteo -> UP = 1, DOWN = 0
+//		- oCOUNT, Salida del contador
+//		- oTC, Pin de fin de cuenta (Terminal Count)
+//
+// -------------------------------------------------------------------------------------------------------------------------
+//      Versión: V1.0                   | Fecha Modificación: 27/10/2021
+//
+//      Autor: Jose Luis Rocabado Rocha
+//
+// -------------------------------------------------------------------------------------------------------------------------
+
 module contador (iCLK, iRST_n, iENABLE, iUP_DOWN, oCOUNT, oTC);
 
 	parameter fin_cuenta = 20;

@@ -1,5 +1,27 @@
-// Autor: Jose Luis Rocabado Rocha
-//Fecha: 26/10/2021
+// -------------------------------------------------------------------------------------------------------------------------
+// Universitat Politècnica de València
+// Escuela Técnica Superior de Ingenieros de Telecomunicación
+// -------------------------------------------------------------------------------------------------------------------------
+// Sistemas Digitales Programables
+// Curso 2021 - 2022
+// -------------------------------------------------------------------------------------------------------------------------
+// Nombre del archivo: tb_count.v
+//
+// Descripción: Este código Verilog implementa el código para el test bench del contador parametrizable correspondiente 
+// a la subtarea 1 de la tarea 1.
+// Se testean los casos:
+//      - Reset
+//		- ENABLE
+//		- Count UP
+//		- Count DOWN
+//		- TC en ambas situacioones de conteo (UP/DOWN)
+//
+// -------------------------------------------------------------------------------------------------------------------------
+//      Versión: V1.0                   | Fecha Modificación: 27/10/2021
+//
+//      Autor: Jose Luis Rocabado Rocha
+//
+// -------------------------------------------------------------------------------------------------------------------------
 
 //´timescale <time_unit>/<time_precision>
 `timescale 1ns/1ps
