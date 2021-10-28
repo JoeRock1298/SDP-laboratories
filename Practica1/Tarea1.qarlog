@@ -1,0 +1,36 @@
+Quartus Prime Archive log --	C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/Tarea1.qarlog
+
+Archive:	C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/Tarea1.qar
+Date:		Thu Oct 28 12:29:39 2021
+Quartus Prime		17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+
+	=========== Files Selected: ===========
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/Lights_set.v
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/MathFun.vh
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/Practica1.qpf
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/Practica1.qsf
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/Test_Shift_Register.vwf
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/Waveform.vwf
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/contador.v
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/output_files/Practica1.asm.rpt
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/output_files/Practica1.eda.rpt
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/output_files/Practica1.fit.rpt
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/output_files/Practica1.fit.smsg
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/output_files/Practica1.fit.summary
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/output_files/Practica1.flow.rpt
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/output_files/Practica1.jdi
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/output_files/Practica1.map.rpt
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/output_files/Practica1.map.summary
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/output_files/Practica1.pin
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/output_files/Practica1.sld
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/output_files/Practica1.sof
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/output_files/Practica1.sta.rpt
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/output_files/Practica1.sta.summary
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/registro7.v
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/tb_Lights_set.v
+C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/tb_count.v
+c:/intelfpga/17.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 25 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

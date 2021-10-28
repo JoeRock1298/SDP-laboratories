@@ -20,6 +20,7 @@
 //      Versión: V1.0                   | Fecha Modificación: 27/10/2021
 //
 //      Autor: Jose Luis Rocabado Rocha
+//		  Autor: Rafael Matevosyan
 //
 // -------------------------------------------------------------------------------------------------------------------------
 
@@ -49,37 +50,40 @@ module tb_count ();
 			ENABLE = 1'b0;
 			UP_DOWN = 1'b0;
 			$display("SIMULANDO!!!");
-			//Esperamos 2*20ns
+			//Esperamos 2 Periodos y desactivamos el reset
 			#(T*2)
 			RST_n = 1'b1;
-			//Esperamos 2*20ns
+			//Esperamos 2 Periodos y activamos el ENABLE y el conteo hacia arriba
 			#(T*2)
 			ENABLE = 1'b1;
 			UP_DOWN = 1'b1;
-			//Esperamos 2*20ns
+			//Esperamos 24 Periodos de conteo y activamos el reset
 			#(T*24)
 			
 			RST_n = 1'b0;
-			#(T*2)
+			#(T*2) //Esperamos 2 Periodos y desactivamos el RESET y contamos hacia abajo
 			RST_n = 1'b1;
 			UP_DOWN = 1'b0;
-			#(T*24)
+			
+			#(T*24) //Esperamos 24 Periodos de conteo y activamos el RESET
 			RST_n = 1'b0;
-			#(T*2)
+			
+			#(T*2) //Esperamos 2 Periodos y desactivamos el RESET
 			
 			RST_n = 1'b1;
-			#(T*2)
+			#(T*2) //Esperamos 2 Periodos y desactivamos el ENABLE
 			
 			ENABLE = 1'b0;
 			#(T*2)
 			
-			
+			//Esperamos 2 Periodos y activamos el ENABLE y contamos hacia arriba
 			ENABLE = 1'b1;
 			UP_DOWN = 1'b1;
 			#(T*2)
-			
+			//Esperamos 2 Periodos y contamos hacia abajo
 			UP_DOWN = 1'b0;
 			#(T*5)
+			//Realizamos el conteo hacia abajo durante 5 Periodos 
 			$display("Fin Simulación!!!");
 			$stop;
 		end

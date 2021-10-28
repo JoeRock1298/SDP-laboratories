@@ -1,0 +1,102 @@
+Archive Project report for Practica1
+Thu Oct 28 12:29:39 2021
+Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Thu Oct 28 12:29:39 2021 ;
+; Revision Name          ; Practica1                             ;
+; Top-level Entity Name  ; Lights_set                            ;
+; Family                 ; Cyclone IV E                          ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Service request' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+    Info: Report files
+    Info: Programming output files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/Tarea1.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'Practica1.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga/17.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4868 megabytes
+    Info: Processing ended: Thu Oct 28 12:29:39 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++---------------------------------------------------------+
+; Files Archived                                          ;
++---------------------------------------------------------+
+; File Name                                               ;
++---------------------------------------------------------+
+; c:/intelfpga/17.1/quartus/bin64/assignment_defaults.qdf ;
+; contador.v                                              ;
+; Lights_set.v                                            ;
+; MathFun.vh                                              ;
+; output_files/Practica1.asm.rpt                          ;
+; output_files/Practica1.eda.rpt                          ;
+; output_files/Practica1.fit.rpt                          ;
+; output_files/Practica1.fit.smsg                         ;
+; output_files/Practica1.fit.summary                      ;
+; output_files/Practica1.flow.rpt                         ;
+; output_files/Practica1.jdi                              ;
+; output_files/Practica1.map.rpt                          ;
+; output_files/Practica1.map.summary                      ;
+; output_files/Practica1.pin                              ;
+; output_files/Practica1.sld                              ;
+; output_files/Practica1.sof                              ;
+; output_files/Practica1.sta.rpt                          ;
+; output_files/Practica1.sta.summary                      ;
+; Practica1.qpf                                           ;
+; Practica1.qsf                                           ;
+; registro7.v                                             ;
+; tb_count.v                                              ;
+; tb_Lights_set.v                                         ;
+; Test_Shift_Register.vwf                                 ;
+; Waveform.vwf                                            ;
++---------------------------------------------------------+
+
+

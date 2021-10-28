@@ -1,6 +1,6 @@
 EDA Netlist Writer report for Practica1
-Wed Oct 27 22:49:50 2021
-Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+Thu Oct 28 11:58:02 2021
+Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
 
 
 ---------------------
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Oct 27 22:49:50 2021 ;
+; EDA Netlist Writer Status ; Successful - Thu Oct 28 11:58:02 2021 ;
 ; Revision Name             ; Practica1                             ;
 ; Top-level Entity Name     ; Lights_set                            ;
 ; Family                    ; Cyclone IV E                          ;
@@ -66,20 +66,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                           ;
-+----------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                      ;
-+----------------------------------------------------------------------------------------------------------------------+
-; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/modelsim/Practica1_7_1200mv_85c_slow.vo     ;
-; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/modelsim/Practica1_7_1200mv_0c_slow.vo      ;
-; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/modelsim/Practica1_min_1200mv_0c_fast.vo    ;
-; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/modelsim/Practica1.vo                       ;
-; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/modelsim/Practica1_7_1200mv_85c_v_slow.sdo  ;
-; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/modelsim/Practica1_7_1200mv_0c_v_slow.sdo   ;
-; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/modelsim/Practica1_min_1200mv_0c_v_fast.sdo ;
-; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/modelsim/Practica1_v.sdo                    ;
-+----------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                         ;
++--------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                    ;
++--------------------------------------------------------------------------------------------------------------------+
+; C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/simulation/modelsim/Practica1_7_1200mv_85c_slow.vo     ;
+; C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/simulation/modelsim/Practica1_7_1200mv_0c_slow.vo      ;
+; C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/simulation/modelsim/Practica1_min_1200mv_0c_fast.vo    ;
+; C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/simulation/modelsim/Practica1.vo                       ;
+; C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/simulation/modelsim/Practica1_7_1200mv_85c_v_slow.sdo  ;
+; C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/simulation/modelsim/Practica1_7_1200mv_0c_v_slow.sdo   ;
+; C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/simulation/modelsim/Practica1_min_1200mv_0c_v_fast.sdo ;
+; C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/simulation/modelsim/Practica1_v.sdo                    ;
++--------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -87,21 +87,21 @@ refer to the applicable agreement for further details.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
-    Info: Processing started: Wed Oct 27 22:49:49 2021
+    Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+    Info: Processing started: Thu Oct 28 11:58:01 2021
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Practica1 -c Practica1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file Practica1_7_1200mv_85c_slow.vo in folder "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Practica1_7_1200mv_0c_slow.vo in folder "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Practica1_min_1200mv_0c_fast.vo in folder "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Practica1.vo in folder "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Practica1_7_1200mv_85c_v_slow.sdo in folder "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Practica1_7_1200mv_0c_v_slow.sdo in folder "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Practica1_min_1200mv_0c_v_fast.sdo in folder "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Practica1_v.sdo in folder "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica1/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Practica1_7_1200mv_85c_slow.vo in folder "C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Practica1_7_1200mv_0c_slow.vo in folder "C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Practica1_min_1200mv_0c_fast.vo in folder "C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Practica1.vo in folder "C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Practica1_7_1200mv_85c_v_slow.sdo in folder "C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Practica1_7_1200mv_0c_v_slow.sdo in folder "C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Practica1_min_1200mv_0c_v_fast.sdo in folder "C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Practica1_v.sdo in folder "C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica1/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4646 megabytes
-    Info: Processing ended: Wed Oct 27 22:49:50 2021
+    Info: Peak virtual memory: 4647 megabytes
+    Info: Processing ended: Thu Oct 28 11:58:02 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

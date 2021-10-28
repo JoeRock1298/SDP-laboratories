@@ -9,7 +9,7 @@
 //
 // Descripción: Este código Verilog implementa un contador parametrizable correspondiente a la subtarea 1 de la tarea 1.
 // Sus funcionalidades son:
-//      - RST_n, activo a nivel bajo
+//      - RST_n, activo a nivel bajo, sincrono
 //      - iCLK, Reloj activo por flanco de subida
 //      - ENABLE
 //      - iUP_DOWN, pin de dirección de conteo -> UP = 1, DOWN = 0
@@ -20,6 +20,7 @@
 //      Versión: V1.0                   | Fecha Modificación: 27/10/2021
 //
 //      Autor: Jose Luis Rocabado Rocha
+//		  Autor: Rafael Matevosyan
 //
 // -------------------------------------------------------------------------------------------------------------------------
 

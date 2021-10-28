@@ -18,6 +18,7 @@
 //      Versión: V1.0                   | Fecha Modificación: 27/10/2021
 //
 //      Autor: Jose Luis Rocabado Rocha
+//		  Autor: Rafael Matevosyan
 //
 // -------------------------------------------------------------------------------------------------------------------------
 //´timescale <time_unit>/<time_precision>
@@ -42,22 +43,30 @@ module tb_Lights_set ();
 			CLK = 1'b0;
 			ENABLE = 1'b0;
 			$display("SIMULANDO!!!");
-			//Esperamos 2*20ns
-			#(T*2)
+			
+			#(T*2) //Esperamos 2 Periodos y desactivamos el RESET
 			RST_n = 1'b1;
-			//Esperamos 2*20ns
+			
+			//Esperamos 2 Periodos y activamos el ENABLE
 			#(T*2)
 			ENABLE = 1'b1;
-			//Esperamos 2*20ns
+			//Esperamos 3,75S y activamos el RESET
 			#(T*180000000)
-			$display("3.5s!!!");
 			RST_n = 1'b0;
+			
+			//Esperamos 2 Periodos y desactivamos el RESET
 			#(T*2)
 			RST_n = 1'b1;
+			
+			//Esperamos 3,75s y desactivamos el ENABLE
 			#(T*18000000)
 			ENABLE = 1'b0;
+			
+			//Esperamos 18000 Periodos y activamos el ENABLE
 			#(T*18000)
 			ENABLE = 1'b1;
+			
+			//Finalmente ejecutamos la simulacion durante 3,75s
 			#(T*180000000)
 			
 			$display("Fin Simulación!!!");

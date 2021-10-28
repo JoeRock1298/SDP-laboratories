@@ -1,6 +1,6 @@
 Flow report for Practica1
-Wed Oct 27 22:49:50 2021
-Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+Thu Oct 28 11:58:02 2021
+Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
 
 
 ---------------------
@@ -37,26 +37,26 @@ refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------------------+
-; Flow Summary                                                                              ;
-+------------------------------------+------------------------------------------------------+
-; Flow Status                        ; Successful - Wed Oct 27 22:49:50 2021                ;
-; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition ;
-; Revision Name                      ; Practica1                                            ;
-; Top-level Entity Name              ; Lights_set                                           ;
-; Family                             ; Cyclone IV E                                         ;
-; Device                             ; EP4CE115F29C7                                        ;
-; Timing Models                      ; Final                                                ;
-; Total logic elements               ; 55 / 114,480 ( < 1 % )                               ;
-;     Total combinational functions  ; 55 / 114,480 ( < 1 % )                               ;
-;     Dedicated logic registers      ; 31 / 114,480 ( < 1 % )                               ;
-; Total registers                    ; 31                                                   ;
-; Total pins                         ; 11 / 529 ( 2 % )                                     ;
-; Total virtual pins                 ; 0                                                    ;
-; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                                ;
-; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                      ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                        ;
-+------------------------------------+------------------------------------------------------+
++-----------------------------------------------------------------------------------------------+
+; Flow Summary                                                                                  ;
++------------------------------------+----------------------------------------------------------+
+; Flow Status                        ; Successful - Thu Oct 28 11:58:02 2021                    ;
+; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition ;
+; Revision Name                      ; Practica1                                                ;
+; Top-level Entity Name              ; Lights_set                                               ;
+; Family                             ; Cyclone IV E                                             ;
+; Device                             ; EP4CE115F29C7                                            ;
+; Timing Models                      ; Final                                                    ;
+; Total logic elements               ; 55 / 114,480 ( < 1 % )                                   ;
+;     Total combinational functions  ; 55 / 114,480 ( < 1 % )                                   ;
+;     Dedicated logic registers      ; 31 / 114,480 ( < 1 % )                                   ;
+; Total registers                    ; 31                                                       ;
+; Total pins                         ; 11 / 529 ( 2 % )                                         ;
+; Total virtual pins                 ; 0                                                        ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                                    ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                          ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                            ;
++------------------------------------+----------------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/27/2021 22:49:21 ;
+; Start date & time ; 10/28/2021 11:57:35 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Practica1           ;
 +-------------------+---------------------+
@@ -75,10 +75,10 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 49410870802600.163536776102092         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 335035121264.163541505401328           ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; contador                               ; --            ; --          ; tb_count       ;
 ; EDA_DESIGN_INSTANCE_NAME             ; Lights_set                             ; --            ; --          ; tb_Lights_set  ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_count                               ; --            ; --          ; eda_simulation ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_Lights_set                          ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation ;
@@ -110,12 +110,12 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 4784 MB             ; 00:00:20                           ;
-; Fitter                    ; 00:00:11     ; 1.0                     ; 5810 MB             ; 00:00:18                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4674 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4861 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4646 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:28     ; --                      ; --                  ; 00:00:43                           ;
+; Analysis & Synthesis      ; 00:00:08     ; 1.0                     ; 4789 MB             ; 00:00:17                           ;
+; Fitter                    ; 00:00:11     ; 1.0                     ; 5881 MB             ; 00:00:17                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4679 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4865 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4647 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:24     ; --                      ; --                  ; 00:00:39                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -124,11 +124,11 @@ refer to the applicable agreement for further details.
 +---------------------------+------------------+------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-LV6HA8E  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; DESKTOP-LV6HA8E  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; DESKTOP-LV6HA8E  ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-LV6HA8E  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-LV6HA8E  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis      ; dise01           ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; dise01           ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; dise01           ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; dise01           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; dise01           ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 
