@@ -1,6 +1,6 @@
 EDA Netlist Writer report for P1_ejer1
-Tue Oct 05 17:49:13 2021
-Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+Thu Oct 28 13:27:54 2021
+Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
 
 
 ---------------------
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Oct 05 17:49:13 2021 ;
+; EDA Netlist Writer Status ; Successful - Thu Oct 28 13:27:54 2021 ;
 ; Revision Name             ; P1_ejer1                              ;
 ; Top-level Entity Name     ; fulladder                             ;
 ; Family                    ; Cyclone IV E                          ;
@@ -65,13 +65,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                      ;
-+-----------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                 ;
-+-----------------------------------------------------------------------------------------------------------------+
-; C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/SDP-Verilog/Practica 1/Ejercicio1/simulation/qsim//P1_ejer1.vo ;
-+-----------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                          ;
++-----------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                     ;
++-----------------------------------------------------------------------------------------------------+
+; C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica0/Ejercicio1/simulation/qsim//P1_ejer1.vo ;
++-----------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -79,7 +79,7 @@ refer to the applicable agreement for further details.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+    Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
     Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and its AMPP partner logic 
@@ -93,13 +93,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Oct 05 17:49:13 2021
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/SDP-Verilog/Practica 1/Ejercicio1/simulation/qsim/" P1_ejer1 -c P1_ejer1
+    Info: Processing started: Thu Oct 28 13:27:54 2021
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica0/Ejercicio1/simulation/qsim/ P1_ejer1 -c P1_ejer1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file P1_ejer1.vo in folder "C:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/SDP-Verilog/Practica 1/Ejercicio1/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file P1_ejer1.vo in folder "C:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica0/Ejercicio1/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4628 megabytes
-    Info: Processing ended: Tue Oct 05 17:49:13 2021
+    Info: Peak virtual memory: 4639 megabytes
+    Info: Processing ended: Thu Oct 28 13:27:54 2021
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 

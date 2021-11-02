@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Oct 05 17:57:00 2021
-Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+Analysis & Synthesis Status : Successful - Thu Oct 28 13:36:49 2021
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
 Revision Name : P1_ejer1
 Top-level Entity Name : fulladder
 Family : Cyclone IV E
-Total logic elements : 8
-    Total combinational functions : 8
+Total logic elements : 14
+    Total combinational functions : 14
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 14
+Total pins : 16
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
