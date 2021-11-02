@@ -26,12 +26,12 @@
 // -------------------------------------------------------------------------------------------------------------------------
 
 module control_motor (
-    input CLK, RESET, UP_DOWN, HALF_PULL, ENABLE,
-    output wire A, B, C, D, INH1, INH2
+    input CLK, RESET, UP_DOWN, HALF_PULL, ENABLE;
+    output wire A, B, C, D, INH1, INH2;
 );
 
-reg [2:0] Estado_actual, Estado_siguiente;
-parameter S1 = 3'b000, S2 =3'b001, S3 =3'b010, S4 =3'b011, S5 =3'b100, S6 =3'b101, S7 =3'b110, S8 =3'b111;
+reg [2:0] Estado_actual, [2:0] Estado_siguiente;
+parameter S1 = 3b'000, S2 =3b'001, S3 =3b'010, S4 =3b'011, S5 =3b'100, S6 =3b'101, S7 =3b'110, S8 =3b'111;
 reg [5:0] x;
 
 
@@ -49,14 +49,12 @@ end
 always @(Estado_actual) begin
     case (Estado_actual)
         S1: 
-		  begin
             x[0] = 0;
             x[1] = 1;
             x[2] = 0;
             x[3] = 1;
             x[4] = 1;
             x[5] = 1;
-			end
 
          S2: 
             x[0] = 0;
