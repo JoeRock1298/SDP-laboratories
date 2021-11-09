@@ -26,10 +26,11 @@
 // -------------------------------------------------------------------------------------------------------------------------
 
 module control_motor (
-    input CLK, RESET, UP_DOWN, HALF_PULL, ENABLE,
+    input CLK, RESET, UP_DOWN, HALF_FULL, ENABLE,
     output wire A, B, C, D, INH1, INH2
 );
 
+(* syn_encoding = "user"*) 
 reg [2:0] Estado_actual, Estado_siguiente;
 parameter S1 = 3'b000, S2 =3'b001, S3 =3'b010, S4 =3'b011, S5 =3'b100, S6 =3'b101, S7 =3'b110, S8 =3'b111;
 reg [5:0] x;
@@ -72,9 +73,9 @@ always @(Estado_actual) begin
          S3: 
             begin
                 x[0] = 1;
-                x[1] = 1;
+                x[1] = 0;
                 x[2] = 0;
-                x[3] = 0;
+                x[3] = 1;
                 x[4] = 1;
                 x[5] = 1; 
             end 
@@ -143,97 +144,121 @@ assign INH1 = x[4];
 assign INH2 = x[5];
 
 //Determinar el estado siguiente
-always @(Estado_actual, ENABLE, UP_DOWN, HAL_FULL) 
+always @(Estado_actual, ENABLE, UP_DOWN, HALF_FULL) 
     begin
 
     case (Estado_actual)
-        S1: if (HALF_FULL) 
-                if (UP_DOWN) 
+        S1:if(ENABLE)
+					if (HALF_FULL) 
+						if (UP_DOWN) 
                     Estado_siguiente = S2;
-                else
+						else
                     Estado_siguiente = S8;
-            else 
-                if(UP_DOWN) 
+					else 
+						if(UP_DOWN) 
                     Estado_siguiente = S3;
-                else
+						else
                     Estado_siguiente = S7;
+				else
+					Estado_siguiente = S1;
 
-        S2: if (HALF_FULL) 
-                if (UP_DOWN) 
+        S2:if(ENABLE)
+					if (HALF_FULL) 
+						if (UP_DOWN) 
                     Estado_siguiente = S3;
-                else
+						else
                     Estado_siguiente = S1;
-            else 
-                if(UP_DOWN) 
+					else 
+						if(UP_DOWN) 
                     Estado_siguiente = S4;
-                else
+						else
                     Estado_siguiente = S8;
+				else
+					Estado_siguiente = S2;
 
-        S3:  if (HALF_FULL) 
-                if (UP_DOWN) 
+        S3:if(ENABLE)  
+					if (HALF_FULL) 
+						if (UP_DOWN) 
                     Estado_siguiente = S4;
-                else
+						else
                     Estado_siguiente = S2;
-            else 
-                if(UP_DOWN) 
+					else 
+						if(UP_DOWN) 
                     Estado_siguiente = S5;
-                else
-                    Estado_siguiente = S1;  
+						else
+                    Estado_siguiente = S1;
+				else
+					Estado_siguiente = S3;  
 
-        S4:  if (HALF_FULL) 
-                if (UP_DOWN) 
+        S4:if(ENABLE)  
+					if (HALF_FULL) 
+						if (UP_DOWN) 
                     Estado_siguiente = S5;
-                else
+						else
                     Estado_siguiente = S3;
-            else 
-                if(UP_DOWN) 
+					else 
+						if(UP_DOWN) 
                     Estado_siguiente = S6;
-                else
+						else
                     Estado_siguiente = S2;
+				else
+					Estado_siguiente = S4;  
 
-        S5:  if (HALF_FULL) 
-                if (UP_DOWN) 
+        S5:if(ENABLE)   
+					if (HALF_FULL) 
+						if (UP_DOWN) 
                     Estado_siguiente = S6;
-                else
+						else
                     Estado_siguiente = S4;
-            else 
-                if(UP_DOWN) 
+					else 
+						if(UP_DOWN) 
                     Estado_siguiente = S7;
-                else
+						else
                     Estado_siguiente = S3; 
+				else
+					Estado_siguiente = S5;  
 
-        S6:  if (HALF_FULL) 
-                if (UP_DOWN) 
+        S6:if(ENABLE) 
+					if (HALF_FULL) 
+						if (UP_DOWN) 
                     Estado_siguiente = S7;
-                else
+						else
                     Estado_siguiente = S5;
-            else 
-                if(UP_DOWN) 
-                    Estado_siguiente = S8;
-                else
+					else 
+						if(UP_DOWN) 
+							Estado_siguiente = S8;
+						else
                     Estado_siguiente = S4; 
+				else
+					Estado_siguiente = S6;
 
-        S7:  if (HALF_FULL) 
-                if (UP_DOWN) 
+        S7:if(ENABLE)
+					if (HALF_FULL) 
+						if (UP_DOWN) 
                     Estado_siguiente = S8;
-                else
+						else
                     Estado_siguiente = S6;
-            else 
-                if(UP_DOWN) 
+					else 
+						if(UP_DOWN) 
                     Estado_siguiente = S1;
-                else
+						else
                     Estado_siguiente = S5; 
+				else
+					Estado_siguiente = S7;
 
-        S8:  if (HALF_FULL) 
-                if (UP_DOWN) 
+        S8:if(ENABLE)
+					if (HALF_FULL) 
+						if (UP_DOWN) 
                     Estado_siguiente = S1;
-                else
+						else
                     Estado_siguiente = S7;
-            else 
-                if(UP_DOWN) 
+					else 
+						if(UP_DOWN) 
                     Estado_siguiente = S2;
-                else
+						else
                     Estado_siguiente = S6; 
+				else
+					Estado_siguiente = S8;
 
         default: Estado_siguiente = S1;
     endcase
