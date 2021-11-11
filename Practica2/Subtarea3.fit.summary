@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Nov 11 17:35:36 2021
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+Revision Name : Subtarea3
+Top-level Entity Name : paso1
+Family : Cyclone IV E
+Device : EP4CE6F17C7
+Timing Models : Final
+Total logic elements : 73 / 6,272 ( 1 % )
+    Total combinational functions : 71 / 6,272 ( 1 % )
+    Dedicated logic registers : 32 / 6,272 ( < 1 % )
+Total registers : 32
+Total pins : 11 / 180 ( 6 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

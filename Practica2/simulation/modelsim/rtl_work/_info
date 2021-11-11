@@ -1,0 +1,101 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/simulation/modelsim
+vcontador
+Z1 !s110 1636649034
+!i10b 1
+!s100 A9>E?R@n=c@EPzNj`_K>M1
+IfWz2odeLE=j07Lb2Bo32d1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1635417883
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/contador.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/contador.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/MathFun.vh
+Z3 L0 27
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1636649034.000000
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/MathFun.vh|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/contador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/contador.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2
+Z8 tCvgOpt 0
+vmedvedev_kit_LS
+!s110 1636649033
+!i10b 1
+!s100 1LBNRM8D6P>]Y:W6Q7T2f0
+IjVWlJEIXQnUHf3>7LjBH]1
+R2
+R0
+w1636639913
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/medvedev_kit_LS.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/medvedev_kit_LS.v
+L0 24
+R4
+r1
+!s85 0
+31
+Z9 !s108 1636649033.000000
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/medvedev_kit_LS.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/medvedev_kit_LS.v|
+!i113 1
+R6
+R7
+R8
+nmedvedev_kit_@l@s
+vpaso1
+R1
+!i10b 1
+!s100 JTIPan>DeI3565XBYTISa0
+IOILRDO3Te4hoON4CA>_ZW2
+R2
+R0
+w1636648517
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso1.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso1.v
+L0 23
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso1.v|
+!i113 1
+R6
+R7
+R8
+vpaso1_TB
+R1
+!i10b 1
+!s100 KNDM]FZ1AQ<o6g7WLXMS^0
+I6iZcVdX`4ZkC^kAAijg`c3
+R2
+R0
+w1636649009
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso1_TB.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso1_TB.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso1_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso1_TB.v|
+!i113 1
+R6
+R7
+R8
+npaso1_@t@b

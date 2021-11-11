@@ -146,7 +146,6 @@ assign INH2 = x[5];
 //Determinar el estado siguiente
 always @(Estado_actual, ENABLE, UP_DOWN, HALF_FULL) 
     begin
-
     case (Estado_actual)
         S1:if(ENABLE)
 					if (HALF_FULL) 
