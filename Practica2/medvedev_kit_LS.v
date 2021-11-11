@@ -11,8 +11,17 @@
 // la Tarea 2. Sus funcionalidades son:
 //      - Funciona a flanco positivo del reloj de 50MHz
 //      - Reset asincrono y activo a nivel bajo
-//      - Enable activo a nivel lto
+//      - Enable activo a nivel alto
+//		  - 14 estados inplementados con 9bits [8:0] donde el MSB indica los estados posteriores al estado 8 dado a la codificación
+//			 one-hot para la salida de los LED's
 //      - Salida [7:0] correspondiente al estado de los LED's
+//
+// Además se implementa la conexión con el contador con TC a 10 Hz (paso 1) para el TB del FSM.
+// Por lo tanto este modulo paso1 tendrá:
+//		  - Un contador de modulo 5000000
+//		  - Reloj, reset y enable igual que el modulo del FSM
+//		  - El UP_DOWN del contador esta conectado al enebale (siempre contará hacia arriba)
+//		  - El clock del FSM esta conectado al TC para realizar las pruebas (cambio estado a 10Hz)
 // -------------------------------------------------------------------------------------------------------------------------
 //      Versión: V1.0                   | Fecha Modificación: 11/11/2021
 //
@@ -95,4 +104,28 @@ end
 
 assign oLEDG = Estado_actual[7:0];
 
+endmodule
+
+module paso1(
+	input iCLK, iRST_n, iENABLE,
+	output [7:0] out
+);
+	//definicion de parametros
+    parameter mod = 5000000; // para tener una frecuencia de 10 Hz, 0.1s
+	
+   // definicion de variables
+	wire TC;
+	
+	//instanciación de los DUT (Device Under Test)
+	contador #(.fin_cuenta(mod)) i1 (.iCLK(iCLK),
+												.iRST_n(iRST_n),
+												.iENABLE (iENABLE),
+												.iUP_DOWN (iENABLE),
+												.oCOUNT(),
+												.oTC(TC));
+    
+    medvedev_kit_LS i2(.iCLK(TC), 
+                       .iRST_n(iRST_n), 
+                       .iENABLE(iENABLE),
+                       .oLEDG(out));
 endmodule
