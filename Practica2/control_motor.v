@@ -265,9 +265,6 @@ always @(Estado_actual, ENABLE, UP_DOWN, HALF_FULL)
 
     end
 
-
-
-
 endmodule
 
 

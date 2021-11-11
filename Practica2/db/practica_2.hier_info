@@ -1,0 +1,39 @@
+|control_motor
+CLK => Estado_actual~9.DATAIN
+RESET => Estado_actual~11.DATAIN
+UP_DOWN => Estado_siguiente.DATAA
+UP_DOWN => Estado_siguiente.DATAB
+UP_DOWN => Estado_siguiente.DATAB
+UP_DOWN => Estado_siguiente.DATAA
+HALF_FULL => Estado_siguiente.OUTPUTSELECT
+HALF_FULL => Estado_siguiente.OUTPUTSELECT
+HALF_FULL => Estado_siguiente.OUTPUTSELECT
+HALF_FULL => Estado_siguiente.OUTPUTSELECT
+ENABLE => Estado_actual.OUTPUTSELECT
+ENABLE => Estado_actual.OUTPUTSELECT
+ENABLE => Estado_actual.OUTPUTSELECT
+ENABLE => Estado_actual.OUTPUTSELECT
+ENABLE => Estado_actual.OUTPUTSELECT
+ENABLE => Estado_actual.OUTPUTSELECT
+ENABLE => Estado_actual.OUTPUTSELECT
+ENABLE => Estado_actual.OUTPUTSELECT
+ENABLE => Estado_siguiente.OUTPUTSELECT
+ENABLE => Estado_siguiente.OUTPUTSELECT
+ENABLE => Estado_siguiente.OUTPUTSELECT
+ENABLE => Estado_siguiente.OUTPUTSELECT
+ENABLE => Selector0.IN1
+ENABLE => Selector1.IN2
+ENABLE => Selector2.IN1
+ENABLE => Selector3.IN2
+ENABLE => Selector4.IN1
+ENABLE => Selector5.IN2
+ENABLE => Selector6.IN1
+ENABLE => Selector7.IN2
+A <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+INH1 <= x.DB_MAX_OUTPUT_PORT_TYPE
+INH2 <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+

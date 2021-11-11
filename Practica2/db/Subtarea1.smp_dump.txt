@@ -1,0 +1,11 @@
+
+State Machine - |control_motor|Estado_actual
+Name Estado_actual~14 Estado_actual~13 Estado_actual~12 
+Estado_actual.S1 0 0 0 
+Estado_actual.S2 0 0 1 
+Estado_actual.S3 0 1 0 
+Estado_actual.S4 0 1 1 
+Estado_actual.S5 1 0 0 
+Estado_actual.S6 1 0 1 
+Estado_actual.S7 1 1 0 
+Estado_actual.S8 1 1 1 
