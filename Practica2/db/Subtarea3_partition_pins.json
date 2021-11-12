@@ -4,31 +4,71 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "oCOUNT[0]",
+					"name" : "oLEDG[0]",
 					"strict" : false
 				},
 				{
-					"name" : "oCOUNT[1]",
+					"name" : "oLEDG[1]",
 					"strict" : false
 				},
 				{
-					"name" : "oCOUNT[2]",
+					"name" : "oLEDG[2]",
 					"strict" : false
 				},
 				{
-					"name" : "oCOUNT[3]",
+					"name" : "oLEDG[3]",
 					"strict" : false
 				},
 				{
-					"name" : "oTC",
+					"name" : "oLEDG[4]",
 					"strict" : false
 				},
 				{
-					"name" : "out[0]",
+					"name" : "oLEDG[5]",
 					"strict" : false
 				},
 				{
-					"name" : "out[1]",
+					"name" : "oLEDG[6]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDG[7]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "iCLK",
 					"strict" : false
 				},
 				{
@@ -36,7 +76,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "iCLK",
+					"name" : "iMODE",
+					"strict" : false
+				},
+				{
+					"name" : "iENABLE",
 					"strict" : false
 				},
 				{

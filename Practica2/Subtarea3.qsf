@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE6F17C7
-set_global_assignment -name TOP_LEVEL_ENTITY paso2
+set_global_assignment -name TOP_LEVEL_ENTITY paso3
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:54:00  NOVEMBER 11, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION "17.1.1 Lite Edition"
@@ -67,6 +67,8 @@ set_global_assignment -name VERILOG_FILE paso2_TB.v
 set_global_assignment -name EDA_TEST_BENCH_FILE paso1_TB.v -section_id paso1_TB
 set_global_assignment -name EDA_TEST_BENCH_FILE paso2_TB.v -section_id paso2_TB
 set_global_assignment -name VERILOG_FILE paso2.v
+set_global_assignment -name VERILOG_FILE variable_counter.v
+set_global_assignment -name VERILOG_FILE paso3.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

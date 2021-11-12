@@ -2,76 +2,112 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'iKEY1'
-Slack : -2.138
-TNS   : -4.171
+Type  : Slow 1200mV 85C Model Setup 'iMODE'
+Slack : -4.098
+TNS   : -25.664
 
 Type  : Slow 1200mV 85C Model Setup 'iCLK'
-Slack : -1.555
-TNS   : -6.967
+Slack : -3.163
+TNS   : -112.568
 
-Type  : Slow 1200mV 85C Model Hold 'iCLK'
-Slack : 0.411
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Setup 'iKEY1'
+Slack : -2.476
+TNS   : -4.866
 
 Type  : Slow 1200mV 85C Model Hold 'iKEY1'
-Slack : 0.710
+Slack : -0.757
+TNS   : -0.947
+
+Type  : Slow 1200mV 85C Model Hold 'iCLK'
+Slack : 0.440
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'iMODE'
+Slack : 1.070
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'iCLK'
 Slack : -3.000
-TNS   : -10.710
+TNS   : -56.970
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'iKEY1'
 Slack : -3.000
 TNS   : -3.000
 
-Type  : Slow 1200mV 0C Model Setup 'iKEY1'
-Slack : -2.157
-TNS   : -4.093
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'iMODE'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Setup 'iMODE'
+Slack : -4.007
+TNS   : -24.983
 
 Type  : Slow 1200mV 0C Model Setup 'iCLK'
-Slack : -1.307
-TNS   : -5.853
+Slack : -2.812
+TNS   : -98.736
 
-Type  : Slow 1200mV 0C Model Hold 'iCLK'
-Slack : 0.361
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Setup 'iKEY1'
+Slack : -2.333
+TNS   : -4.590
 
 Type  : Slow 1200mV 0C Model Hold 'iKEY1'
-Slack : 0.722
+Slack : -0.593
+TNS   : -0.724
+
+Type  : Slow 1200mV 0C Model Hold 'iCLK'
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'iMODE'
+Slack : 1.168
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'iCLK'
 Slack : -3.000
-TNS   : -10.710
+TNS   : -56.970
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'iKEY1'
 Slack : -3.000
 TNS   : -3.000
 
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'iMODE'
+Slack : -3.000
+TNS   : -3.000
+
 Type  : Fast 1200mV 0C Model Setup 'iCLK'
-Slack : -0.919
-TNS   : -2.110
+Slack : -1.758
+TNS   : -40.982
+
+Type  : Fast 1200mV 0C Model Setup 'iMODE'
+Slack : -1.552
+TNS   : -7.759
 
 Type  : Fast 1200mV 0C Model Setup 'iKEY1'
-Slack : -0.422
-TNS   : -0.762
-
-Type  : Fast 1200mV 0C Model Hold 'iCLK'
-Slack : 0.186
-TNS   : 0.000
+Slack : -0.716
+TNS   : -1.291
 
 Type  : Fast 1200mV 0C Model Hold 'iKEY1'
-Slack : 0.311
+Slack : -0.522
+TNS   : -0.795
+
+Type  : Fast 1200mV 0C Model Hold 'iCLK'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'iMODE'
+Slack : 0.241
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'iCLK'
 Slack : -3.000
-TNS   : -9.310
+TNS   : -49.327
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'iMODE'
+Slack : -3.000
+TNS   : -4.219
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'iKEY1'
 Slack : -3.000
-TNS   : -3.000
+TNS   : -3.606
 
 ------------------------------------------------------------

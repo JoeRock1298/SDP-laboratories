@@ -1,5 +1,5 @@
 
-State Machine - |paso2|mealy_speed:i2|state
+State Machine - |paso3|mealy_speed:i4|state
 Name state~5 state~4 
 state.S0 0 0 
 state.S1 0 1 
