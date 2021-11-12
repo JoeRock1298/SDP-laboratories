@@ -7,8 +7,8 @@
 // -------------------------------------------------------------------------------------------------------------------------
 // Nombre del archivo: medvedev_kit_LS.v
 //
-// Descripción: Este código Verilog implementa la máquina de estados Medvedev del contador Johnson de la subtarea 3 de 
-// la Tarea 2. Sus funcionalidades son:
+// Descripción: Este código Verilog implementa la máquina de estados Medvedev de la subtarea 3 de la Tarea 2 (paso 1).
+// Simula el contador jonhson y el codificador de la Tarea 1. Sus funcionalidades son:
 //      - Funciona a flanco positivo del reloj de 50MHz
 //      - Reset asincrono y activo a nivel bajo
 //      - Enable activo a nivel alto
@@ -42,11 +42,13 @@ module medvedev_kit_LS (
 reg [8:0] Estado_actual, Estado_siguiente;
 
 //declaring parameters
+//The MSB of the 9 bits allow us to differenciate between the 14 states of the FSM
 parameter S1 = 9'b010000000, S2 = 9'b001000000, S3 = 9'b000100000, S4 = 9'b000010000;
 parameter S5 = 9'b000001000, S6 = 9'b000000100, S7 = 9'b000000010, S8 = 9'b000000001; 
 parameter S9 = {1'b1, S7[7:0]}, S10 = {1'b1, S6[7:0]}, S11 = {1'b1, S5[7:0]};
 parameter S12 = {1'b1, S4[7:0]}, S13 = {1'b1, S3[7:0]}, S14 = {1'b1, S2[7:0]};
 
+//next state logic
 always @(Estado_actual, iENABLE) 
 begin
     case (Estado_actual)
@@ -93,6 +95,7 @@ begin
     endcase
 end
 
+// State memory
 always @(posedge iCLK, negedge iRST_n) 
 begin
     if (!iRST_n)
@@ -102,30 +105,7 @@ begin
             Estado_actual <= Estado_siguiente;  
 end
 
+//assigning the output without taking into account the MSB of the state
 assign oLEDG = Estado_actual[7:0];
 
-endmodule
-
-module paso1(
-	input iCLK, iRST_n, iENABLE,
-	output [7:0] out
-);
-	//definicion de parametros
-    parameter mod = 5000000; // para tener una frecuencia de 10 Hz, 0.1s
-	
-   // definicion de variables
-	wire TC;
-	
-	//instanciación de los DUT (Device Under Test)
-	contador #(.fin_cuenta(mod)) i1 (.iCLK(iCLK),
-												.iRST_n(iRST_n),
-												.iENABLE (iENABLE),
-												.iUP_DOWN (iENABLE),
-												.oCOUNT(),
-												.oTC(TC));
-    
-    medvedev_kit_LS i2(.iCLK(TC), 
-                       .iRST_n(iRST_n), 
-                       .iENABLE(iENABLE),
-                       .oLEDG(out));
 endmodule

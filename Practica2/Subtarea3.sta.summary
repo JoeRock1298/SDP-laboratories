@@ -2,112 +2,76 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'iENABLE'
-Slack : -4.189
-TNS   : -31.595
+Type  : Slow 1200mV 85C Model Setup 'iKEY1'
+Slack : -2.138
+TNS   : -4.171
 
 Type  : Slow 1200mV 85C Model Setup 'iCLK'
-Slack : -4.013
-TNS   : -91.576
-
-Type  : Slow 1200mV 85C Model Setup 'contador:i1|oCOUNT[0]'
-Slack : -2.029
-TNS   : -16.467
-
-Type  : Slow 1200mV 85C Model Hold 'contador:i1|oCOUNT[0]'
-Slack : 0.546
-TNS   : 0.000
+Slack : -1.555
+TNS   : -6.967
 
 Type  : Slow 1200mV 85C Model Hold 'iCLK'
-Slack : 0.679
+Slack : 0.411
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'iENABLE'
-Slack : 1.510
+Type  : Slow 1200mV 85C Model Hold 'iKEY1'
+Slack : 0.710
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'iCLK'
 Slack : -3.000
-TNS   : -32.555
+TNS   : -10.710
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'iENABLE'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'iKEY1'
 Slack : -3.000
 TNS   : -3.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'contador:i1|oCOUNT[0]'
-Slack : -1.285
-TNS   : -11.565
-
-Type  : Slow 1200mV 0C Model Setup 'iENABLE'
-Slack : -4.060
-TNS   : -30.599
+Type  : Slow 1200mV 0C Model Setup 'iKEY1'
+Slack : -2.157
+TNS   : -4.093
 
 Type  : Slow 1200mV 0C Model Setup 'iCLK'
-Slack : -3.642
-TNS   : -83.041
-
-Type  : Slow 1200mV 0C Model Setup 'contador:i1|oCOUNT[0]'
-Slack : -1.672
-TNS   : -13.391
-
-Type  : Slow 1200mV 0C Model Hold 'contador:i1|oCOUNT[0]'
-Slack : 0.543
-TNS   : 0.000
+Slack : -1.307
+TNS   : -5.853
 
 Type  : Slow 1200mV 0C Model Hold 'iCLK'
-Slack : 0.618
+Slack : 0.361
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'iENABLE'
-Slack : 1.567
+Type  : Slow 1200mV 0C Model Hold 'iKEY1'
+Slack : 0.722
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'iCLK'
 Slack : -3.000
-TNS   : -32.555
+TNS   : -10.710
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'iENABLE'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'iKEY1'
 Slack : -3.000
 TNS   : -3.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'contador:i1|oCOUNT[0]'
-Slack : -1.285
-TNS   : -11.565
-
 Type  : Fast 1200mV 0C Model Setup 'iCLK'
-Slack : -1.413
-TNS   : -32.130
+Slack : -0.919
+TNS   : -2.110
 
-Type  : Fast 1200mV 0C Model Setup 'iENABLE'
-Slack : -1.378
-TNS   : -8.858
-
-Type  : Fast 1200mV 0C Model Setup 'contador:i1|oCOUNT[0]'
-Slack : -1.318
-TNS   : -11.005
+Type  : Fast 1200mV 0C Model Setup 'iKEY1'
+Slack : -0.422
+TNS   : -0.762
 
 Type  : Fast 1200mV 0C Model Hold 'iCLK'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'iKEY1'
 Slack : 0.311
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'contador:i1|oCOUNT[0]'
-Slack : 0.333
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'iENABLE'
-Slack : 0.380
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'iCLK'
 Slack : -3.000
-TNS   : -28.438
+TNS   : -9.310
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'iENABLE'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'iKEY1'
 Slack : -3.000
-TNS   : -3.618
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'contador:i1|oCOUNT[0]'
-Slack : -1.000
-TNS   : -9.000
+TNS   : -3.000
 
 ------------------------------------------------------------

@@ -1,0 +1,6 @@
+
+State Machine - |paso2|mealy_speed:i2|state
+Name state~5 state~4 
+state.S0 0 0 
+state.S1 0 1 
+state.S2 1 0 
