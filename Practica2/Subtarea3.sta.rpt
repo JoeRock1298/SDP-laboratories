@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Subtarea3
-Fri Nov 12 03:03:09 2021
+Fri Nov 12 10:59:21 2021
 Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 
 
@@ -110,15 +110,15 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.17        ;
+; Average used               ; 1.21        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   5.4%      ;
-;     Processor 3            ;   5.3%      ;
-;     Processor 4            ;   5.1%      ;
-;     Processors 5-6         ;   0.5%      ;
+;     Processor 2            ;   6.6%      ;
+;     Processor 3            ;   6.4%      ;
+;     Processor 4            ;   6.2%      ;
+;     Processors 5-6         ;   0.6%      ;
 +----------------------------+-------------+
 
 
@@ -357,13 +357,13 @@ No paths to report.
 ; -2.927 ; variable_counter:i5|out[2]                 ; variable_counter:i5|out[1]          ; iCLK         ; iCLK        ; 1.000        ; -0.047     ; 3.898      ;
 ; -2.927 ; variable_counter:i5|out[2]                 ; variable_counter:i5|out[0]          ; iCLK         ; iCLK        ; 1.000        ; -0.047     ; 3.898      ;
 ; -2.925 ; contador:i1|oCOUNT[6]                      ; medvedev_kit_LS:i2|Estado_actual[2] ; iCLK         ; iCLK        ; 1.000        ; 0.247      ; 4.190      ;
+; -2.923 ; variable_counter:i5|out[2]                 ; variable_counter:i5|out[2]          ; iCLK         ; iCLK        ; 1.000        ; -0.043     ; 3.898      ;
 ; -2.923 ; variable_counter:i5|out[0]                 ; medvedev_kit_LS:i2|Estado_actual[0] ; iCLK         ; iCLK        ; 1.000        ; 0.137      ; 4.078      ;
 ; -2.923 ; variable_counter:i5|out[0]                 ; medvedev_kit_LS:i2|Estado_actual[4] ; iCLK         ; iCLK        ; 1.000        ; 0.137      ; 4.078      ;
 ; -2.923 ; variable_counter:i5|out[0]                 ; variable_counter:i5|out[3]          ; iCLK         ; iCLK        ; 1.000        ; -0.047     ; 3.894      ;
-; -2.923 ; variable_counter:i5|out[2]                 ; variable_counter:i5|out[2]          ; iCLK         ; iCLK        ; 1.000        ; -0.043     ; 3.898      ;
-; -2.922 ; variable_counter:i5|out[0]                 ; variable_counter:i5|out[2]          ; iCLK         ; iCLK        ; 1.000        ; -0.047     ; 3.893      ;
 ; -2.922 ; variable_counter:i5|out[2]                 ; medvedev_kit_LS:i2|Estado_actual[0] ; iCLK         ; iCLK        ; 1.000        ; 0.137      ; 4.077      ;
 ; -2.922 ; variable_counter:i5|out[2]                 ; medvedev_kit_LS:i2|Estado_actual[4] ; iCLK         ; iCLK        ; 1.000        ; 0.137      ; 4.077      ;
+; -2.922 ; variable_counter:i5|out[0]                 ; variable_counter:i5|out[2]          ; iCLK         ; iCLK        ; 1.000        ; -0.047     ; 3.893      ;
 ; -2.921 ; variable_counter:i5|out[0]                 ; variable_counter:i5|out[1]          ; iCLK         ; iCLK        ; 1.000        ; -0.047     ; 3.892      ;
 ; -2.918 ; variable_counter:i5|out[0]                 ; variable_counter:i5|out[0]          ; iCLK         ; iCLK        ; 1.000        ; -0.043     ; 3.893      ;
 ; -2.901 ; contador:i3|oCOUNT[0]                      ; medvedev_kit_LS:i2|Estado_actual[7] ; iCLK         ; iCLK        ; 1.000        ; 0.281      ; 4.200      ;
@@ -428,8 +428,8 @@ No paths to report.
 ; Slack ; From Node                  ; To Node                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
 ; 0.440 ; variable_counter:i5|out[1] ; variable_counter:i5|out[1] ; iCLK         ; iCLK        ; 0.000        ; 0.043      ; 0.669      ;
-; 0.440 ; variable_counter:i5|out[2] ; variable_counter:i5|out[2] ; iCLK         ; iCLK        ; 0.000        ; 0.043      ; 0.669      ;
 ; 0.440 ; variable_counter:i5|out[3] ; variable_counter:i5|out[3] ; iCLK         ; iCLK        ; 0.000        ; 0.043      ; 0.669      ;
+; 0.440 ; variable_counter:i5|out[2] ; variable_counter:i5|out[2] ; iCLK         ; iCLK        ; 0.000        ; 0.043      ; 0.669      ;
 ; 0.445 ; contador:i3|oCOUNT[0]      ; contador:i3|oCOUNT[0]      ; iCLK         ; iCLK        ; 0.000        ; 0.043      ; 0.674      ;
 ; 0.445 ; variable_counter:i5|out[0] ; variable_counter:i5|out[0] ; iCLK         ; iCLK        ; 0.000        ; 0.043      ; 0.674      ;
 ; 0.679 ; contador:i1|oCOUNT[1]      ; contador:i1|oCOUNT[1]      ; iCLK         ; iCLK        ; 0.000        ; 0.043      ; 0.908      ;
@@ -1232,10 +1232,10 @@ No paths to report.
 ; -0.942 ; contador:i1|oCOUNT[7]                      ; medvedev_kit_LS:i2|Estado_actual[8] ; iCLK         ; iCLK        ; 1.000        ; 0.025      ; 1.974      ;
 ; -0.942 ; contador:i1|oCOUNT[7]                      ; medvedev_kit_LS:i2|Estado_actual[1] ; iCLK         ; iCLK        ; 1.000        ; 0.025      ; 1.974      ;
 ; -0.937 ; contador:i3|oCOUNT[0]                      ; medvedev_kit_LS:i2|Estado_actual[7] ; iCLK         ; iCLK        ; 1.000        ; 0.143      ; 2.087      ;
-; -0.935 ; variable_counter:i5|out[2]                 ; medvedev_kit_LS:i2|Estado_actual[0] ; iCLK         ; iCLK        ; 1.000        ; 0.075      ; 2.017      ;
-; -0.935 ; variable_counter:i5|out[2]                 ; medvedev_kit_LS:i2|Estado_actual[4] ; iCLK         ; iCLK        ; 1.000        ; 0.075      ; 2.017      ;
 ; -0.935 ; contador:i1|oCOUNT[0]                      ; medvedev_kit_LS:i2|Estado_actual[0] ; iCLK         ; iCLK        ; 1.000        ; 0.079      ; 2.021      ;
 ; -0.935 ; contador:i1|oCOUNT[0]                      ; medvedev_kit_LS:i2|Estado_actual[4] ; iCLK         ; iCLK        ; 1.000        ; 0.079      ; 2.021      ;
+; -0.935 ; variable_counter:i5|out[2]                 ; medvedev_kit_LS:i2|Estado_actual[0] ; iCLK         ; iCLK        ; 1.000        ; 0.075      ; 2.017      ;
+; -0.935 ; variable_counter:i5|out[2]                 ; medvedev_kit_LS:i2|Estado_actual[4] ; iCLK         ; iCLK        ; 1.000        ; 0.075      ; 2.017      ;
 ; -0.923 ; contador:i1|oCOUNT[6]                      ; medvedev_kit_LS:i2|Estado_actual[5] ; iCLK         ; iCLK        ; 1.000        ; 0.025      ; 1.955      ;
 ; -0.923 ; contador:i1|oCOUNT[6]                      ; medvedev_kit_LS:i2|Estado_actual[6] ; iCLK         ; iCLK        ; 1.000        ; 0.025      ; 1.955      ;
 ; -0.923 ; contador:i1|oCOUNT[6]                      ; medvedev_kit_LS:i2|Estado_actual[3] ; iCLK         ; iCLK        ; 1.000        ; 0.025      ; 1.955      ;
@@ -1388,13 +1388,13 @@ No paths to report.
 +-------+----------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                  ; To Node                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+----------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.201 ; variable_counter:i5|out[2] ; variable_counter:i5|out[2]          ; iCLK         ; iCLK        ; 0.000        ; 0.022      ; 0.307      ;
 ; 0.201 ; variable_counter:i5|out[1] ; variable_counter:i5|out[1]          ; iCLK         ; iCLK        ; 0.000        ; 0.022      ; 0.307      ;
 ; 0.201 ; variable_counter:i5|out[3] ; variable_counter:i5|out[3]          ; iCLK         ; iCLK        ; 0.000        ; 0.022      ; 0.307      ;
-; 0.201 ; variable_counter:i5|out[2] ; variable_counter:i5|out[2]          ; iCLK         ; iCLK        ; 0.000        ; 0.022      ; 0.307      ;
 ; 0.208 ; contador:i3|oCOUNT[0]      ; contador:i3|oCOUNT[0]               ; iCLK         ; iCLK        ; 0.000        ; 0.022      ; 0.314      ;
 ; 0.208 ; variable_counter:i5|out[0] ; variable_counter:i5|out[0]          ; iCLK         ; iCLK        ; 0.000        ; 0.022      ; 0.314      ;
-; 0.312 ; contador:i1|oCOUNT[3]      ; contador:i1|oCOUNT[3]               ; iCLK         ; iCLK        ; 0.000        ; 0.022      ; 0.418      ;
 ; 0.312 ; contador:i1|oCOUNT[1]      ; contador:i1|oCOUNT[1]               ; iCLK         ; iCLK        ; 0.000        ; 0.022      ; 0.418      ;
+; 0.312 ; contador:i1|oCOUNT[3]      ; contador:i1|oCOUNT[3]               ; iCLK         ; iCLK        ; 0.000        ; 0.022      ; 0.418      ;
 ; 0.312 ; contador:i1|oCOUNT[5]      ; contador:i1|oCOUNT[5]               ; iCLK         ; iCLK        ; 0.000        ; 0.022      ; 0.418      ;
 ; 0.312 ; contador:i1|oCOUNT[14]     ; contador:i1|oCOUNT[14]              ; iCLK         ; iCLK        ; 0.000        ; 0.022      ; 0.418      ;
 ; 0.312 ; contador:i1|oCOUNT[16]     ; contador:i1|oCOUNT[16]              ; iCLK         ; iCLK        ; 0.000        ; 0.022      ; 0.418      ;
@@ -1420,8 +1420,8 @@ No paths to report.
 ; 0.361 ; variable_counter:i5|out[0] ; variable_counter:i5|out[2]          ; iCLK         ; iCLK        ; 0.000        ; 0.024      ; 0.469      ;
 ; 0.374 ; contador:i3|oCOUNT[3]      ; contador:i3|oCOUNT[3]               ; iCLK         ; iCLK        ; 0.000        ; 0.025      ; 0.483      ;
 ; 0.422 ; variable_counter:i5|out[2] ; variable_counter:i5|out[3]          ; iCLK         ; iCLK        ; 0.000        ; 0.024      ; 0.530      ;
-; 0.457 ; contador:i1|oCOUNT[3]      ; contador:i1|oCOUNT[4]               ; iCLK         ; iCLK        ; 0.000        ; 0.026      ; 0.567      ;
 ; 0.457 ; contador:i1|oCOUNT[1]      ; contador:i1|oCOUNT[2]               ; iCLK         ; iCLK        ; 0.000        ; 0.026      ; 0.567      ;
+; 0.457 ; contador:i1|oCOUNT[3]      ; contador:i1|oCOUNT[4]               ; iCLK         ; iCLK        ; 0.000        ; 0.026      ; 0.567      ;
 ; 0.457 ; contador:i1|oCOUNT[5]      ; contador:i1|oCOUNT[6]               ; iCLK         ; iCLK        ; 0.000        ; 0.026      ; 0.567      ;
 ; 0.460 ; contador:i1|oCOUNT[15]     ; contador:i1|oCOUNT[16]              ; iCLK         ; iCLK        ; 0.000        ; 0.024      ; 0.568      ;
 ; 0.460 ; contador:i1|oCOUNT[17]     ; contador:i1|oCOUNT[18]              ; iCLK         ; iCLK        ; 0.000        ; 0.024      ; 0.568      ;
@@ -1457,11 +1457,11 @@ No paths to report.
 ; 0.494 ; contador:i3|oCOUNT[1]      ; contador:i3|oCOUNT[1]               ; iCLK         ; iCLK        ; 0.000        ; 0.025      ; 0.603      ;
 ; 0.496 ; iMODE                      ; medvedev_kit_LS:i2|Estado_actual[2] ; iMODE        ; iCLK        ; 0.000        ; 1.242      ; 1.852      ;
 ; 0.507 ; contador:i3|oCOUNT[3]      ; contador:i3|oCOUNT[1]               ; iCLK         ; iCLK        ; 0.000        ; 0.025      ; 0.616      ;
-; 0.520 ; contador:i1|oCOUNT[3]      ; contador:i1|oCOUNT[5]               ; iCLK         ; iCLK        ; 0.000        ; 0.026      ; 0.630      ;
 ; 0.520 ; contador:i1|oCOUNT[1]      ; contador:i1|oCOUNT[3]               ; iCLK         ; iCLK        ; 0.000        ; 0.026      ; 0.630      ;
+; 0.520 ; contador:i1|oCOUNT[3]      ; contador:i1|oCOUNT[5]               ; iCLK         ; iCLK        ; 0.000        ; 0.026      ; 0.630      ;
 ; 0.520 ; contador:i1|oCOUNT[5]      ; contador:i1|oCOUNT[7]               ; iCLK         ; iCLK        ; 0.000        ; 0.026      ; 0.630      ;
-; 0.523 ; contador:i1|oCOUNT[3]      ; contador:i1|oCOUNT[6]               ; iCLK         ; iCLK        ; 0.000        ; 0.026      ; 0.633      ;
 ; 0.523 ; contador:i1|oCOUNT[1]      ; contador:i1|oCOUNT[4]               ; iCLK         ; iCLK        ; 0.000        ; 0.026      ; 0.633      ;
+; 0.523 ; contador:i1|oCOUNT[3]      ; contador:i1|oCOUNT[6]               ; iCLK         ; iCLK        ; 0.000        ; 0.026      ; 0.633      ;
 ; 0.523 ; contador:i1|oCOUNT[5]      ; contador:i1|oCOUNT[8]               ; iCLK         ; iCLK        ; 0.000        ; 0.026      ; 0.633      ;
 ; 0.523 ; contador:i1|oCOUNT[9]      ; contador:i1|oCOUNT[11]              ; iCLK         ; iCLK        ; 0.000        ; 0.030      ; 0.637      ;
 ; 0.523 ; contador:i1|oCOUNT[15]     ; contador:i1|oCOUNT[17]              ; iCLK         ; iCLK        ; 0.000        ; 0.024      ; 0.631      ;
@@ -1866,7 +1866,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
-    Info: Processing started: Fri Nov 12 03:03:06 2021
+    Info: Processing started: Fri Nov 12 10:59:19 2021
 Info: Command: quartus_sta Subtarea3 -c Subtarea3
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1968,9 +1968,9 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4776 megabytes
-    Info: Processing ended: Fri Nov 12 03:03:09 2021
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 4772 megabytes
+    Info: Processing ended: Fri Nov 12 10:59:21 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

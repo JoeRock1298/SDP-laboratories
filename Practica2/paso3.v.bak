@@ -5,11 +5,11 @@
 // Sistemas Digitales Programables
 // Curso 2021 - 2022
 // -------------------------------------------------------------------------------------------------------------------------
-// Nombre del archivo: paso3.v
+// Nombre del archivo: paso2.v
 //
-// Descripción: Este código Verilog implementa la conexión con el contador de modulo 4 (paso 2) para el TB del FSM dela 
-// subtarea 3 de la Tarea 2 (Paso 3).
-// Por lo tanto este modulo paso 3 (se hará una instanciación del contador de la tarea 1) tendrá: 
+// Descripción: Este código Verilog implementa la conexión con el contador de modulo 4 (paso 2) para el TB del FSM la 
+// subtarea 3 de la Tarea 2 (Paso 2).
+// Por lo tanto este modulo paso2 (se hará una instanciación del contador de la tarea 1) tendrá: 
 //      - Funciona a flanco positivo del reloj de 50MHz
 //      - Reset asincrono y activo a nivel bajo
 //      - Enable activo a nivel alto

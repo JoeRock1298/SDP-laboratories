@@ -9,6 +9,7 @@ source_file = 1, C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/p
 source_file = 1, C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso2.v
 source_file = 1, C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/variable_counter.v
 source_file = 1, C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso3.v
+source_file = 1, C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso3_TB.v
 source_file = 1, C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/db/Subtarea3.cbx.xml
 design_name = paso3
 instance = comp, \oLEDG[0]~output , oLEDG[0]~output, paso3, 1

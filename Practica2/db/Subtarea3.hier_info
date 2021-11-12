@@ -5,22 +5,22 @@ iENABLE => iENABLE.IN2
 iMODE => iMODE.IN1
 iKEY1 => iKEY1.IN1
 iKEY2 => iKEY2.IN1
-oLEDG[0] <= medvedev_kit_LS:i2.oLEDG
-oLEDG[1] <= medvedev_kit_LS:i2.oLEDG
-oLEDG[2] <= medvedev_kit_LS:i2.oLEDG
-oLEDG[3] <= medvedev_kit_LS:i2.oLEDG
-oLEDG[4] <= medvedev_kit_LS:i2.oLEDG
-oLEDG[5] <= medvedev_kit_LS:i2.oLEDG
-oLEDG[6] <= medvedev_kit_LS:i2.oLEDG
-oLEDG[7] <= medvedev_kit_LS:i2.oLEDG
-oLEDR[0] <= count_i3[0].DB_MAX_OUTPUT_PORT_TYPE
-oLEDR[1] <= count_i3[1].DB_MAX_OUTPUT_PORT_TYPE
-oLEDR[2] <= count_i3[2].DB_MAX_OUTPUT_PORT_TYPE
-oLEDR[3] <= count_i3[3].DB_MAX_OUTPUT_PORT_TYPE
-oLEDR[4] <= variable_counter:i5.oCOUNT
-oLEDR[5] <= variable_counter:i5.oCOUNT
-oLEDR[6] <= variable_counter:i5.oCOUNT
-oLEDR[7] <= variable_counter:i5.oCOUNT
+oLEDG[0] << medvedev_kit_LS:i2.oLEDG
+oLEDG[1] << medvedev_kit_LS:i2.oLEDG
+oLEDG[2] << medvedev_kit_LS:i2.oLEDG
+oLEDG[3] << medvedev_kit_LS:i2.oLEDG
+oLEDG[4] << medvedev_kit_LS:i2.oLEDG
+oLEDG[5] << medvedev_kit_LS:i2.oLEDG
+oLEDG[6] << medvedev_kit_LS:i2.oLEDG
+oLEDG[7] << medvedev_kit_LS:i2.oLEDG
+oLEDR[0] << count_i3[0].DB_MAX_OUTPUT_PORT_TYPE
+oLEDR[1] << count_i3[1].DB_MAX_OUTPUT_PORT_TYPE
+oLEDR[2] << count_i3[2].DB_MAX_OUTPUT_PORT_TYPE
+oLEDR[3] << count_i3[3].DB_MAX_OUTPUT_PORT_TYPE
+oLEDR[4] << variable_counter:i5.oCOUNT
+oLEDR[5] << variable_counter:i5.oCOUNT
+oLEDR[6] << variable_counter:i5.oCOUNT
+oLEDR[7] << variable_counter:i5.oCOUNT
 
 
 |paso3|contador:i1

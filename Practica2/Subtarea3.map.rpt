@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Subtarea3
-Fri Nov 12 03:02:54 2021
+Fri Nov 12 10:59:11 2021
 Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 
 
@@ -54,7 +54,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                              ;
 +------------------------------------+------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 12 03:02:54 2021                ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 12 10:59:11 2021                ;
 ; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition ;
 ; Revision Name                      ; Subtarea3                                            ;
 ; Top-level Entity Name              ; paso3                                                ;
@@ -438,7 +438,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
-    Info: Processing started: Fri Nov 12 03:02:41 2021
+    Info: Processing started: Fri Nov 12 10:59:03 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Subtarea3 -c Subtarea3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -460,6 +460,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file variabl
     Info (12023): Found entity 1: variable_counter File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/variable_counter.v Line: 29
 Info (12021): Found 1 design units, including 1 entities, in source file paso3.v
     Info (12023): Found entity 1: paso3 File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso3.v Line: 31
+Info (12021): Found 1 design units, including 1 entities, in source file paso3_tb.v
+    Info (12023): Found entity 1: paso3_TB File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso3_TB.v Line: 27
 Info (12127): Elaborating entity "paso3" for the top level hierarchy
 Info (12128): Elaborating entity "contador" for hierarchy "contador:i1" File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso3.v Line: 53
 Warning (10230): Verilog HDL assignment warning at contador.v(58): truncated value with size 32 to match size of target (23) File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/contador.v Line: 58
@@ -526,9 +528,9 @@ Info (21057): Implemented 136 device resources after synthesis - the final resou
     Info (21059): Implemented 16 output pins
     Info (21061): Implemented 114 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
-    Info: Peak virtual memory: 4768 megabytes
-    Info: Processing ended: Fri Nov 12 03:02:54 2021
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:24
+    Info: Peak virtual memory: 4767 megabytes
+    Info: Processing ended: Fri Nov 12 10:59:11 2021
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:17
 
 

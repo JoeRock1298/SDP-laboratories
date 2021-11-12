@@ -28,7 +28,7 @@ module paso1_TB ();
     //definicion de parametros
     localparam T = 2;
     parameter mod = 5; // para tener una frecuencia de 10 MHz, para visualizar el resultado más rápido
-	 localparam countT = T*mod;
+	localparam countT = T*mod;
 	 
     // definicion de variables
 	reg CLK, RST_n, ENABLE;
