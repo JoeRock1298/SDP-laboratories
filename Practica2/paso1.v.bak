@@ -1,0 +1,23 @@
+module paso1(
+	input iCLK, iRST_n, iENABLE,
+	output [7:0] out
+);
+	//definicion de parametros
+    parameter mod = 5000000; // para tener una frecuencia de 10 Hz, 0.1s
+	
+   // definicion de variables
+	wire TC;
+	
+	//instanciación de los DUT (Device Under Test)
+	contador #(.fin_cuenta(mod)) i1 (.iCLK(iCLK),
+												.iRST_n(iRST_n),
+												.iENABLE (iENABLE),
+												.iUP_DOWN (iENABLE),
+												.oCOUNT(),
+												.oTC(TC));
+    
+    medvedev_kit_LS i2 (.iCLK(TC), 
+                       .iRST_n(iRST_n), 
+                       .iENABLE(iENABLE),
+                       .oLEDG(out));
+endmodul

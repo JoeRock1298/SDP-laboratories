@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Nov 11 11:56:45 2021
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+Revision Name : practica_2
+Top-level Entity Name : control_motor
+Family : Cyclone IV E
+Device : EP4CE6E22C6
+Timing Models : Final
+Total logic elements : 11 / 6,272 ( < 1 % )
+    Total combinational functions : 11 / 6,272 ( < 1 % )
+    Dedicated logic registers : 3 / 6,272 ( < 1 % )
+Total registers : 3
+Total pins : 11 / 92 ( 12 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

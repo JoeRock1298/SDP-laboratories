@@ -1,0 +1,145 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/simulation/modelsim
+vcontador
+Z1 !s110 1636711870
+!i10b 1
+!s100 A9>E?R@n=c@EPzNj`_K>M1
+IfWz2odeLE=j07Lb2Bo32d1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1635417883
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/contador.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/contador.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/MathFun.vh
+Z3 L0 27
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1636711870.000000
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/MathFun.vh|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/contador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/contador.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2
+Z8 tCvgOpt 0
+vmealy_speed
+R1
+!i10b 1
+!s100 deATERPMK48mzaYTU?Aog3
+I6gB`n;`5_=l]_75cgXVk83
+R2
+R0
+w1636678280
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/mealy_speed.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/mealy_speed.v
+L0 26
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/mealy_speed.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/mealy_speed.v|
+!i113 1
+R6
+R7
+R8
+vmedvedev_kit_LS
+R1
+!i10b 1
+!s100 N_1`O?Iejcc1F?b5zHW2A1
+IjSjQDTR]Kb^2Olnhe3?VH2
+R2
+R0
+w1636678043
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/medvedev_kit_LS.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/medvedev_kit_LS.v
+L0 33
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/medvedev_kit_LS.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/medvedev_kit_LS.v|
+!i113 1
+R6
+R7
+R8
+nmedvedev_kit_@l@s
+vpaso3
+R1
+!i10b 1
+!s100 ^VO>BE3PB@8eo:5Oe:i?]3
+Izml7gC06Vc7ZUoMg_75FE1
+R2
+R0
+w1636706991
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso3.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso3.v
+L0 31
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso3.v|
+!i113 1
+R6
+R7
+R8
+vpaso3_TB
+R1
+!i10b 1
+!s100 Xf9S5E@8@<n0>>Sch7zHV1
+IH0:_^5QnC8zYgJRkKn75O1
+R2
+R0
+w1636711852
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso3_TB.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso3_TB.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso3_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso3_TB.v|
+!i113 1
+R6
+R7
+R8
+npaso3_@t@b
+vvariable_counter
+R1
+!i10b 1
+!s100 7]H2G8KF;=eCNfX>S=eL93
+ImTi^Za:DG3od6>HHnP82N0
+R2
+R0
+w1636680611
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/variable_counter.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/variable_counter.v
+L0 29
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/variable_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/variable_counter.v|
+!i113 1
+R6
+R7
+R8

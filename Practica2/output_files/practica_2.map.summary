@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Nov 11 11:56:39 2021
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+Revision Name : practica_2
+Top-level Entity Name : control_motor
+Family : Cyclone IV E
+Total logic elements : 11
+    Total combinational functions : 11
+    Dedicated logic registers : 3
+Total registers : 3
+Total pins : 11
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

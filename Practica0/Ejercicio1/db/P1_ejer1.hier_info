@@ -8,11 +8,13 @@ b[1] => b[1].IN1
 b[2] => b[2].IN1
 b[3] => b[3].IN1
 cin => cin.IN1
-s[0] << adder:A1.s
-s[1] << adder:A2.s
-s[2] << adder:A3.s
-s[3] << adder:A4.s
-cout << adder:A4.cout
+La << HEX:d1.seg_a
+Lb << HEX:d1.seg_b
+Lc << HEX:d1.seg_c
+Ld << HEX:d1.seg_d
+Le << HEX:d1.seg_e
+Lf << HEX:d1.seg_f
+Lg << HEX:d1.seg_g
 
 
 |fulladder|adder:A1
@@ -69,5 +71,19 @@ cin => cout.IN1
 cin => cout.IN1
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fulladder|HEX:d1
+hex_digit[0] => Decoder0.IN3
+hex_digit[1] => Decoder0.IN2
+hex_digit[2] => Decoder0.IN1
+hex_digit[3] => Decoder0.IN0
+seg_a <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+seg_b <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg_c <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg_d <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg_e <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg_f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg_g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -1,0 +1,97 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "oLEDG[0]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDG[1]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDG[2]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDG[3]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDG[4]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDG[5]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDG[6]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDG[7]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "iCLK",
+					"strict" : false
+				},
+				{
+					"name" : "iRST_n",
+					"strict" : false
+				},
+				{
+					"name" : "iMODE",
+					"strict" : false
+				},
+				{
+					"name" : "iENABLE",
+					"strict" : false
+				},
+				{
+					"name" : "iKEY1",
+					"strict" : false
+				},
+				{
+					"name" : "iKEY2",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,185 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'testbench:U1|DE2_LTM_Control:U5|div[0]'
+Slack : -7.657
+TNS   : -550.362
+
+Type  : Slow 1200mV 85C Model Setup 'Reloj'
+Slack : -4.141
+TNS   : -591.639
+
+Type  : Slow 1200mV 85C Model Setup 'testbench:U1|DE2_LTM_Control:U5|lcd_spi_cotroller:u2|three_wire_controller:u0|mSPI_CLK'
+Slack : -2.494
+TNS   : -74.903
+
+Type  : Slow 1200mV 85C Model Hold 'testbench:U1|DE2_LTM_Control:U5|div[0]'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Reloj'
+Slack : 0.386
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'testbench:U1|DE2_LTM_Control:U5|lcd_spi_cotroller:u2|three_wire_controller:u0|mSPI_CLK'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'testbench:U1|DE2_LTM_Control:U5|lcd_spi_cotroller:u2|three_wire_controller:u0|mSPI_CLK'
+Slack : -3.531
+TNS   : -70.961
+
+Type  : Slow 1200mV 85C Model Recovery 'Reloj'
+Slack : -2.846
+TNS   : -295.463
+
+Type  : Slow 1200mV 85C Model Recovery 'testbench:U1|DE2_LTM_Control:U5|div[0]'
+Slack : -1.181
+TNS   : -80.590
+
+Type  : Slow 1200mV 85C Model Removal 'testbench:U1|DE2_LTM_Control:U5|div[0]'
+Slack : 0.937
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Reloj'
+Slack : 2.802
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'testbench:U1|DE2_LTM_Control:U5|lcd_spi_cotroller:u2|three_wire_controller:u0|mSPI_CLK'
+Slack : 2.972
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Reloj'
+Slack : -3.000
+TNS   : -265.140
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'testbench:U1|DE2_LTM_Control:U5|div[0]'
+Slack : -2.693
+TNS   : -243.506
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'testbench:U1|DE2_LTM_Control:U5|lcd_spi_cotroller:u2|three_wire_controller:u0|mSPI_CLK'
+Slack : -1.285
+TNS   : -48.830
+
+Type  : Slow 1200mV 0C Model Setup 'testbench:U1|DE2_LTM_Control:U5|div[0]'
+Slack : -6.828
+TNS   : -491.121
+
+Type  : Slow 1200mV 0C Model Setup 'Reloj'
+Slack : -3.751
+TNS   : -522.776
+
+Type  : Slow 1200mV 0C Model Setup 'testbench:U1|DE2_LTM_Control:U5|lcd_spi_cotroller:u2|three_wire_controller:u0|mSPI_CLK'
+Slack : -2.230
+TNS   : -66.010
+
+Type  : Slow 1200mV 0C Model Hold 'testbench:U1|DE2_LTM_Control:U5|div[0]'
+Slack : 0.327
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Reloj'
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'testbench:U1|DE2_LTM_Control:U5|lcd_spi_cotroller:u2|three_wire_controller:u0|mSPI_CLK'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'testbench:U1|DE2_LTM_Control:U5|lcd_spi_cotroller:u2|three_wire_controller:u0|mSPI_CLK'
+Slack : -3.176
+TNS   : -62.976
+
+Type  : Slow 1200mV 0C Model Recovery 'Reloj'
+Slack : -2.459
+TNS   : -252.872
+
+Type  : Slow 1200mV 0C Model Recovery 'testbench:U1|DE2_LTM_Control:U5|div[0]'
+Slack : -1.001
+TNS   : -65.994
+
+Type  : Slow 1200mV 0C Model Removal 'testbench:U1|DE2_LTM_Control:U5|div[0]'
+Slack : 0.866
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Reloj'
+Slack : 2.502
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'testbench:U1|DE2_LTM_Control:U5|lcd_spi_cotroller:u2|three_wire_controller:u0|mSPI_CLK'
+Slack : 2.690
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Reloj'
+Slack : -3.000
+TNS   : -265.140
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'testbench:U1|DE2_LTM_Control:U5|div[0]'
+Slack : -2.649
+TNS   : -241.438
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'testbench:U1|DE2_LTM_Control:U5|lcd_spi_cotroller:u2|three_wire_controller:u0|mSPI_CLK'
+Slack : -1.285
+TNS   : -48.830
+
+Type  : Fast 1200mV 0C Model Setup 'testbench:U1|DE2_LTM_Control:U5|div[0]'
+Slack : -3.130
+TNS   : -206.017
+
+Type  : Fast 1200mV 0C Model Setup 'Reloj'
+Slack : -1.601
+TNS   : -185.065
+
+Type  : Fast 1200mV 0C Model Setup 'testbench:U1|DE2_LTM_Control:U5|lcd_spi_cotroller:u2|three_wire_controller:u0|mSPI_CLK'
+Slack : -0.679
+TNS   : -17.458
+
+Type  : Fast 1200mV 0C Model Hold 'testbench:U1|DE2_LTM_Control:U5|div[0]'
+Slack : 0.126
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Reloj'
+Slack : 0.175
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'testbench:U1|DE2_LTM_Control:U5|lcd_spi_cotroller:u2|three_wire_controller:u0|mSPI_CLK'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'testbench:U1|DE2_LTM_Control:U5|lcd_spi_cotroller:u2|three_wire_controller:u0|mSPI_CLK'
+Slack : -1.582
+TNS   : -28.694
+
+Type  : Fast 1200mV 0C Model Recovery 'Reloj'
+Slack : -1.073
+TNS   : -106.676
+
+Type  : Fast 1200mV 0C Model Recovery 'testbench:U1|DE2_LTM_Control:U5|div[0]'
+Slack : -0.122
+TNS   : -2.649
+
+Type  : Fast 1200mV 0C Model Removal 'testbench:U1|DE2_LTM_Control:U5|div[0]'
+Slack : 0.383
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Reloj'
+Slack : 1.478
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'testbench:U1|DE2_LTM_Control:U5|lcd_spi_cotroller:u2|three_wire_controller:u0|mSPI_CLK'
+Slack : 1.494
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Reloj'
+Slack : -3.000
+TNS   : -270.096
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'testbench:U1|DE2_LTM_Control:U5|div[0]'
+Slack : -1.000
+TNS   : -138.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'testbench:U1|DE2_LTM_Control:U5|lcd_spi_cotroller:u2|three_wire_controller:u0|mSPI_CLK'
+Slack : -1.000
+TNS   : -38.000
+
+------------------------------------------------------------

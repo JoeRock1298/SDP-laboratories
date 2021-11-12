@@ -9,13 +9,13 @@ z2
 cModel Technology
 dC:/Users/jose_/OneDrive/Documentos/UPV/2021-2022/SDP-Verilog/Practica 1/Ejercicio1/simulation/qsim
 vfulladder
-Z0 !s110 1633448954
+Z0 !s110 1635420476
 !i10b 1
-!s100 R<zh;<BEIcS3XTP=VC>l;1
-I:K`FI2eP`bUF<g]4?2:@h1
+!s100 9dOMS:95bNS0mXIl>EYP80
+IIJ_eZEbKMFjgEg4CI6?lL0
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica 1/Ejercicio1/simulation/qsim
-Z3 w1632848279
+Z2 dC:/Users/rama2/Desktop/Practica1/SDP-laboratories/Practica0/Ejercicio1/simulation/qsim
+Z3 w1635420474
 Z4 8P1_ejer1.vo
 Z5 FP1_ejer1.vo
 L0 31
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1633448954.000000
+Z7 !s108 1635420476.000000
 Z8 !s107 P1_ejer1.vo|
 Z9 !s90 -work|work|P1_ejer1.vo|
 !i113 1
@@ -32,35 +32,35 @@ Z11 tCvgOpt 0
 vfulladder_vlg_vec_tst
 R0
 !i10b 1
-!s100 8fScAHLnQeB3NMa>IK[A63
-I^^1;oXNm1l<b^7<K;X7>71
+!s100 bg]hOmP>IPgeD;;WLNF9P3
+Ifz;2HKA[j4B?4]<5`41SR0
 R1
 R2
-w1633448953
-8Waveform.vwf.vt
-FWaveform.vwf.vt
+w1635420473
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
 L0 29
 R6
 r1
 !s85 0
 31
 R7
-!s107 Waveform.vwf.vt|
-!s90 -work|work|Waveform.vwf.vt|
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
 !i113 1
 R10
 R11
 vhard_block
 R0
 !i10b 1
-!s100 DS<0c1Hz7hzVL4GlR16^Z3
-ILhohi8OgRK5;CVcGlRJO43
+!s100 L4zX>fWe?6iz1Dg]0R08@1
+II3bmPBhJU<PbeJ<FBUNFW2
 R1
 R2
 R3
 R4
 R5
-L0 403
+L0 555
 R6
 r1
 !s85 0

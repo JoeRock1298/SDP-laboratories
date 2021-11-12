@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Nov 11 11:58:34 2021
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+Revision Name : motor
+Top-level Entity Name : Verifica_Motor
+Family : Cyclone IV E
+Total logic elements : 796
+    Total combinational functions : 725
+    Dedicated logic registers : 333
+Total registers : 333
+Total pins : 93
+Total virtual pins : 0
+Total memory bits : 384,000
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
