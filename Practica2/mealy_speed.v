@@ -67,6 +67,11 @@ module mealy_speed(
                     out = 2'b10;
                     next_state = S2;
                 end 
+					 else
+					 begin
+						  out = 2'b0X;
+                    next_state = S0;
+					 end
             S1:
                 if (in == 2'b01)
                 begin

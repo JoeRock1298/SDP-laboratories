@@ -1,0 +1,31 @@
+Quartus Prime Archive log --	C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Practica2-Subtarea2.qarlog
+
+Archive:	C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Practica2-Subtarea2.qar
+Date:		Sun Nov 14 22:46:16 2021
+Quartus Prime		17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Verifica_Motor.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/control_motor.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/motor.asm.rpt
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/motor.fit.rpt
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/motor.fit.smsg
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/motor.fit.summary
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/motor.flow.rpt
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/motor.jdi
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/motor.map.rpt
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/motor.map.summary
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/motor.pin
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/motor.qpf
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/motor.qsf
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/motor.restore.rpt
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/motor.sld
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/motor.sof
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/motor.sta.rpt
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/motor.sta.summary
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/testbench-U1.qxp
+c:/intelfpga_lite/17.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 20 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

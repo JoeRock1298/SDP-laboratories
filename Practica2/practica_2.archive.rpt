@@ -1,0 +1,94 @@
+Archive Project report for practica_2
+Sun Nov 14 22:44:29 2021
+Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Sun Nov 14 22:44:29 2021 ;
+; Revision Name          ; practica_2                            ;
+; Top-level Entity Name  ; control_motor                         ;
+; Family                 ; Cyclone IV E                          ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Service request' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+    Info: Report files
+    Info: Programming output files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Tarea2-Subtarea1.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'practica_2.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4832 megabytes
+    Info: Processing ended: Sun Nov 14 22:44:29 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+
++--------------------------------------------------------------+
+; Files Archived                                               ;
++--------------------------------------------------------------+
+; File Name                                                    ;
++--------------------------------------------------------------+
+; c:/intelfpga_lite/17.1/quartus/bin64/assignment_defaults.qdf ;
+; control_motor.v                                              ;
+; output_files/practica_2.asm.rpt                              ;
+; output_files/practica_2.fit.rpt                              ;
+; output_files/practica_2.fit.smsg                             ;
+; output_files/practica_2.fit.summary                          ;
+; output_files/practica_2.flow.rpt                             ;
+; output_files/practica_2.jdi                                  ;
+; output_files/practica_2.map.rpt                              ;
+; output_files/practica_2.map.summary                          ;
+; output_files/practica_2.pin                                  ;
+; output_files/practica_2.sld                                  ;
+; output_files/practica_2.sof                                  ;
+; output_files/practica_2.sta.rpt                              ;
+; output_files/practica_2.sta.summary                          ;
+; practica_2.qsf                                               ;
+; Subtarea1.qpf                                                ;
++--------------------------------------------------------------+
+
+

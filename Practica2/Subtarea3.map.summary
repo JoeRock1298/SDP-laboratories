@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Fri Nov 12 10:59:11 2021
+Analysis & Synthesis Status : Successful - Sun Nov 14 22:29:52 2021
 Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 Revision Name : Subtarea3
 Top-level Entity Name : paso3
 Family : Cyclone IV E
-Total logic elements : 104
-    Total combinational functions : 104
+Total logic elements : 96
+    Total combinational functions : 96
     Dedicated logic registers : 42
 Total registers : 42
 Total pins : 22

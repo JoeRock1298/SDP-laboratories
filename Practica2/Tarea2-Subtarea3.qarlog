@@ -1,0 +1,40 @@
+Quartus Prime Archive log --	C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Tarea2-Subtarea3.qarlog
+
+Archive:	C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Tarea2-Subtarea3.qar
+Date:		Sun Nov 14 22:47:37 2021
+Quartus Prime		17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/MathFun.vh
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Subtarea3.asm.rpt
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Subtarea3.eda.rpt
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Subtarea3.fit.rpt
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Subtarea3.fit.smsg
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Subtarea3.fit.summary
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Subtarea3.flow.rpt
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Subtarea3.jdi
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Subtarea3.map.rpt
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Subtarea3.map.smsg
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Subtarea3.map.summary
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Subtarea3.pin
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Subtarea3.qpf
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Subtarea3.qsf
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Subtarea3.sld
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Subtarea3.sof
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Subtarea3.sta.rpt
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/Subtarea3.sta.summary
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/contador.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/mealy_speed.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/medvedev_kit_LS.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso1.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso1_TB.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso2.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso2_TB.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso3.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/paso3_TB.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica2/variable_counter.v
+c:/intelfpga_lite/17.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 29 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

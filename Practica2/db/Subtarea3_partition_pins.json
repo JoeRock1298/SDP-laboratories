@@ -80,15 +80,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "iENABLE",
-					"strict" : false
-				},
-				{
 					"name" : "iKEY1",
 					"strict" : false
 				},
 				{
 					"name" : "iKEY2",
+					"strict" : false
+				},
+				{
+					"name" : "iENABLE",
 					"strict" : false
 				}
 			]
