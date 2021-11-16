@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Tue Nov 16 19:08:28 2021
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Revision Name : Practica3
+Top-level Entity Name : LCD_SYNC
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 11
+Total pins : 30
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1
+Total DLLs : 0

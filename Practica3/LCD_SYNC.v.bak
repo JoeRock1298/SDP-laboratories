@@ -1,0 +1,12 @@
+module LCD_SYNC(
+
+	input CLK, RST_n,
+	output NCLK, GREST, HD, VD, DEN,
+	output [1055:0] Fila, 
+	output [224:0] Columna
+
+);
+
+
+
+endmoudle
