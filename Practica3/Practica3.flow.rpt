@@ -1,5 +1,5 @@
 Flow report for Practica3
-Tue Nov 16 19:09:48 2021
+Tue Nov 23 19:12:40 2021
 Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
 
 
@@ -37,29 +37,26 @@ refer to the applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------------+
-; Flow Summary                                                                               ;
-+---------------------------------+----------------------------------------------------------+
-; Flow Status                     ; Successful - Tue Nov 16 19:09:16 2021                    ;
-; Quartus Prime Version           ; 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition ;
-; Revision Name                   ; Practica3                                                ;
-; Top-level Entity Name           ; LCD_SYNC                                                 ;
-; Family                          ; Cyclone V                                                ;
-; Device                          ; 5CGXFC7C7F23C8                                           ;
-; Timing Models                   ; Final                                                    ;
-; Logic utilization (in ALMs)     ; 9 / 56,480 ( < 1 % )                                     ;
-; Total registers                 ; 11                                                       ;
-; Total pins                      ; 30 / 268 ( 11 % )                                        ;
-; Total virtual pins              ; 0                                                        ;
-; Total block memory bits         ; 0 / 7,024,640 ( 0 % )                                    ;
-; Total DSP Blocks                ; 0 / 156 ( 0 % )                                          ;
-; Total HSSI RX PCSs              ; 0 / 6 ( 0 % )                                            ;
-; Total HSSI PMA RX Deserializers ; 0 / 6 ( 0 % )                                            ;
-; Total HSSI TX PCSs              ; 0 / 6 ( 0 % )                                            ;
-; Total HSSI PMA TX Serializers   ; 0 / 6 ( 0 % )                                            ;
-; Total PLLs                      ; 1 / 13 ( 8 % )                                           ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                                            ;
-+---------------------------------+----------------------------------------------------------+
++-----------------------------------------------------------------------------------------------+
+; Flow Summary                                                                                  ;
++------------------------------------+----------------------------------------------------------+
+; Flow Status                        ; Successful - Tue Nov 23 19:12:40 2021                    ;
+; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition ;
+; Revision Name                      ; Practica3                                                ;
+; Top-level Entity Name              ; LCD_SYNC                                                 ;
+; Family                             ; Cyclone IV E                                             ;
+; Device                             ; EP4CE115F29C7                                            ;
+; Timing Models                      ; Final                                                    ;
+; Total logic elements               ; 41 / 114,480 ( < 1 % )                                   ;
+;     Total combinational functions  ; 41 / 114,480 ( < 1 % )                                   ;
+;     Dedicated logic registers      ; 21 / 114,480 ( < 1 % )                                   ;
+; Total registers                    ; 21                                                       ;
+; Total pins                         ; 28 / 529 ( 5 % )                                         ;
+; Total virtual pins                 ; 0                                                        ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                                    ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                          ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                                           ;
++------------------------------------+----------------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -67,31 +64,39 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/16/2021 19:08:15 ;
+; Start date & time ; 11/23/2021 19:12:01 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Practica3           ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                        ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 335035121264.163708609506520           ; --            ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
-; MISC_FILE                           ; pll_ltm.cmp                            ; --            ; --          ; --         ;
-; MISC_FILE                           ; pll_ltm_sim/pll_ltm.vo                 ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; LCD_SYNC    ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; LCD_SYNC    ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; LCD_SYNC    ; Top        ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
-; SPD_FILE                            ; pll_ltm.spd                            ; --            ; --          ; --         ;
-; SYNTHESIS_ONLY_QIP                  ; On                                     ; --            ; --          ; --         ;
-; TOP_LEVEL_ENTITY                    ; LCD_SYNC                               ; Practica3     ; --          ; --         ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                             ;
++--------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
++--------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 335035121264.163769112108644           ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; LC_SYNC                                ; --            ; --          ; LC_SYNC_TB     ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; LC_SYNC_TB                             ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; LC_SYNC_TB.v                           ; --            ; --          ; LC_SYNC_TB     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; LC_SYNC_TB                             ; --            ; --          ; LC_SYNC_TB     ;
+; EDA_TEST_BENCH_NAME                  ; LC_SYNC_TB                             ; --            ; --          ; eda_simulation ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --             ;
+; MISC_FILE                            ; pll_ltm_inst.v                         ; --            ; --          ; --             ;
+; MISC_FILE                            ; pll_ltm_bb.v                           ; --            ; --          ; --             ;
+; MISC_FILE                            ; pll_ltm.ppf                            ; --            ; --          ; --             ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; LCD_SYNC    ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; LCD_SYNC    ; Top            ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; LCD_SYNC    ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                     ; LCD_SYNC                               ; Practica3     ; --          ; --             ;
++--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -99,11 +104,12 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 4844 MB             ; 00:00:18                           ;
-; Fitter                    ; 00:00:30     ; 1.0                     ; 6960 MB             ; 00:01:04                           ;
-; Assembler                 ; 00:00:09     ; 1.0                     ; 4820 MB             ; 00:00:06                           ;
-; TimeQuest Timing Analyzer ; 00:00:30     ; 1.0                     ; 5209 MB             ; 00:00:06                           ;
-; Total                     ; 00:01:21     ; --                      ; --                  ; 00:01:34                           ;
+; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 4792 MB             ; 00:00:18                           ;
+; Fitter                    ; 00:00:10     ; 1.0                     ; 5879 MB             ; 00:00:13                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4680 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 4866 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4651 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:30     ; --                      ; --                  ; 00:00:36                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -116,6 +122,7 @@ refer to the applicable agreement for further details.
 ; Fitter                    ; dise01           ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler                 ; dise01           ; Windows 10 ; 10.0       ; x86_64         ;
 ; TimeQuest Timing Analyzer ; dise01           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; dise01           ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 
@@ -126,6 +133,7 @@ quartus_map --read_settings_files=on --write_settings_files=off subtarea1 -c Pra
 quartus_fit --read_settings_files=off --write_settings_files=off subtarea1 -c Practica3
 quartus_asm --read_settings_files=off --write_settings_files=off subtarea1 -c Practica3
 quartus_sta subtarea1 -c Practica3
+quartus_eda --read_settings_files=off --write_settings_files=off subtarea1 -c Practica3
 
 
 

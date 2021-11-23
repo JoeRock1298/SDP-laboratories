@@ -2,29 +2,38 @@ module LCD_SYNC(
 
 	input CLK, RST_n,
 	output NCLK, GREST, HD, VD, DEN,
-	output [13:0] Columnas, 
-	output [13:0] Filas
+	output [10:0] Columna, 
+	output [9:0] Fila
 
 );
 
 	wire EN_VCOUNT; //Enable del VCOUNT que esta conectado al TC del HCOUNT
 	wire TC_VCOUNT; //TC del VCOUNT que esta conectado a la puerta inversora del VD
+	reg DENaux;
 	
-	contador #(.fin_cuenta(1056)) HCOUNT(.iCLK(NCLK), .iRST_n(RST_n), .iENABLE(1), .iUP_DOWN(1), .oCOUNT(Columna), .oTC(EN_VCOUNT));
+	contador #(.fin_cuenta(1056)) HCOUNT(.iCLK(NCLK), .iRST_n(RST_n), .iENABLE(1'b1), .iUP_DOWN(1'b1), .oCOUNT(Columna), .oTC(EN_VCOUNT) );
 
-	contador #(.fin_cuenta(525)) VCOUNT(.iCLK(NCLK), .iRST_n(RST_n), .iENABLE(EN_vCOUNT), .iUP_DOWN(1), .oCOUNT(Fila), .oTC(TC_COUNT));
+	contador #(.fin_cuenta(525)) VCOUNT(.iCLK(NCLK), .iRST_n(RST_n), .iENABLE(EN_VCOUNT), .iUP_DOWN(1'b1), .oCOUNT(Fila), .oTC(TC_VCOUNT) );
 
 	assign HD = ~EN_VCOUNT;
-	assign vD = ~TC_COUNT;
-
-	pll_ltm_0002 PLL (
-		.refclk   (CLK),   //  refclk.clk
-		.rst      (RST_n),      //   reset.reset
-		.outclk_0 (NCLK), // outclk0.clk
+	assign VD = ~TC_VCOUNT;
+	assign GREST = RST_n;
+	
+	pll_ltm PLL (
+		.inclk0   (CLK),   		//inclk0.clk
+		.c0      (NCLK)         // c0.reset
 	);
 	
+	always@(Fila, Columna)
+		begin
+			DENaux = 1;
+			if(Columna >= 514 && Columna <= 1015 && Fila >= 35 && Fila <= 216)
+				DENaux= 0;
+			else
+				DENaux = 1;
+		
+		end
+		
+	assign DEN = DENaux; 
 	
-	
-	
-
 endmodule

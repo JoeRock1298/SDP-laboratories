@@ -4,7 +4,103 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "GREST",
+					"strict" : false
+				},
+				{
 					"name" : "HD",
+					"strict" : false
+				},
+				{
+					"name" : "VD",
+					"strict" : false
+				},
+				{
+					"name" : "DEN",
+					"strict" : false
+				},
+				{
+					"name" : "Columna[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Columna[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Columna[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Columna[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Columna[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Columna[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Columna[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Columna[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Columna[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Columna[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Columna[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Fila[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Fila[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Fila[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Fila[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Fila[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Fila[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Fila[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Fila[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Fila[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Fila[9]",
 					"strict" : false
 				},
 				{
