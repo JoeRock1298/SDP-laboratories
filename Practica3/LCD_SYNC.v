@@ -27,7 +27,7 @@ module LCD_SYNC(
 	always@(Fila, Columna)
 		begin
 			DENaux = 1;
-			if(Columna >= 514 && Columna <= 1015 && Fila >= 35 && Fila <= 216)
+			if(Columna >= 216 && Columna <= 1015 && Fila >= 35 && Fila <= 514)
 				DENaux= 0;
 			else
 				DENaux = 1;

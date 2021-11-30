@@ -1,35 +1,69 @@
-|LCD_SYNC
+|BARRAS_LCD
+CLK => CLK.IN1
+RST_n => RST_n.IN1
+NCLK <= LCD_SYNC:control_LCD.NCLK
+GREST <= LCD_SYNC:control_LCD.GREST
+HD <= LCD_SYNC:control_LCD.HD
+VD <= LCD_SYNC:control_LCD.VD
+DEN <= LCD_SYNC:control_LCD.DEN
+R[0] <= Roux[0].DB_MAX_OUTPUT_PORT_TYPE
+R[1] <= Roux[1].DB_MAX_OUTPUT_PORT_TYPE
+R[2] <= Roux[2].DB_MAX_OUTPUT_PORT_TYPE
+R[3] <= Roux[3].DB_MAX_OUTPUT_PORT_TYPE
+R[4] <= Roux[4].DB_MAX_OUTPUT_PORT_TYPE
+R[5] <= Roux[5].DB_MAX_OUTPUT_PORT_TYPE
+R[6] <= Roux[6].DB_MAX_OUTPUT_PORT_TYPE
+R[7] <= Roux[7].DB_MAX_OUTPUT_PORT_TYPE
+G[0] <= Goux[0].DB_MAX_OUTPUT_PORT_TYPE
+G[1] <= Goux[1].DB_MAX_OUTPUT_PORT_TYPE
+G[2] <= Goux[2].DB_MAX_OUTPUT_PORT_TYPE
+G[3] <= Goux[3].DB_MAX_OUTPUT_PORT_TYPE
+G[4] <= Goux[4].DB_MAX_OUTPUT_PORT_TYPE
+G[5] <= Goux[5].DB_MAX_OUTPUT_PORT_TYPE
+G[6] <= Goux[6].DB_MAX_OUTPUT_PORT_TYPE
+G[7] <= Goux[7].DB_MAX_OUTPUT_PORT_TYPE
+B[0] <= Boux[0].DB_MAX_OUTPUT_PORT_TYPE
+B[1] <= Boux[1].DB_MAX_OUTPUT_PORT_TYPE
+B[2] <= Boux[2].DB_MAX_OUTPUT_PORT_TYPE
+B[3] <= Boux[3].DB_MAX_OUTPUT_PORT_TYPE
+B[4] <= Boux[4].DB_MAX_OUTPUT_PORT_TYPE
+B[5] <= Boux[5].DB_MAX_OUTPUT_PORT_TYPE
+B[6] <= Boux[6].DB_MAX_OUTPUT_PORT_TYPE
+B[7] <= Boux[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BARRAS_LCD|LCD_SYNC:control_LCD
 CLK => CLK.IN1
 RST_n => RST_n.IN2
-NCLK << NCLK.DB_MAX_OUTPUT_PORT_TYPE
-GREST << RST_n.DB_MAX_OUTPUT_PORT_TYPE
-HD << EN_VCOUNT.DB_MAX_OUTPUT_PORT_TYPE
-VD << contador:VCOUNT.oTC
-DEN << always0.DB_MAX_OUTPUT_PORT_TYPE
-Columna[0] << contador:HCOUNT.oCOUNT
-Columna[1] << contador:HCOUNT.oCOUNT
-Columna[2] << contador:HCOUNT.oCOUNT
-Columna[3] << contador:HCOUNT.oCOUNT
-Columna[4] << contador:HCOUNT.oCOUNT
-Columna[5] << contador:HCOUNT.oCOUNT
-Columna[6] << contador:HCOUNT.oCOUNT
-Columna[7] << contador:HCOUNT.oCOUNT
-Columna[8] << contador:HCOUNT.oCOUNT
-Columna[9] << contador:HCOUNT.oCOUNT
-Columna[10] << contador:HCOUNT.oCOUNT
-Fila[0] << contador:VCOUNT.oCOUNT
-Fila[1] << contador:VCOUNT.oCOUNT
-Fila[2] << contador:VCOUNT.oCOUNT
-Fila[3] << contador:VCOUNT.oCOUNT
-Fila[4] << contador:VCOUNT.oCOUNT
-Fila[5] << contador:VCOUNT.oCOUNT
-Fila[6] << contador:VCOUNT.oCOUNT
-Fila[7] << contador:VCOUNT.oCOUNT
-Fila[8] << contador:VCOUNT.oCOUNT
-Fila[9] << contador:VCOUNT.oCOUNT
+NCLK <= NCLK.DB_MAX_OUTPUT_PORT_TYPE
+GREST <= RST_n.DB_MAX_OUTPUT_PORT_TYPE
+HD <= EN_VCOUNT.DB_MAX_OUTPUT_PORT_TYPE
+VD <= contador:VCOUNT.oTC
+DEN <= always0.DB_MAX_OUTPUT_PORT_TYPE
+Columna[0] <= contador:HCOUNT.oCOUNT
+Columna[1] <= contador:HCOUNT.oCOUNT
+Columna[2] <= contador:HCOUNT.oCOUNT
+Columna[3] <= contador:HCOUNT.oCOUNT
+Columna[4] <= contador:HCOUNT.oCOUNT
+Columna[5] <= contador:HCOUNT.oCOUNT
+Columna[6] <= contador:HCOUNT.oCOUNT
+Columna[7] <= contador:HCOUNT.oCOUNT
+Columna[8] <= contador:HCOUNT.oCOUNT
+Columna[9] <= contador:HCOUNT.oCOUNT
+Columna[10] <= contador:HCOUNT.oCOUNT
+Fila[0] <= contador:VCOUNT.oCOUNT
+Fila[1] <= contador:VCOUNT.oCOUNT
+Fila[2] <= contador:VCOUNT.oCOUNT
+Fila[3] <= contador:VCOUNT.oCOUNT
+Fila[4] <= contador:VCOUNT.oCOUNT
+Fila[5] <= contador:VCOUNT.oCOUNT
+Fila[6] <= contador:VCOUNT.oCOUNT
+Fila[7] <= contador:VCOUNT.oCOUNT
+Fila[8] <= contador:VCOUNT.oCOUNT
+Fila[9] <= contador:VCOUNT.oCOUNT
 
 
-|LCD_SYNC|contador:HCOUNT
+|BARRAS_LCD|LCD_SYNC:control_LCD|contador:HCOUNT
 iCLK => oCOUNT[0]~reg0.CLK
 iCLK => oCOUNT[1]~reg0.CLK
 iCLK => oCOUNT[2]~reg0.CLK
@@ -88,7 +122,7 @@ oCOUNT[10] <= oCOUNT[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 oTC <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|LCD_SYNC|contador:VCOUNT
+|BARRAS_LCD|LCD_SYNC:control_LCD|contador:VCOUNT
 iCLK => oCOUNT[0]~reg0.CLK
 iCLK => oCOUNT[1]~reg0.CLK
 iCLK => oCOUNT[2]~reg0.CLK
@@ -142,12 +176,12 @@ oCOUNT[9] <= oCOUNT[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 oTC <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|LCD_SYNC|pll_ltm:PLL
+|BARRAS_LCD|LCD_SYNC:control_LCD|pll_ltm:PLL
 inclk0 => sub_wire1[0].IN1
 c0 <= altpll:altpll_component.clk
 
 
-|LCD_SYNC|pll_ltm:PLL|altpll:altpll_component
+|BARRAS_LCD|LCD_SYNC:control_LCD|pll_ltm:PLL|altpll:altpll_component
 inclk[0] => pll_ltm_altpll:auto_generated.inclk[0]
 inclk[1] => pll_ltm_altpll:auto_generated.inclk[1]
 fbin => ~NO_FANOUT~
@@ -207,7 +241,7 @@ fref <= <GND>
 icdrclk <= <GND>
 
 
-|LCD_SYNC|pll_ltm:PLL|altpll:altpll_component|pll_ltm_altpll:auto_generated
+|BARRAS_LCD|LCD_SYNC:control_LCD|pll_ltm:PLL|altpll:altpll_component|pll_ltm_altpll:auto_generated
 clk[0] <= pll1.CLK
 clk[1] <= pll1.CLK1
 clk[2] <= pll1.CLK2

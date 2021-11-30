@@ -13,60 +13,71 @@
 # 
 # vlog -vlog01compat -work work +incdir+W:/www/MUISE/Sistemas\ digitales\ programables/Practica1\ Subir/SDP-laboratories/Practica3 {W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/LCD_SYNC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:12:50 on Nov 23,2021
+# Start time: 17:59:08 on Nov 30,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3" W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/LCD_SYNC.v 
 # -- Compiling module LCD_SYNC
 # 
 # Top level modules:
 # 	LCD_SYNC
-# End time: 19:12:50 on Nov 23,2021, Elapsed time: 0:00:00
+# End time: 17:59:08 on Nov 30,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+W:/www/MUISE/Sistemas\ digitales\ programables/Practica1\ Subir/SDP-laboratories/Practica3 {W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/pll_ltm.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:12:50 on Nov 23,2021
+# Start time: 17:59:08 on Nov 30,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3" W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/pll_ltm.v 
 # -- Compiling module pll_ltm
 # 
 # Top level modules:
 # 	pll_ltm
-# End time: 19:12:50 on Nov 23,2021, Elapsed time: 0:00:00
+# End time: 17:59:08 on Nov 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+W:/www/MUISE/Sistemas\ digitales\ programables/Practica1\ Subir/SDP-laboratories/Practica3 {W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:59:08 on Nov 30,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3" W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v 
+# -- Compiling module BARRAS_LCD
+# 
+# Top level modules:
+# 	BARRAS_LCD
+# End time: 17:59:09 on Nov 30,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+W:/www/MUISE/Sistemas\ digitales\ programables/Practica1\ Subir/SDP-laboratories/Practica3/db {W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/db/pll_ltm_altpll.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:12:50 on Nov 23,2021
+# Start time: 17:59:09 on Nov 30,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/db" W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/db/pll_ltm_altpll.v 
 # -- Compiling module pll_ltm_altpll
 # 
 # Top level modules:
 # 	pll_ltm_altpll
-# End time: 19:12:50 on Nov 23,2021, Elapsed time: 0:00:00
+# End time: 17:59:09 on Nov 30,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+W:/www/MUISE/Sistemas\ digitales\ programables/Practica1\ Subir/SDP-laboratories/Practica3 {W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/contador.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:12:50 on Nov 23,2021
+# Start time: 17:59:09 on Nov 30,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3" W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/contador.v 
 # -- Compiling module contador
 # 
 # Top level modules:
 # 	contador
-# End time: 19:12:51 on Nov 23,2021, Elapsed time: 0:00:01
+# End time: 17:59:09 on Nov 30,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+W:/www/MUISE/Sistemas\ digitales\ programables/Practica1\ Subir/SDP-laboratories/Practica3 {W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/LC_SYNC_TB.v}
+# vlog -vlog01compat -work work +incdir+W:/www/MUISE/Sistemas\ digitales\ programables/Practica1\ Subir/SDP-laboratories/Practica3 {W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD_TB.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:12:51 on Nov 23,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3" W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/LC_SYNC_TB.v 
-# -- Compiling module LC_SYNC_TB
+# Start time: 17:59:09 on Nov 30,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3" W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD_TB.v 
+# -- Compiling module BARRAS_LCD_TB
 # 
 # Top level modules:
-# 	LC_SYNC_TB
-# End time: 19:12:51 on Nov 23,2021, Elapsed time: 0:00:00
+# 	BARRAS_LCD_TB
+# End time: 17:59:10 on Nov 30,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  LC_SYNC_TB
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" LC_SYNC_TB 
-# Start time: 19:12:51 on Nov 23,2021
-# Loading work.LC_SYNC_TB
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  BARRAS_LCD_TB
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" BARRAS_LCD_TB 
+# Start time: 17:59:10 on Nov 30,2021
+# Loading work.BARRAS_LCD_TB
+# Loading work.BARRAS_LCD
 # Loading work.LCD_SYNC
 # Loading work.contador
 # Loading work.pll_ltm
@@ -86,10 +97,20 @@
 # run -all
 # SIMULANDO!!!
 #  Note : Cyclone IV E PLL locked to incoming clock
-# Time: 90000  Instance: LC_SYNC_TB.dut1.PLL.altpll_component.cycloneiii_pll.pll3
-# Fin Simulación!!!
-# ** Note: $stop    : W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/LC_SYNC_TB.v(55)
-#    Time: 22133940 ns  Iteration: 0  Instance: /LC_SYNC_TB
-# Break in Task fin at W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/LC_SYNC_TB.v line 55
-# End time: 19:17:53 on Nov 23,2021, Elapsed time: 0:05:02
-# Errors: 0, Warnings: 0
+# Time: 90000  Instance: BARRAS_LCD_TB.dut1.control_LCD.PLL.altpll_component.cycloneiii_pll.pll3
+# Fin de la simulacion
+# 
+# Cierro Fichero
+# ** Error (suppressible): (vsim-PLI-3085) W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD_TB.v(78): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 22176190 ns  Iteration: 1  Instance: /BARRAS_LCD_TB
+# ** Error (suppressible): (vsim-PLI-3085) W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD_TB.v(78): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 22176210 ns  Iteration: 1  Instance: /BARRAS_LCD_TB
+# ** Error (suppressible): (vsim-PLI-3085) W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD_TB.v(78): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 22176230 ns  Iteration: 1  Instance: /BARRAS_LCD_TB
+# ** Error (suppressible): (vsim-PLI-3085) W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD_TB.v(78): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 22176250 ns  Iteration: 1  Instance: /BARRAS_LCD_TB
+# ** Note: $stop    : W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD_TB.v(65)
+#    Time: 22176270 ns  Iteration: 0  Instance: /BARRAS_LCD_TB
+# Break in Module BARRAS_LCD_TB at W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD_TB.v line 65
+# End time: 18:03:11 on Nov 30,2021, Elapsed time: 0:04:01
+# Errors: 4, Warnings: 0
