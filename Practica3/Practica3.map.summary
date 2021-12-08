@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Tue Nov 30 18:31:39 2021
-Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Analysis & Synthesis Status : Failed - Wed Dec 08 22:54:39 2021
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 Revision Name : Practica3
-Top-level Entity Name : BARRAS_LCD
+Top-level Entity Name : IMAGEN_LCD
 Family : Cyclone IV E
-Total logic elements : 108
-    Total combinational functions : 108
-    Dedicated logic registers : 21
-Total registers : 21
-Total pins : 31
-Total virtual pins : 0
-Total memory bits : 0
-Embedded Multiplier 9-bit elements : 0
-Total PLLs : 1
+Total logic elements : N/A until Partition Merge
+    Total combinational functions : N/A until Partition Merge
+    Dedicated logic registers : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total memory bits : N/A until Partition Merge
+Embedded Multiplier 9-bit elements : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge

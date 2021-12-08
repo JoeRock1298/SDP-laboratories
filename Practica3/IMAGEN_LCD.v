@@ -9,10 +9,6 @@ module IMAGEN_LCD(
 	localparam x = CLogB2(400-1);//9
 	localparam y = CLogB2(240-1);//8
 	localparam p = CLogB2((400*240*16)-1);//(21) corresponding a 400x240 pixels image of 16 bits
-	
-	wire [10:0] Columnas; 
-	wire [9:0] Filas; 
-	wire NCLKaux;
 
 	// Defition of the auxiliar variables
 	wire [10:0] Columnas; 
@@ -21,8 +17,9 @@ module IMAGEN_LCD(
 	reg [x-1:0] posX;
 	reg [y-1:0] posY;
 	wire NCLKaux;
-	wire DatosIN;
+	wire[23:0] DatosIN;
 	
+	// LCD module instance
 	LCD_SYNC control_LCD (.CLK(CLK),
 								.RST_n(RST_n),
 								.NCLK(NCLK),
@@ -42,21 +39,18 @@ module IMAGEN_LCD(
 			posY = (Filas - 35) >> 1;
 		end	
 	end
-	assign Address = {posY,posX};
-		
+	assign Address = {posY,posX} >> (p - (x + y));
+	
+	//ROM memory instance
 	ROM_image ROM_image_inst (
 							.address(Address),
 							.clock(NCLK),
 							.q(DatosIN)
 							);
-	assing B = (DatosIN[4:0] << 2) | DatosIN[4:3];
-	assing G = (DatosIN[15:8] << 2) | DatosIN[15:14];
-	assing R = (DatosIN[23:16] << 2) | DatosIN[23:22];
-	
-	end
-	
-
-	
-	
-	
+							
+	//Defining RGB 16 to 24 bits decoder
+	assign B = (DatosIN[4:0] << 2) | DatosIN[4:3]; // 5 bit ->{DatosIN[4:0], DatosIn[4:2]}
+	assign G = (DatosIN[15:8] << 2) | DatosIN[15:14]; // 6 bit ->{DatosIN [10:5], DatosIn[10:9}
+	assign R = (DatosIN[23:16] << 2) | DatosIN[23:22]; // 5 bit ->{DatosIN[15:11], DatosIn[15:13]}
+		
 endmodule

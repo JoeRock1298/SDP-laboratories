@@ -29,10 +29,10 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "BARRAS_LCD")
-  (DATE "11/30/2021 18:32:17")
+  (DATE "12/08/2021 22:51:41")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
-  (VERSION "Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition")
+  (VERSION "Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition")
   (DIVIDER .)
   (TIMESCALE 1 ps)
 

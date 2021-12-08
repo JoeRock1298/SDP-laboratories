@@ -38,10 +38,10 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY BARRAS_LCD
+set_global_assignment -name TOP_LEVEL_ENTITY IMAGEN_LCD
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:06:48  NOVEMBER 16, 2021"
-set_global_assignment -name LAST_QUARTUS_VERSION "17.1.1 Standard Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.1.1 Lite Edition"
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
@@ -61,9 +61,6 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME LC_SYNC_TB -section_id LC
 set_global_assignment -name QIP_FILE pll_ltm.qip
 set_global_assignment -name VERILOG_FILE BARRAS_LCD.v
 set_global_assignment -name VERILOG_FILE BARRAS_LCD_TB.v
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name EDA_TEST_BENCH_FILE LC_SYNC_TB.v -section_id LC_SYNC_TB
 set_global_assignment -name EDA_TEST_BENCH_NAME BARRAS_LCD_TB -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME BARRAS_LCD -section_id BARRAS_LCD_TB
@@ -100,5 +97,8 @@ set_location_assignment PIN_AG22 -to R[1]
 set_location_assignment PIN_AE25 -to R[0]
 set_location_assignment PIN_M23 -to RST_n
 set_location_assignment PIN_AD19 -to VD
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VERILOG_FILE IMAGEN_LCD.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
