@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Practica3
-Tue Nov 30 18:31:39 2021
-Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Wed Dec 08 19:43:33 2021
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -49,24 +49,24 @@ refer to the applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                                  ;
-+------------------------------------+----------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 30 18:31:39 2021                    ;
-; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition ;
-; Revision Name                      ; Practica3                                                ;
-; Top-level Entity Name              ; BARRAS_LCD                                               ;
-; Family                             ; Cyclone IV E                                             ;
-; Total logic elements               ; 108                                                      ;
-;     Total combinational functions  ; 108                                                      ;
-;     Dedicated logic registers      ; 21                                                       ;
-; Total registers                    ; 21                                                       ;
-; Total pins                         ; 31                                                       ;
-; Total virtual pins                 ; 0                                                        ;
-; Total memory bits                  ; 0                                                        ;
-; Embedded Multiplier 9-bit elements ; 0                                                        ;
-; Total PLLs                         ; 1                                                        ;
-+------------------------------------+----------------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Dec 08 19:43:32 2021       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                      ; Practica3                                   ;
+; Top-level Entity Name              ; BARRAS_LCD                                  ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 108                                         ;
+;     Total combinational functions  ; 108                                         ;
+;     Dedicated logic registers      ; 21                                          ;
+; Total registers                    ; 21                                          ;
+; Total pins                         ; 31                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 1                                           ;
++------------------------------------+---------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -160,35 +160,35 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 6           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------+---------+
-; MathFun.vh                       ; yes             ; User Unspecified File        ; W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/MathFun.vh          ;         ;
-; contador.v                       ; yes             ; User Verilog HDL File        ; W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/contador.v          ;         ;
-; LCD_SYNC.v                       ; yes             ; User Verilog HDL File        ; W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/LCD_SYNC.v          ;         ;
-; pll_ltm.v                        ; yes             ; User Wizard-Generated File   ; W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/pll_ltm.v           ;         ;
-; BARRAS_LCD.v                     ; yes             ; User Verilog HDL File        ; W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v        ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga/17.1/quartus/libraries/megafunctions/altpll.tdf                                                ;         ;
-; aglobal171.inc                   ; yes             ; Megafunction                 ; c:/intelfpga/17.1/quartus/libraries/megafunctions/aglobal171.inc                                            ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga/17.1/quartus/libraries/megafunctions/stratix_pll.inc                                           ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga/17.1/quartus/libraries/megafunctions/stratixii_pll.inc                                         ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga/17.1/quartus/libraries/megafunctions/cycloneii_pll.inc                                         ;         ;
-; db/pll_ltm_altpll.v              ; yes             ; Auto-Generated Megafunction  ; W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/db/pll_ltm_altpll.v ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                      ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                  ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
+; MathFun.vh                       ; yes             ; User Unspecified File        ; C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/MathFun.vh          ;         ;
+; contador.v                       ; yes             ; User Verilog HDL File        ; C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/contador.v          ;         ;
+; LCD_SYNC.v                       ; yes             ; User Verilog HDL File        ; C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/LCD_SYNC.v          ;         ;
+; pll_ltm.v                        ; yes             ; User Wizard-Generated File   ; C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/pll_ltm.v           ;         ;
+; BARRAS_LCD.v                     ; yes             ; User Verilog HDL File        ; C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v        ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                 ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altpll.tdf                                             ;         ;
+; aglobal171.inc                   ; yes             ; Megafunction                 ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc                                         ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                 ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_pll.inc                                        ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                 ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratixii_pll.inc                                      ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                 ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/cycloneii_pll.inc                                      ;         ;
+; db/pll_ltm_altpll.v              ; yes             ; Auto-Generated Megafunction  ; C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/db/pll_ltm_altpll.v ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -780,7 +780,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -789,64 +789,70 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
-    Info: Processing started: Tue Nov 30 18:30:28 2021
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Wed Dec 08 19:42:47 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off subtarea1 -c Practica3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file contador.v
-    Info (12023): Found entity 1: contador File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/contador.v Line: 27
+    Info (12023): Found entity 1: contador File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/contador.v Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file lcd_sync.v
-    Info (12023): Found entity 1: LCD_SYNC File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/LCD_SYNC.v Line: 1
+    Info (12023): Found entity 1: LCD_SYNC File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/LCD_SYNC.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file lc_sync_tb.v
-    Info (12023): Found entity 1: LC_SYNC_TB File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/LC_SYNC_TB.v Line: 27
+    Info (12023): Found entity 1: LC_SYNC_TB File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/LC_SYNC_TB.v Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file pll_ltm.v
-    Info (12023): Found entity 1: pll_ltm File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/pll_ltm.v Line: 39
+    Info (12023): Found entity 1: pll_ltm File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/pll_ltm.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file barras_lcd.v
-    Info (12023): Found entity 1: BARRAS_LCD File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 1
+    Info (12023): Found entity 1: BARRAS_LCD File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file barras_lcd_tb.v
-    Info (12023): Found entity 1: BARRAS_LCD_TB File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD_TB.v Line: 27
+    Info (12023): Found entity 1: BARRAS_LCD_TB File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD_TB.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file imagen_lcd.v
+    Info (12023): Found entity 1: IMAGEN_LCD File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/IMAGEN_LCD.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file caracteres_lcd.v
+    Info (12023): Found entity 1: CARACTERES_LCD File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/CARACTERES_LCD.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rom_char.v
+    Info (12023): Found entity 1: ROM_char File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/ROM_char.v Line: 39
 Info (12127): Elaborating entity "BARRAS_LCD" for the top level hierarchy
-Warning (10240): Verilog HDL Always Construct warning at BARRAS_LCD.v(22): inferring latch(es) for variable "Roux", which holds its previous value in one or more paths through the always construct File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 22
-Warning (10240): Verilog HDL Always Construct warning at BARRAS_LCD.v(22): inferring latch(es) for variable "Goux", which holds its previous value in one or more paths through the always construct File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 22
-Warning (10240): Verilog HDL Always Construct warning at BARRAS_LCD.v(22): inferring latch(es) for variable "Boux", which holds its previous value in one or more paths through the always construct File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 22
-Info (10041): Inferred latch for "Boux[0]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Boux[1]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Boux[2]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Boux[3]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Boux[4]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Boux[5]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Boux[6]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Boux[7]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Goux[0]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Goux[1]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Goux[2]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Goux[3]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Goux[4]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Goux[5]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Goux[6]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Goux[7]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Roux[0]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Roux[1]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Roux[2]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Roux[3]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Roux[4]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Roux[5]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Roux[6]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (10041): Inferred latch for "Roux[7]" at BARRAS_LCD.v(75) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
-Info (12128): Elaborating entity "LCD_SYNC" for hierarchy "LCD_SYNC:control_LCD" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 19
-Info (12128): Elaborating entity "contador" for hierarchy "LCD_SYNC:control_LCD|contador:HCOUNT" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/LCD_SYNC.v Line: 14
-Warning (10230): Verilog HDL assignment warning at contador.v(58): truncated value with size 32 to match size of target (11) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/contador.v Line: 58
-Warning (10230): Verilog HDL assignment warning at contador.v(64): truncated value with size 32 to match size of target (11) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/contador.v Line: 64
-Warning (10230): Verilog HDL assignment warning at contador.v(69): truncated value with size 32 to match size of target (11) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/contador.v Line: 69
-Info (12128): Elaborating entity "contador" for hierarchy "LCD_SYNC:control_LCD|contador:VCOUNT" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/LCD_SYNC.v Line: 16
-Warning (10230): Verilog HDL assignment warning at contador.v(58): truncated value with size 32 to match size of target (10) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/contador.v Line: 58
-Warning (10230): Verilog HDL assignment warning at contador.v(64): truncated value with size 32 to match size of target (10) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/contador.v Line: 64
-Warning (10230): Verilog HDL assignment warning at contador.v(69): truncated value with size 32 to match size of target (10) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/contador.v Line: 69
-Info (12128): Elaborating entity "pll_ltm" for hierarchy "LCD_SYNC:control_LCD|pll_ltm:PLL" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/LCD_SYNC.v Line: 25
-Info (12128): Elaborating entity "altpll" for hierarchy "LCD_SYNC:control_LCD|pll_ltm:PLL|altpll:altpll_component" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/pll_ltm.v Line: 90
-Info (12130): Elaborated megafunction instantiation "LCD_SYNC:control_LCD|pll_ltm:PLL|altpll:altpll_component" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/pll_ltm.v Line: 90
-Info (12133): Instantiated megafunction "LCD_SYNC:control_LCD|pll_ltm:PLL|altpll:altpll_component" with the following parameter: File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/pll_ltm.v Line: 90
+Warning (10240): Verilog HDL Always Construct warning at BARRAS_LCD.v(22): inferring latch(es) for variable "Roux", which holds its previous value in one or more paths through the always construct File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 22
+Warning (10240): Verilog HDL Always Construct warning at BARRAS_LCD.v(22): inferring latch(es) for variable "Goux", which holds its previous value in one or more paths through the always construct File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 22
+Warning (10240): Verilog HDL Always Construct warning at BARRAS_LCD.v(22): inferring latch(es) for variable "Boux", which holds its previous value in one or more paths through the always construct File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 22
+Info (10041): Inferred latch for "Boux[0]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Boux[1]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Boux[2]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Boux[3]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Boux[4]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Boux[5]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Boux[6]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Boux[7]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Goux[0]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Goux[1]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Goux[2]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Goux[3]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Goux[4]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Goux[5]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Goux[6]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Goux[7]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Roux[0]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Roux[1]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Roux[2]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Roux[3]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Roux[4]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Roux[5]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Roux[6]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (10041): Inferred latch for "Roux[7]" at BARRAS_LCD.v(75) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 75
+Info (12128): Elaborating entity "LCD_SYNC" for hierarchy "LCD_SYNC:control_LCD" File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/BARRAS_LCD.v Line: 19
+Info (12128): Elaborating entity "contador" for hierarchy "LCD_SYNC:control_LCD|contador:HCOUNT" File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/LCD_SYNC.v Line: 14
+Warning (10230): Verilog HDL assignment warning at contador.v(58): truncated value with size 32 to match size of target (11) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/contador.v Line: 58
+Warning (10230): Verilog HDL assignment warning at contador.v(64): truncated value with size 32 to match size of target (11) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/contador.v Line: 64
+Warning (10230): Verilog HDL assignment warning at contador.v(69): truncated value with size 32 to match size of target (11) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/contador.v Line: 69
+Info (12128): Elaborating entity "contador" for hierarchy "LCD_SYNC:control_LCD|contador:VCOUNT" File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/LCD_SYNC.v Line: 16
+Warning (10230): Verilog HDL assignment warning at contador.v(58): truncated value with size 32 to match size of target (10) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/contador.v Line: 58
+Warning (10230): Verilog HDL assignment warning at contador.v(64): truncated value with size 32 to match size of target (10) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/contador.v Line: 64
+Warning (10230): Verilog HDL assignment warning at contador.v(69): truncated value with size 32 to match size of target (10) File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/contador.v Line: 69
+Info (12128): Elaborating entity "pll_ltm" for hierarchy "LCD_SYNC:control_LCD|pll_ltm:PLL" File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/LCD_SYNC.v Line: 25
+Info (12128): Elaborating entity "altpll" for hierarchy "LCD_SYNC:control_LCD|pll_ltm:PLL|altpll:altpll_component" File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/pll_ltm.v Line: 90
+Info (12130): Elaborated megafunction instantiation "LCD_SYNC:control_LCD|pll_ltm:PLL|altpll:altpll_component" File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/pll_ltm.v Line: 90
+Info (12133): Instantiated megafunction "LCD_SYNC:control_LCD|pll_ltm:PLL|altpll:altpll_component" with the following parameter: File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/pll_ltm.v Line: 90
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "2"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -902,8 +908,8 @@ Info (12133): Instantiated megafunction "LCD_SYNC:control_LCD|pll_ltm:PLL|altpll
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_ltm_altpll.v
-    Info (12023): Found entity 1: pll_ltm_altpll File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/db/pll_ltm_altpll.v Line: 29
-Info (12128): Elaborating entity "pll_ltm_altpll" for hierarchy "LCD_SYNC:control_LCD|pll_ltm:PLL|altpll:altpll_component|pll_ltm_altpll:auto_generated" File: c:/intelfpga/17.1/quartus/libraries/megafunctions/altpll.tdf Line: 897
+    Info (12023): Found entity 1: pll_ltm_altpll File: C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/db/pll_ltm_altpll.v Line: 29
+Info (12128): Elaborating entity "pll_ltm_altpll" for hierarchy "LCD_SYNC:control_LCD|pll_ltm:PLL|altpll:altpll_component|pll_ltm_altpll:auto_generated" File: d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altpll.tdf Line: 897
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
@@ -913,9 +919,9 @@ Info (21057): Implemented 140 device resources after synthesis - the final resou
     Info (21061): Implemented 108 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4804 megabytes
-    Info: Processing ended: Tue Nov 30 18:31:39 2021
-    Info: Elapsed time: 00:01:11
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Peak virtual memory: 4756 megabytes
+    Info: Processing ended: Wed Dec 08 19:43:33 2021
+    Info: Elapsed time: 00:00:46
+    Info: Total CPU time (on all processors): 00:01:01
 
 

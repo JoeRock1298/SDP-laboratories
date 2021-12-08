@@ -1,0 +1,42 @@
+module CARACTERES_LCD(
+    input CLK, RST_n;
+    output NCLK,GREST, HD, VD, DEN,
+    output [7:0] R, G, B
+);
+
+    //VariableS que esta conectadad al modulo LCD_SYNC
+    wire  [9:0] Filas;      
+    wire [10:0] Columnas;  
+    wire [8:0] DireccionROM;
+    reg  [5:0] Caracter;
+    assign Caracter = 6'o01;
+
+    LCD_SYNC control_caracteres(
+                                .RST_n(RST_n),
+		                        .NCLK(NCLK),
+		                        .GREST(GREST),
+								.HD(HD),
+								.VD(VD),
+								.DEN(DEN),
+								.Columna(Columnas),
+								.Fila(Filas)
+                                );
+    
+    always @(posedge NCLK) 
+        begin
+            
+            DireccionROM <= {Caracter, [2:0]Filas};
+
+        end
+    
+    
+    ROM_char	ROM_char_inst (
+	.address ( address_sig ),
+	.clock ( clock_sig ),
+	.q ( q_sig )
+	);
+
+
+
+
+endmodule

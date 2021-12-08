@@ -1,6 +1,6 @@
 Flow report for Practica3
-Tue Nov 30 18:32:18 2021
-Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Wed Dec 08 19:43:33 2021
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -37,26 +37,26 @@ refer to the applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------------------------+
-; Flow Summary                                                                                  ;
-+------------------------------------+----------------------------------------------------------+
-; Flow Status                        ; Successful - Tue Nov 30 18:32:18 2021                    ;
-; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition ;
-; Revision Name                      ; Practica3                                                ;
-; Top-level Entity Name              ; BARRAS_LCD                                               ;
-; Family                             ; Cyclone IV E                                             ;
-; Device                             ; EP4CE115F29C7                                            ;
-; Timing Models                      ; Final                                                    ;
-; Total logic elements               ; 108 / 114,480 ( < 1 % )                                  ;
-;     Total combinational functions  ; 108 / 114,480 ( < 1 % )                                  ;
-;     Dedicated logic registers      ; 21 / 114,480 ( < 1 % )                                   ;
-; Total registers                    ; 21                                                       ;
-; Total pins                         ; 31 / 529 ( 6 % )                                         ;
-; Total virtual pins                 ; 0                                                        ;
-; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                                    ;
-; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                          ;
-; Total PLLs                         ; 1 / 4 ( 25 % )                                           ;
-+------------------------------------+----------------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Wed Dec 08 19:43:32 2021       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                      ; Practica3                                   ;
+; Top-level Entity Name              ; BARRAS_LCD                                  ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE115F29C7                               ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 108                                         ;
+;     Total combinational functions  ; 108                                         ;
+;     Dedicated logic registers      ; 21                                          ;
+; Total registers                    ; 21                                          ;
+; Total pins                         ; 31                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 1                                           ;
++------------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/30/2021 18:30:38 ;
+; Start date & time ; 12/08/2021 19:42:49 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Practica3           ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 335035121264.163829343212060           ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 238537296414866.163898896909292        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; BARRAS_LCD                             ; --            ; --          ; BARRAS_LCD_TB  ;
 ; EDA_DESIGN_INSTANCE_NAME             ; LC_SYNC                                ; --            ; --          ; LC_SYNC_TB     ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; BARRAS_LCD_TB                          ; --            ; --          ; eda_simulation ;
@@ -94,6 +94,8 @@ refer to the applicable agreement for further details.
 ; MISC_FILE                            ; pll_ltm_inst.v                         ; --            ; --          ; --             ;
 ; MISC_FILE                            ; pll_ltm_bb.v                           ; --            ; --          ; --             ;
 ; MISC_FILE                            ; pll_ltm.ppf                            ; --            ; --          ; --             ;
+; MISC_FILE                            ; ROM_char_inst.v                        ; --            ; --          ; --             ;
+; MISC_FILE                            ; ROM_char_bb.v                          ; --            ; --          ; --             ;
 ; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; BARRAS_LCD  ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; BARRAS_LCD  ; Top            ;
 ; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; BARRAS_LCD  ; Top            ;
@@ -103,41 +105,29 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:01:01     ; 1.0                     ; 4804 MB             ; 00:00:18                           ;
-; Fitter                    ; 00:00:09     ; 1.0                     ; 5880 MB             ; 00:00:12                           ;
-; Assembler                 ; 00:00:07     ; 1.0                     ; 4684 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:08     ; 1.0                     ; 4865 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4653 MB             ; 00:00:01                           ;
-; Total                     ; 00:01:28     ; --                      ; --                  ; 00:00:35                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:45     ; 1.0                     ; 4747 MB             ; 00:01:00                           ;
+; Total                ; 00:00:45     ; --                      ; --                  ; 00:01:00                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                         ;
-+---------------------------+------------------+------------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; dise01           ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; dise01           ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; dise01           ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; dise01           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; dise01           ; Windows 10 ; 10.0       ; x86_64         ;
-+---------------------------+------------------+------------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-NIN97LJ  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off subtarea1 -c Practica3
-quartus_fit --read_settings_files=off --write_settings_files=off subtarea1 -c Practica3
-quartus_asm --read_settings_files=off --write_settings_files=off subtarea1 -c Practica3
-quartus_sta subtarea1 -c Practica3
-quartus_eda --read_settings_files=off --write_settings_files=off subtarea1 -c Practica3
 
 
 
