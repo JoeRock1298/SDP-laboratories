@@ -49,7 +49,7 @@ module IMAGEN_LCD(
 	//						);
 	//assing B = (DatosIN[4:0] << 3) | DatosIN[4:2];
 	//assing G = (DatosIN[10:5] << 2) | DatosIN[10:9];  //¿Cuando se coge una parte de un array los pone en la posicion 0?
-	//assing R = (DatosIN[15:11] << 3) | DatosIN[15:12];
+	//assing R = (DatosIN[15:13] << 3) | DatosIN[15:12];
 		
 	
 endmodule
