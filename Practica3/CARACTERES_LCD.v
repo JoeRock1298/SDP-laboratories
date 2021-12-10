@@ -26,7 +26,7 @@ module CARACTERES_LCD(
 										  .Fila(Filas));
     //Bloque CHAR_ROM
     //En cada actualizacion de las filas cambia el valor de la direccion de la ROM
-	 assign DireccionROM = {Caracter, Filas[2:0]};
+	 assign DireccionROM = {Caracter, Filas[4:2]};
 	 
     ROM_char    ROM_char_inst (.address (DireccionROM),
 										 .clock (NCLK),
@@ -36,23 +36,25 @@ module CARACTERES_LCD(
     //Datos es la entrada del Multiplexor
     //La direccion esta marcada por las columnas[2:0]
     always @(Columnas) begin
-            case (Columnas[2:0])
-                3'b000:  outMUX = Datos[0];
-                3'b001:  outMUX = Datos[1];
-                3'b010:  outMUX = Datos[2];
-                3'b011:  outMUX = Datos[3];
-                3'b100:  outMUX = Datos[4];
-                3'b101:  outMUX = Datos[5];
-                3'b110:  outMUX = Datos[6];
-                3'b111:  outMUX = Datos[7];
+            case (Columnas[4:2])
+                3'b000:  outMUX = Datos[7];
+                3'b001:  outMUX = Datos[6];
+                3'b010:  outMUX = Datos[5];
+                3'b011:  outMUX = Datos[4];
+                3'b100:  outMUX = Datos[3];
+                3'b101:  outMUX = Datos[2];
+                3'b110:  outMUX = Datos[1];
+                3'b111:  outMUX = Datos[0];
                 default: outMUX = 0;
             endcase
 				// imprimir varios caracteres
-				if (Columnas[3] == 0)
+				if (Columnas[5] == 0)
 					car_aux = 6'o12;
 				else
 					car_aux = 6'o22;
+                   
         end
+    
 	 
 	 assign Caracter = car_aux;
 	 assign Sel_color = outMUX; 

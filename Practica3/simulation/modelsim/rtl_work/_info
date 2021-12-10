@@ -8,120 +8,121 @@ z2
 !i10f 100
 cModel Technology
 Z0 dW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/simulation/modelsim
-vBARRAS_LCD
-Z1 !s110 1638291549
-!i10b 1
-!s100 Kf4MRLOTcK1NM?nPeTEbN1
-IXKPZzIZ;5[H0P;4VkCMXD3
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-R0
-w1638290934
-8W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v
-FW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v
-L0 1
-Z3 OV;L;10.5b;63
-r1
-!s85 0
-31
-Z4 !s108 1638291548.000000
-!s107 W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3|W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD.v|
-!i113 1
-Z5 o-vlog01compat -work work
-Z6 !s92 -vlog01compat -work work {+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3}
-Z7 tCvgOpt 0
-n@b@a@r@r@a@s_@l@c@d
-vBARRAS_LCD_TB
-!s110 1638291550
-!i10b 1
-!s100 CzPoH_U22hoU274ZCOVZC2
-I7kYOWaN0?NbO=dHGn^d0i3
-R2
-R0
-w1638291440
-8W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD_TB.v
-FW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD_TB.v
-Z8 L0 27
-R3
-r1
-!s85 0
-31
-Z9 !s108 1638291549.000000
-!s107 W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD_TB.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3|W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/BARRAS_LCD_TB.v|
-!i113 1
-R5
-R6
-R7
-n@b@a@r@r@a@s_@l@c@d_@t@b
 vcontador
-R1
+Z1 !s110 1639138241
 !i10b 1
 !s100 A9>E?R@n=c@EPzNj`_K>M1
 IYP5OdEbzM]BZWnZ`14M`T1
-R2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1637080653
 8W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/contador.v
 FW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/contador.v
-FW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/MathFun.vh
-R8
-R3
+Z3 FW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/MathFun.vh
+Z4 L0 27
+Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-R9
+Z6 !s108 1639138241.000000
 !s107 W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/MathFun.vh|W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/contador.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3|W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/contador.v|
 !i113 1
-R5
-R6
-R7
-vLCD_SYNC
-Z10 !s110 1638291548
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work {+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3}
+Z9 tCvgOpt 0
+vIMAGEN_LCD
+Z10 !s110 1639138242
 !i10b 1
-!s100 IzBaih<NAoe;7TU<:=QRK3
-I<`HecUllaaWQH@AC37jLV1
+!s100 AhCSB3G017eN3ne1bNELJ3
+I:<jYO?@5mn3WgIhmW[NJ=3
 R2
 R0
-w1637690390
-8W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/LCD_SYNC.v
-FW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/LCD_SYNC.v
-L0 1
+w1639134785
+8W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/IMAGEN_LCD.v
+FW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/IMAGEN_LCD.v
 R3
+L0 1
+R5
 r1
 !s85 0
 31
+R6
+!s107 W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/MathFun.vh|W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/IMAGEN_LCD.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3|W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/IMAGEN_LCD.v|
+!i113 1
+R7
+R8
+R9
+n@i@m@a@g@e@n_@l@c@d
+vIMAGEN_LCD_TB
+R10
+!i10b 1
+!s100 8T3C;H:KL_45B7SnW]GJM2
+I6kMRXTWX`Xg86D2Y[lci00
+R2
+R0
+w1639138107
+8W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/IMAGEN_LCD_TB.v
+FW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/IMAGEN_LCD_TB.v
 R4
+R5
+r1
+!s85 0
+31
+!s108 1639138242.000000
+!s107 W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/IMAGEN_LCD_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3|W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/IMAGEN_LCD_TB.v|
+!i113 1
+R7
+R8
+R9
+n@i@m@a@g@e@n_@l@c@d_@t@b
+vLCD_SYNC
+!s110 1639138240
+!i10b 1
+!s100 9KYH33OCID5Dc;EGmTfQ51
+I_C4?acj2@4zF3Q7SLO5nl3
+R2
+R0
+w1639137001
+8W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/LCD_SYNC.v
+FW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/LCD_SYNC.v
+L0 26
+R5
+r1
+!s85 0
+31
+!s108 1639138240.000000
 !s107 W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/LCD_SYNC.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3|W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/LCD_SYNC.v|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 n@l@c@d_@s@y@n@c
 vpll_ltm
-R10
+R1
 !i10b 1
 !s100 EP@0kF_mEJE_=70M@1kLG2
 I4W<^XNd;LR82?YmFJ0WGS2
 R2
 R0
-w1637691579
+w1638300267
 8W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/pll_ltm.v
 FW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/pll_ltm.v
-L0 39
-R3
+Z11 L0 39
+R5
 r1
 !s85 0
 31
-R4
+R6
 !s107 W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/pll_ltm.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3|W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/pll_ltm.v|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 vpll_ltm_altpll
 R1
 !i10b 1
@@ -129,18 +130,41 @@ R1
 IXQNhNKeMRRQiY`=ZI=io83
 R2
 R0
-w1637688567
+w1639134790
 8W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/db/pll_ltm_altpll.v
 FW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/db/pll_ltm_altpll.v
 L0 29
-R3
+R5
 r1
 !s85 0
 31
-R9
+R6
 !s107 W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/db/pll_ltm_altpll.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/db|W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/db/pll_ltm_altpll.v|
 !i113 1
-R5
-!s92 -vlog01compat -work work {+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/db}
 R7
+!s92 -vlog01compat -work work {+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/db}
+R9
+vROM_image
+R1
+!i10b 1
+!s100 ?6C;Y][j0ILY7O0:eoNfg1
+Ij3W^W<<298>ik?=bj]_lL0
+R2
+R0
+w1639134787
+8W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/ROM_image.v
+FW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/ROM_image.v
+R11
+R5
+r1
+!s85 0
+31
+R6
+!s107 W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/ROM_image.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3|W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica3/ROM_image.v|
+!i113 1
+R7
+R8
+R9
+n@r@o@m_image
