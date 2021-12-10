@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Wed Dec 08 19:43:32 2021
-Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Analysis & Synthesis Status : Successful - Fri Dec 10 10:51:18 2021
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 Revision Name : Practica3
-Top-level Entity Name : BARRAS_LCD
+Top-level Entity Name : CARACTERES_LCD
 Family : Cyclone IV E
-Total logic elements : 108
-    Total combinational functions : 108
+Total logic elements : 47
+    Total combinational functions : 47
     Dedicated logic registers : 21
 Total registers : 21
 Total pins : 31
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 2,048
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 1

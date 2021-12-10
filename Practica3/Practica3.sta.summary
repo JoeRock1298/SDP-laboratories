@@ -2,52 +2,52 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'control_LCD|PLL|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 36.136
+Type  : Slow 1200mV 85C Model Setup 'control_caracteres|PLL|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 35.793
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'control_LCD|PLL|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.447
+Type  : Slow 1200mV 85C Model Hold 'control_caracteres|PLL|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.363
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
 Slack : 9.891
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'control_LCD|PLL|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 19.708
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'control_caracteres|PLL|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.707
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'control_LCD|PLL|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 36.461
+Type  : Slow 1200mV 0C Model Setup 'control_caracteres|PLL|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 36.139
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'control_LCD|PLL|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.404
+Type  : Slow 1200mV 0C Model Hold 'control_caracteres|PLL|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.360
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : 9.887
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'control_LCD|PLL|altpll_component|auto_generated|pll1|clk[0]'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'control_caracteres|PLL|altpll_component|auto_generated|pll1|clk[0]'
 Slack : 19.709
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'control_LCD|PLL|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 38.149
+Type  : Fast 1200mV 0C Model Setup 'control_caracteres|PLL|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 37.988
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'control_LCD|PLL|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.202
+Type  : Fast 1200mV 0C Model Hold 'control_caracteres|PLL|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.146
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : 9.574
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'control_LCD|PLL|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 19.780
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'control_caracteres|PLL|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.753
 TNS   : 0.000
 
 ------------------------------------------------------------

@@ -5,42 +5,37 @@ module CARACTERES_LCD(
 );
 
     //Variables que esta conectadad al modulo LCD_SYNC
-    reg  [9:0] Filas;      
+    wire  [9:0] Filas;      
     wire [10:0] Columnas;  
-    reg  [8:0] DireccionROM;
-    wire [5:0] Caracter = {6'o01}; 
-	 reg  [7:0] Datos;
+    wire  [8:0] DireccionROM;
+    wire [5:0] Caracter; 
+	 wire  [7:0] Datos;
+	 wire Sel_color;
     reg outMUX;
 	 reg [7:0] Roux, Goux, Boux;
+	 reg [5:0] car_aux  = 6'o01;
 
-    LCD_SYNC control_caracteres(
-                               .RST_n(RST_n),
-		                        .NCLK(NCLK),
-		                        .GREST(GREST),
-								.HD(HD),
-								.VD(VD),
-								.DEN(DEN),
-								.Columna(Columnas),
-								.Fila(Filas)
-                                );
+    LCD_SYNC control_caracteres(.CLK(CLK),
+										  .RST_n(RST_n),
+										  .NCLK(NCLK),
+										  .GREST(GREST),
+										  .HD(HD),
+										  .VD(VD),
+										  .DEN(DEN),
+										  .Columna(Columnas),
+										  .Fila(Filas));
     //Bloque CHAR_ROM
     //En cada actualizacion de las filas cambia el valor de la direccion de la ROM
-	always@(Filas) begin
-		
-		DireccionROM = {Caracter,Filas[2:0]};
-	
-	end
+	 assign DireccionROM = {Caracter, Filas[2:0]};
 	 
-    ROM_char    ROM_char_inst (
-								.address (DireccionROM),
-								.clock (NCLK),
-								.q (Datos)
-								);
+    ROM_char    ROM_char_inst (.address (DireccionROM),
+										 .clock (NCLK),
+										 .q (Datos));
     
     //Multiplexor con los datos de salida de la memoria ROM y la columna
     //Datos es la entrada del Multiplexor
     //La direccion esta marcada por las columnas[2:0]
-    always @(Columnas[2:0]) begin
+    always @(Columnas) begin
             case (Columnas[2:0])
                 3'b000:  outMUX = Datos[0];
                 3'b001:  outMUX = Datos[1];
@@ -51,12 +46,20 @@ module CARACTERES_LCD(
                 3'b110:  outMUX = Datos[6];
                 3'b111:  outMUX = Datos[7];
                 default: outMUX = 0;
-            endcase         
+            endcase
+				// imprimir varios caracteres
+				if (Columnas[3] == 0)
+					car_aux = 6'o12;
+				else
+					car_aux = 6'o22;
         end
+	 
+	 assign Caracter = car_aux;
+	 assign Sel_color = outMUX; 
 
     //SELECT_COLOR
-    always @(outMUX) begin
-        case (outMUX)
+    always @(Sel_color) begin
+        case (Sel_color)
             1'b0: 
 					begin
 						Roux = 8'd255;
