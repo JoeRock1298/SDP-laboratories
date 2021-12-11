@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Sat Dec 11 04:57:39 2021
-Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Analysis & Synthesis Status : Successful - Sat Dec 11 10:01:00 2021
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 Revision Name : Practica3
-Top-level Entity Name : LCD_SYNC
+Top-level Entity Name : IMAGEN_LCD
 Family : Cyclone IV E
-Total logic elements : 40
-    Total combinational functions : 40
-    Dedicated logic registers : 21
-Total registers : 21
-Total pins : 28
+Total logic elements : 267
+    Total combinational functions : 267
+    Dedicated logic registers : 25
+Total registers : 25
+Total pins : 31
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 2,048,000
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 1

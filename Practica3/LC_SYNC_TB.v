@@ -5,19 +5,17 @@
 // Sistemas Digitales Programables
 // Curso 2021 - 2022
 // -------------------------------------------------------------------------------------------------------------------------
-// Nombre del archivo: LCD_SYNC_TB.v
+// Nombre del archivo: LC_SYNC_TB.v
 //
-// Descripción: Este código Verilog implementa el documento de TestBench de la subtarea 1 de la tarea 3.
-//      - Funciona a flanco positivo del reloj de 25MHz
-//      - Reset sincrono y activo a nivel alto
-//      - Enable activo a nivel alto
-//      - Salida [10:0] correspondiente a las columnas
-//      - Salida [9:0] correspondiente a las filas
+// Descripción: Este código Verilog implementa el documento de TestBench para la subtarea 1 de la tarea 3.
+// Aquí se comprobará el funcionamiento del driver de sincronización de una pantalla LCD
+//      - Funciona a flanco positivo del reloj de 50MHz
+//      - Se simulará un frame para comprobar el correcto funcionamiento de los contadores mediante una task
 // -------------------------------------------------------------------------------------------------------------------------
-//      Versión: V1.0                   | Fecha Modificación: 11/11/2021
+//      Versión: V1.0                   | Fecha Modificación: 28/11/2021
 //
 //      Autor: Jose Luis Rocabado Rocha
-// 	    Autor: Rafael Matevosyan
+// 	  Autor: Rafael Matevosyan
 //
 // -------------------------------------------------------------------------------------------------------------------------
 

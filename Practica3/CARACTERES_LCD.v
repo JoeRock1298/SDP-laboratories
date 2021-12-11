@@ -5,20 +5,28 @@
 // Sistemas Digitales Programables
 // Curso 2021 - 2022
 // -------------------------------------------------------------------------------------------------------------------------
-// Nombre del archivo: contador.v
+// Nombre del archivo: CARACTERES_LCD.v
 //
-// Descripción: Este código Verilog realiza la visualización de una imagen correspondiente a la subtarea 4 de la tarea 3.
-// Sus funcionalidades son:
-//      - RST_n, activo a nivel alto, sincrono
-//      - iCLK, Reloj activo por flanco de subida
-//      - GREST, un reset global
-//		  - NCLK, señal de reloj hacia la pantalla
-//      - HD, VD señales de sincronismo horizontal y vertical, respectivamente
-//		  - DEN, habilitación visualizacion en la pantalla 
-//		  - [7:0] R, G, B, salida que indica el color a representar
+// Descripción: Este código Verilog implementa la visualización de los caracteres seleccionados.
+// La información de los caracteres se guarda en una memoria ROM.
+// Corresponde con la subtarea 4 de la tarea 3. Sus funcionalidades son:
+//      - RST_n, activo a nivel bajo, sincrono que se conectara al contador
+//      - CLK, Reloj activo por flanco de subida
+//      - NCLK, Salida de reloj clock a mitad de frecuencia
+//		  - GREST, Salida del RST_n
+//		  - HD, VD, Fin de cuenta horizontal y vertical
+//		  - DEN, Flag del area de visualización
+//		  - Direccionamiento con 3 digitos en base octal donde se controla la selección de las filas
+//		  - Memoria ROM de 512 palabras con una q de 8 bits
+//		  - RGB, de 24 bits obtenido con el selector de color según el valor de las columnas
+//
+// Para variar el tamaño de la palabra se replican los bits seleccionando los bits según la escala (múltiplos de dos).
+// Por ejemplo, si se quiere un factor de escala de 1 se seleccionan los tres bits menos significativos [2:0], si queremos
+// obtener 4 veces más el tamaño original se debe seleccionar los bits [4:2]. El límite será la dimensión de menor tamaño,
+// En nuestro caso, 240 pixeles.
 //
 // -------------------------------------------------------------------------------------------------------------------------
-//      Versión: V1.0                   | Fecha Modificación: 27/10/2021
+//      Versión: V1.0                   | Fecha Modificación: 10/12/2021
 //
 //      Autor: Jose Luis Rocabado Rocha
 //		  Autor: Rafael Matevosyan

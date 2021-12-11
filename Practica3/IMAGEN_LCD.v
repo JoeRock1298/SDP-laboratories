@@ -5,25 +5,28 @@
 // Sistemas Digitales Programables
 // Curso 2021 - 2022
 // -------------------------------------------------------------------------------------------------------------------------
-// Nombre del archivo: contador.v
+// Nombre del archivo: IMAGEN_LCD.v
 //
-// Descripción: Este código Verilog realiza la visualización de una imagen correspondiente a la subtarea 3 de la tarea 3.
-// Sus funcionalidades son:
-//      - RST_n, activo a nivel alto, sincrono
-//      - iCLK, Reloj activo por flanco de subida
-//      - GREST, un reset global
-//		  - NCLK, señal de reloj hacia la pantalla
-//      - HD, VD señales de sincronismo horizontal y vertical, respectivamente
-//		  - DEN, habilitación visualizacion en la pantalla 
-//		  - [7:0] R, G, B, salida que indica el color a representar
+// Descripción: Este código Verilog implementa la visualización de una imagen guardada en una memoria ROM.
+// Corresponde con la subtarea 3 de la tarea 3. Sus funcionalidades son:
+//      - RST_n, activo a nivel bajo, sincrono que se conectara al contador
+//      - CLK, Reloj activo por flanco de subida
+//      - NCLK, Salida de reloj clock a mitad de frecuencia
+//		  - GREST, Salida del RST_n
+//		  - HD, VD, Fin de cuenta horizontal y vertical
+//		  - DEN, Flag del area de visualización
+//		  - Direccionamiento XY con duplicado de pixeles para ajustar a la pantalla el tamaño de la imagen 
+//		  - Memoria ROM de 240x(2^9) palabras con una q de 16 bits
+//		  - RGB, de 24 bits obtenido del RGB de 16 bits de la imagen guardada en memoria
 //
 // -------------------------------------------------------------------------------------------------------------------------
-//      Versión: V1.0                   | Fecha Modificación: 27/10/2021
+//      Versión: V1.0                   | Fecha Modificación: 7/12/2021
 //
 //      Autor: Jose Luis Rocabado Rocha
 //		  Autor: Rafael Matevosyan
 //
 // -------------------------------------------------------------------------------------------------------------------------
+
 module IMAGEN_LCD(
 	input CLK, RST_n,
 	output NCLK, GREST, HD, VD, DEN,
@@ -76,7 +79,7 @@ module IMAGEN_LCD(
 	
 	//16 to 24 bit RGB converter
 	assign B = (DatosIN[4:0] << 3) | DatosIN[4:2];
-	assign G = (DatosIN[10:5] << 2) | DatosIN[10:9];  
+	assign G = (DatosIN[10:5] << 2) | DatosIN[10:9];  //¿Cuando se coge una parte de un array los pone en la posicion 0? Si
 	assign R = (DatosIN[15:11] << 3) | DatosIN[15:13];
 		
 	

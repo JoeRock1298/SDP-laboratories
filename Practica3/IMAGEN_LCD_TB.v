@@ -7,16 +7,16 @@
 // -------------------------------------------------------------------------------------------------------------------------
 // Nombre del archivo: IMAGEN_LCD_TB.v
 //
-// Descripción: Este código Verilog implementa el documento de TestBench de la subtarea 3 de la tarea 3.
-//      - Funciona a flanco positivo del reloj de 25MHz
-//      - Reset sincrono y activo a nivel alto
-//      - Enable activo a nivel alto
-//      - Salida [7:0] correspondiente a los colores R, G y B
+// Descripción: Este código Verilog implementa el documento de TestBench para la subtarea 3 de la tarea 3.
+// Aquí se comprobará el funcionamiento de la visualización de una imagen guardada en una memoria ROM.
+//      - Funciona a flanco positivo del reloj de 50MHz
+//      - Se simulará un frame para comprobar el correcto funcionamiento de los contadores mediante una task
+//		  - Se generá un documento de texto que nos permitirá comprobar la simulación de forma visual mediante un emulador
 // -------------------------------------------------------------------------------------------------------------------------
-//      Versión: V1.0                   | Fecha Modificación: 11/11/2021
+//      Versión: V1.0                   | Fecha Modificación: 7/12/2021
 //
 //      Autor: Jose Luis Rocabado Rocha
-// 	    Autor: Rafael Matevosyan
+// 	  Autor: Rafael Matevosyan
 //
 // -------------------------------------------------------------------------------------------------------------------------
 
@@ -31,8 +31,7 @@ module IMAGEN_LCD_TB ();
 	reg CLK, RST_n;
 	wire [7:0] R, G, B;
 	wire NCLK, GREST, HD, VD, DEN;
-	
-	
+		
 	//instanciación de los DUT (Device Under Test)
 	IMAGEN_LCD dut2(.CLK(CLK),
 				  .RST_n(RST_n),
@@ -53,7 +52,7 @@ module IMAGEN_LCD_TB ();
          RST_n = 1'b0;
 			CLK = 1'b0;
 			$display("SIMULANDO!!!");
-				#(10*T)
+			#(10*T)
 			RST_n = 1'b1;
 	
 	

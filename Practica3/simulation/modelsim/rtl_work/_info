@@ -7,117 +7,164 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/simulation/modelsim
+Z0 dC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/simulation/modelsim
 vcontador
-Z1 !s110 1639195738
+Z1 !s110 1639213341
 !i10b 1
 !s100 A9>E?R@n=c@EPzNj`_K>M1
-IiCdf@;`XOM3H5n:Jh5l=b0
+Iz:@:hh>UNK^P4CaCYbReG0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1638905288
-8C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/contador.v
-FC:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/contador.v
-FC:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/MathFun.vh
-Z4 L0 27
-Z5 OV;L;10.5b;63
+Z3 w1638952422
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/contador.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/contador.v
+Z4 FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/MathFun.vh
+Z5 L0 27
+Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1639195737.000000
-!s107 C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/MathFun.vh|C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/contador.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3|C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/contador.v|
+Z7 !s108 1639213341.000000
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/MathFun.vh|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/contador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/contador.v|
 !i113 1
-Z7 o-vlog01compat -work work
-Z8 !s92 -vlog01compat -work work {+incdir+C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3}
-Z9 tCvgOpt 0
-vLC_SYNC_TB
+Z8 o-vlog01compat -work work
+Z9 !s92 -vlog01compat -work work +incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3
+Z10 tCvgOpt 0
+vIMAGEN_LCD
 R1
 !i10b 1
-!s100 m;DPFPFoQ?2kWk1T2;M@S2
-Ib@f>B@8DImQWWK7H4jLHP2
+!s100 AhCSB3G017eN3ne1bNELJ3
+I0WB54R@dCObYn_W0Je<KU3
+R2
+R0
+w1639059840
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/IMAGEN_LCD.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/IMAGEN_LCD.v
+R4
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/MathFun.vh|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/IMAGEN_LCD.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/IMAGEN_LCD.v|
+!i113 1
+R8
+R9
+R10
+n@i@m@a@g@e@n_@l@c@d
+vIMAGEN_LCD_TB
+!s110 1639213342
+!i10b 1
+!s100 [[kIZkYZLTUeXR3Ei]:R:2
+IYRFBY2z2=18Bl[@631TGb2
+R2
+R0
+Z11 w1639152844
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/IMAGEN_LCD_TB.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/IMAGEN_LCD_TB.v
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/IMAGEN_LCD_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/IMAGEN_LCD_TB.v|
+!i113 1
+R8
+R9
+R10
+n@i@m@a@g@e@n_@l@c@d_@t@b
+vLCD_SYNC
+R1
+!i10b 1
+!s100 9KYH33OCID5Dc;EGmTfQ51
+IkNk:zU7;[SPMYDk;I>moj3
+R2
+R0
+R11
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/LCD_SYNC.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/LCD_SYNC.v
+L0 26
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/LCD_SYNC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/LCD_SYNC.v|
+!i113 1
+R8
+R9
+R10
+n@l@c@d_@s@y@n@c
+vpll_ltm
+R1
+!i10b 1
+!s100 EP@0kF_mEJE_=70M@1kLG2
+I4jWhTj`mWC77XDU>6ICmz2
 R2
 R0
 R3
-8C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/LC_SYNC_TB.v
-FC:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/LC_SYNC_TB.v
-R4
-R5
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/pll_ltm.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/pll_ltm.v
+Z12 L0 39
+R6
 r1
 !s85 0
 31
-!s108 1639195738.000000
-!s107 C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/LC_SYNC_TB.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3|C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/LC_SYNC_TB.v|
-!i113 1
 R7
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/pll_ltm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/pll_ltm.v|
+!i113 1
 R8
 R9
-n@l@c_@s@y@n@c_@t@b
-vLCD_SYNC
-Z10 !s110 1639195736
-!i10b 1
-!s100 9KYH33OCID5Dc;EGmTfQ51
-Ilc1LVbDT^PJEj[P5gcUHB0
-R2
-R0
-w1639187784
-8C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/LCD_SYNC.v
-FC:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/LCD_SYNC.v
-L0 26
-R5
-r1
-!s85 0
-31
-Z11 !s108 1639195736.000000
-!s107 C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/LCD_SYNC.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3|C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/LCD_SYNC.v|
-!i113 1
-R7
-R8
-R9
-n@l@c@d_@s@y@n@c
-vpll_ltm
 R10
-!i10b 1
-!s100 EP@0kF_mEJE_=70M@1kLG2
-Ii:F`4XIDm<<^T3jZl`6@N2
-R2
-R0
-w1638905289
-8C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/pll_ltm.v
-FC:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/pll_ltm.v
-L0 39
-R5
-r1
-!s85 0
-31
-R11
-!s107 C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/pll_ltm.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3|C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/pll_ltm.v|
-!i113 1
-R7
-R8
-R9
 vpll_ltm_altpll
-!s110 1639195737
+R1
 !i10b 1
 !s100 4cF:2UJd_?jBKeZM_7_KD2
-IRSPkSlcf[>bbMh:_KC`Ce0
+IGJJGY`Dk7RdlBJn@WjJ1;1
 R2
 R0
-w1639188193
-8C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/db/pll_ltm_altpll.v
-FC:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/db/pll_ltm_altpll.v
+w1639080608
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/db/pll_ltm_altpll.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/db/pll_ltm_altpll.v
 L0 29
-R5
+R6
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/db/pll_ltm_altpll.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/db|C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/db/pll_ltm_altpll.v|
-!i113 1
 R7
-!s92 -vlog01compat -work work {+incdir+C:/Users/34644/Documents/MUISE/Sistemas Digitales Programables/SDP-laboratories/Practica3/db}
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/db/pll_ltm_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/db|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/db/pll_ltm_altpll.v|
+!i113 1
+R8
+!s92 -vlog01compat -work work +incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/db
+R10
+vROM_image
+R1
+!i10b 1
+!s100 ?6C;Y][j0ILY7O0:eoNfg1
+IgLTL=8=9;^JiDj99K_EKX2
+R2
+R0
+w1639059683
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/ROM_image.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/ROM_image.v
+R12
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/ROM_image.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/ROM_image.v|
+!i113 1
+R8
 R9
+R10
+n@r@o@m_image

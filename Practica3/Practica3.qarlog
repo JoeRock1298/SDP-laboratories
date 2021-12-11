@@ -1,0 +1,53 @@
+Quartus Prime Archive log --	C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/Practica3.qarlog
+
+Archive:	C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/Practica3.qar
+Date:		Sat Dec 11 11:38:58 2021
+Quartus Prime		17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/BARRAS_LCD.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/BARRAS_LCD_TB.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/CARACTERES_LCD.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/CARACTERES_LCD_TB.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/IMAGEN_LCD.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/IMAGEN_LCD_TB.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/LCD_SYNC.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/LC_SYNC_TB.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/MathFun.vh
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/Practica3.asm.rpt
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/Practica3.eda.rpt
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/Practica3.fit.rpt
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/Practica3.fit.smsg
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/Practica3.fit.summary
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/Practica3.flow.rpt
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/Practica3.ipregen.rpt
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/Practica3.jdi
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/Practica3.map.rpt
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/Practica3.map.summary
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/Practica3.pin
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/Practica3.qpf
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/Practica3.qsf
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/Practica3.sld
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/Practica3.sof
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/Practica3.sta.rpt
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/Practica3.sta.summary
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/ROM_char.qip
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/ROM_char.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/ROM_char_bb.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/ROM_char_inst.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/ROM_image.qip
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/ROM_image.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/ROM_image_bb.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/ROM_image_inst.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/contador.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/foto/imagen_rgb_16_xy.mif
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/pll_ltm.ppf
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/pll_ltm.qip
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/pll_ltm.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/pll_ltm_bb.v
+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica3/pll_ltm_inst.v
+c:/intelfpga_lite/17.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 42 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

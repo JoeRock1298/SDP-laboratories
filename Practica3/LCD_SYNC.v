@@ -5,26 +5,25 @@
 // Sistemas Digitales Programables
 // Curso 2021 - 2022
 // -------------------------------------------------------------------------------------------------------------------------
-// Nombre del archivo: contador.v
+// Nombre del archivo: LCD_SYNC.v
 //
-// Descripción: Este código Verilog realiza la visualización de una imagen correspondiente a la subtarea 1 de la tarea 3.
-// Sus funcionalidades son:
-//      - RST_n, activo a nivel alto, sincrono
-//      - iCLK, Reloj activo por flanco de subida
-//      - GREST, un reset global
-//		  - NCLK, señal de reloj hacia la pantalla
-//      - HD, VD señales de sincronismo horizontal y vertical, respectivamente
-//		  - DEN, habilitación visualizacion en la pantalla 
-//		  - [10:0] Columna
-//		  - [9:0] Fila
+// Descripción: Este código Verilog implementa los principales drivers de sincronización para una pantalla LCD.
+// Corresponde con la subtarea 1 de la tarea 3. Sus funcionalidades son:
+//      - RST_n, activo a nivel bajo, sincrono que se conectara al contador
+//      - CLK, Reloj activo por flanco de subida
+//      - NCLK, Salida de reloj clock a mitad de frecuencia
+//		  - GREST, Salida del RST_n
+//		  - HD, VD, Fin de cuenta horizontal y vertical
+//		  - DEN, Flag del area de visualización
 //
 // -------------------------------------------------------------------------------------------------------------------------
-//      Versión: V1.0                   | Fecha Modificación: 27/10/2021
+//      Versión: V1.0                   | Fecha Modificación: 28/11/2021
 //
 //      Autor: Jose Luis Rocabado Rocha
 //		  Autor: Rafael Matevosyan
 //
 // -------------------------------------------------------------------------------------------------------------------------
+
 module LCD_SYNC(
 
 	input CLK, RST_n,
@@ -38,6 +37,7 @@ module LCD_SYNC(
 	wire TC_VCOUNT; //TC del VCOUNT que esta conectado a la puerta inversora del VD
 	reg DENaux;
 	
+	//Instancias de los contadores horizontal y vertical
 	contador #(.fin_cuenta(1056)) HCOUNT(.iCLK(NCLK), .iRST_n(RST_n), .iENABLE(1'b1), .iUP_DOWN(1'b1), .oCOUNT(Columna), .oTC(EN_VCOUNT) );
 
 	contador #(.fin_cuenta(525)) VCOUNT(.iCLK(NCLK), .iRST_n(RST_n), .iENABLE(EN_VCOUNT), .iUP_DOWN(1'b1), .oCOUNT(Fila), .oTC(TC_VCOUNT) );
@@ -46,11 +46,13 @@ module LCD_SYNC(
 	assign VD = ~TC_VCOUNT;
 	assign GREST = RST_n;
 	
+	// Instacia del PLL
 	pll_ltm PLL (
 		.inclk0   (CLK),   		//inclk0.clk
 		.c0      (NCLK)         // c0.reset
 	);
 	
+	// Declaración de la salida DEN
 	always@(Fila, Columna)
 		begin
 			DENaux = 1;
