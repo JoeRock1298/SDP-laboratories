@@ -1,6 +1,6 @@
 Flow report for Practica3
-Fri Dec 10 13:18:40 2021
-Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Sat Dec 11 04:58:55 2021
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -37,26 +37,26 @@ refer to the applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------------------------+
-; Flow Summary                                                                                  ;
-+------------------------------------+----------------------------------------------------------+
-; Flow Status                        ; Successful - Fri Dec 10 13:18:40 2021                    ;
-; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition ;
-; Revision Name                      ; Practica3                                                ;
-; Top-level Entity Name              ; IMAGEN_LCD                                               ;
-; Family                             ; Cyclone IV E                                             ;
-; Device                             ; EP4CE115F29C7                                            ;
-; Timing Models                      ; Final                                                    ;
-; Total logic elements               ; 267 / 114,480 ( < 1 % )                                  ;
-;     Total combinational functions  ; 267 / 114,480 ( < 1 % )                                  ;
-;     Dedicated logic registers      ; 25 / 114,480 ( < 1 % )                                   ;
-; Total registers                    ; 25                                                       ;
-; Total pins                         ; 31 / 529 ( 6 % )                                         ;
-; Total virtual pins                 ; 0                                                        ;
-; Total memory bits                  ; 2,048,000 / 3,981,312 ( 51 % )                           ;
-; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                          ;
-; Total PLLs                         ; 1 / 4 ( 25 % )                                           ;
-+------------------------------------+----------------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Sat Dec 11 04:58:55 2021       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                      ; Practica3                                   ;
+; Top-level Entity Name              ; LCD_SYNC                                    ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE115F29C7                               ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 40 / 114,480 ( < 1 % )                      ;
+;     Total combinational functions  ; 40 / 114,480 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 21 / 114,480 ( < 1 % )                      ;
+; Total registers                    ; 21                                          ;
+; Total pins                         ; 28 / 529 ( 5 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                              ;
++------------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -64,51 +64,55 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/10/2021 13:17:01 ;
+; Start date & time ; 12/11/2021 04:56:44 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Practica3           ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                             ;
-+--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
-+--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 335035121264.163913862112124           ; --            ; --          ; --             ;
-; EDA_DESIGN_INSTANCE_NAME             ; IMAGEN_LCD                             ; --            ; --          ; IMAGEN_LCD_TB  ;
-; EDA_DESIGN_INSTANCE_NAME             ; BARRAS_LCD                             ; --            ; --          ; BARRAS_LCD_TB  ;
-; EDA_DESIGN_INSTANCE_NAME             ; LC_SYNC                                ; --            ; --          ; LC_SYNC_TB     ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; IMAGEN_LCD_TB                          ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_FILE                  ; IMAGEN_LCD_TB.v                        ; --            ; --          ; IMAGEN_LCD_TB  ;
-; EDA_TEST_BENCH_FILE                  ; BARRAS_LCD_TB.v                        ; --            ; --          ; BARRAS_LCD_TB  ;
-; EDA_TEST_BENCH_FILE                  ; LC_SYNC_TB.v                           ; --            ; --          ; LC_SYNC_TB     ;
-; EDA_TEST_BENCH_MODULE_NAME           ; IMAGEN_LCD_TB                          ; --            ; --          ; IMAGEN_LCD_TB  ;
-; EDA_TEST_BENCH_MODULE_NAME           ; BARRAS_LCD_TB                          ; --            ; --          ; BARRAS_LCD_TB  ;
-; EDA_TEST_BENCH_MODULE_NAME           ; LC_SYNC_TB                             ; --            ; --          ; LC_SYNC_TB     ;
-; EDA_TEST_BENCH_NAME                  ; LC_SYNC_TB                             ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_NAME                  ; BARRAS_LCD_TB                          ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_NAME                  ; IMAGEN_LCD_TB                          ; --            ; --          ; eda_simulation ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --             ;
-; MISC_FILE                            ; pll_ltm_inst.v                         ; --            ; --          ; --             ;
-; MISC_FILE                            ; pll_ltm_bb.v                           ; --            ; --          ; --             ;
-; MISC_FILE                            ; pll_ltm.ppf                            ; --            ; --          ; --             ;
-; MISC_FILE                            ; ROM_char_inst.v                        ; --            ; --          ; --             ;
-; MISC_FILE                            ; ROM_char_bb.v                          ; --            ; --          ; --             ;
-; MISC_FILE                            ; ROM_image_inst.v                       ; --            ; --          ; --             ;
-; MISC_FILE                            ; ROM_image_bb.v                         ; --            ; --          ; --             ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; IMAGEN_LCD  ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; IMAGEN_LCD  ; Top            ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; IMAGEN_LCD  ; Top            ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                     ; IMAGEN_LCD                             ; Practica3     ; --          ; --             ;
-+--------------------------------------+----------------------------------------+---------------+-------------+----------------+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                ;
++--------------------------------------+----------------------------------------+---------------+-------------+-------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id        ;
++--------------------------------------+----------------------------------------+---------------+-------------+-------------------+
+; COMPILER_SIGNATURE_ID                ; 238537296414866.163919500311648        ; --            ; --          ; --                ;
+; EDA_DESIGN_INSTANCE_NAME             ; CARACTERES_LCD                         ; --            ; --          ; CARACTERES_LCD_TB ;
+; EDA_DESIGN_INSTANCE_NAME             ; IMAGEN_LCD                             ; --            ; --          ; IMAGEN_LCD_TB     ;
+; EDA_DESIGN_INSTANCE_NAME             ; BARRAS_LCD                             ; --            ; --          ; BARRAS_LCD_TB     ;
+; EDA_DESIGN_INSTANCE_NAME             ; LC_SYNC                                ; --            ; --          ; LC_SYNC_TB        ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; IMAGEN_LCD_TB                          ; --            ; --          ; eda_simulation    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation    ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation    ;
+; EDA_TEST_BENCH_FILE                  ; CARACTERES_LCD_TB.v                    ; --            ; --          ; CARACTERES_LCD_TB ;
+; EDA_TEST_BENCH_FILE                  ; IMAGEN_LCD_TB.v                        ; --            ; --          ; IMAGEN_LCD_TB     ;
+; EDA_TEST_BENCH_FILE                  ; BARRAS_LCD_TB.v                        ; --            ; --          ; BARRAS_LCD_TB     ;
+; EDA_TEST_BENCH_FILE                  ; LC_SYNC_TB.v                           ; --            ; --          ; LC_SYNC_TB        ;
+; EDA_TEST_BENCH_MODULE_NAME           ; CARACTERES_LCD_TB                      ; --            ; --          ; CARACTERES_LCD_TB ;
+; EDA_TEST_BENCH_MODULE_NAME           ; IMAGEN_LCD_TB                          ; --            ; --          ; IMAGEN_LCD_TB     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; BARRAS_LCD_TB                          ; --            ; --          ; BARRAS_LCD_TB     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; LC_SYNC_TB                             ; --            ; --          ; LC_SYNC_TB        ;
+; EDA_TEST_BENCH_NAME                  ; LC_SYNC_TB                             ; --            ; --          ; eda_simulation    ;
+; EDA_TEST_BENCH_NAME                  ; BARRAS_LCD_TB                          ; --            ; --          ; eda_simulation    ;
+; EDA_TEST_BENCH_NAME                  ; IMAGEN_LCD_TB                          ; --            ; --          ; eda_simulation    ;
+; EDA_TEST_BENCH_NAME                  ; CARACTERES_LCD_TB                      ; --            ; --          ; eda_simulation    ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation    ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                ;
+; MISC_FILE                            ; pll_ltm_inst.v                         ; --            ; --          ; --                ;
+; MISC_FILE                            ; pll_ltm_bb.v                           ; --            ; --          ; --                ;
+; MISC_FILE                            ; pll_ltm.ppf                            ; --            ; --          ; --                ;
+; MISC_FILE                            ; ROM_char_inst.v                        ; --            ; --          ; --                ;
+; MISC_FILE                            ; ROM_char_bb.v                          ; --            ; --          ; --                ;
+; MISC_FILE                            ; ROM_image_inst.v                       ; --            ; --          ; --                ;
+; MISC_FILE                            ; ROM_image_bb.v                         ; --            ; --          ; --                ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; LCD_SYNC    ; Top               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; LCD_SYNC    ; Top               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; LCD_SYNC    ; Top               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                ;
+; TOP_LEVEL_ENTITY                     ; LCD_SYNC                               ; Practica3     ; --          ; --                ;
++--------------------------------------+----------------------------------------+---------------+-------------+-------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -116,12 +120,12 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:13     ; 1.0                     ; 4811 MB             ; 00:00:20                           ;
-; Fitter                    ; 00:00:43     ; 1.0                     ; 5956 MB             ; 00:00:56                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 4701 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:08     ; 1.0                     ; 4889 MB             ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:07     ; 1.0                     ; 4677 MB             ; 00:00:03                           ;
-; Total                     ; 00:01:15     ; --                      ; --                  ; 00:01:25                           ;
+; Analysis & Synthesis      ; 00:00:58     ; 1.0                     ; 4749 MB             ; 00:01:03                           ;
+; Fitter                    ; 00:00:40     ; 1.0                     ; 5474 MB             ; 00:00:37                           ;
+; Assembler                 ; 00:00:12     ; 1.0                     ; 4676 MB             ; 00:00:10                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 4810 MB             ; 00:00:06                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4642 MB             ; 00:00:03                           ;
+; Total                     ; 00:02:02     ; --                      ; --                  ; 00:01:59                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -130,11 +134,11 @@ refer to the applicable agreement for further details.
 +---------------------------+------------------+------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; dise01           ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; dise01           ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; dise01           ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; dise01           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; dise01           ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-NIN97LJ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; DESKTOP-NIN97LJ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; DESKTOP-NIN97LJ  ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-NIN97LJ  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-NIN97LJ  ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 

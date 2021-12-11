@@ -13,8 +13,8 @@
 //      - iCLK, Reloj activo por flanco de subida
 //      - ENABLE
 //      - iUP_DOWN, pin de dirección de conteo -> UP = 1, DOWN = 0
-//		- oCOUNT, Salida del contador
-//		- oTC, Pin de fin de cuenta (Terminal Count)
+//		  - oCOUNT, Salida del contador
+//		  - oTC, Pin de fin de cuenta (Terminal Count)
 //
 // -------------------------------------------------------------------------------------------------------------------------
 //      Versión: V1.0                   | Fecha Modificación: 27/10/2021

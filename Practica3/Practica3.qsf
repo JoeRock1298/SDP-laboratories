@@ -38,10 +38,10 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY IMAGEN_LCD
+set_global_assignment -name TOP_LEVEL_ENTITY LCD_SYNC
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:06:48  NOVEMBER 16, 2021"
-set_global_assignment -name LAST_QUARTUS_VERSION "17.1.1 Standard Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Lite Edition"
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
@@ -50,7 +50,7 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH IMAGEN_LCD_TB -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH LC_SYNC_TB -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME LC_SYNC_TB -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME LC_SYNC -section_id LC_SYNC_TB
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME LC_SYNC_TB -section_id LC_SYNC_TB
@@ -100,14 +100,18 @@ set_global_assignment -name VERILOG_FILE CARACTERES_LCD.v
 set_global_assignment -name QIP_FILE ROM_char.qip
 set_global_assignment -name QIP_FILE ROM_image.qip
 set_global_assignment -name VERILOG_FILE IMAGEN_LCD_TB.v
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name EDA_TEST_BENCH_NAME IMAGEN_LCD_TB -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME IMAGEN_LCD -section_id IMAGEN_LCD_TB
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME IMAGEN_LCD_TB -section_id IMAGEN_LCD_TB
+set_global_assignment -name VERILOG_FILE CARACTERES_LCD_TB.v
+set_global_assignment -name EDA_TEST_BENCH_NAME CARACTERES_LCD_TB -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME CARACTERES_LCD -section_id CARACTERES_LCD_TB
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME CARACTERES_LCD_TB -section_id CARACTERES_LCD_TB
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name EDA_TEST_BENCH_FILE LC_SYNC_TB.v -section_id LC_SYNC_TB
 set_global_assignment -name EDA_TEST_BENCH_FILE BARRAS_LCD_TB.v -section_id BARRAS_LCD_TB
 set_global_assignment -name EDA_TEST_BENCH_FILE IMAGEN_LCD_TB.v -section_id IMAGEN_LCD_TB
-set_global_assignment -name VERILOG_FILE CARACTERES_LCD_TB.v
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_FILE CARACTERES_LCD_TB.v -section_id CARACTERES_LCD_TB

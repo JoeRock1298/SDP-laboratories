@@ -1,3 +1,29 @@
+// -------------------------------------------------------------------------------------------------------------------------
+// Universitat Politècnica de València
+// Escuela Técnica Superior de Ingenieros de Telecomunicación
+// -------------------------------------------------------------------------------------------------------------------------
+// Sistemas Digitales Programables
+// Curso 2021 - 2022
+// -------------------------------------------------------------------------------------------------------------------------
+// Nombre del archivo: contador.v
+//
+// Descripción: Este código Verilog realiza la visualización de una imagen correspondiente a la subtarea 3 de la tarea 3.
+// Sus funcionalidades son:
+//      - RST_n, activo a nivel alto, sincrono
+//      - iCLK, Reloj activo por flanco de subida
+//      - GREST, un reset global
+//		  - NCLK, señal de reloj hacia la pantalla
+//      - HD, VD señales de sincronismo horizontal y vertical, respectivamente
+//		  - DEN, habilitación visualizacion en la pantalla 
+//		  - [7:0] R, G, B, salida que indica el color a representar
+//
+// -------------------------------------------------------------------------------------------------------------------------
+//      Versión: V1.0                   | Fecha Modificación: 27/10/2021
+//
+//      Autor: Jose Luis Rocabado Rocha
+//		  Autor: Rafael Matevosyan
+//
+// -------------------------------------------------------------------------------------------------------------------------
 module IMAGEN_LCD(
 	input CLK, RST_n,
 	output NCLK, GREST, HD, VD, DEN,
@@ -50,7 +76,7 @@ module IMAGEN_LCD(
 	
 	//16 to 24 bit RGB converter
 	assign B = (DatosIN[4:0] << 3) | DatosIN[4:2];
-	assign G = (DatosIN[10:5] << 2) | DatosIN[10:9];  //¿Cuando se coge una parte de un array los pone en la posicion 0? Si
+	assign G = (DatosIN[10:5] << 2) | DatosIN[10:9];  
 	assign R = (DatosIN[15:11] << 3) | DatosIN[15:13];
 		
 	

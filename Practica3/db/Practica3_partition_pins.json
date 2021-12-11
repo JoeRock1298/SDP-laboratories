@@ -20,99 +20,87 @@
 					"strict" : false
 				},
 				{
-					"name" : "R[0]",
+					"name" : "Columna[0]",
 					"strict" : false
 				},
 				{
-					"name" : "R[1]",
+					"name" : "Columna[1]",
 					"strict" : false
 				},
 				{
-					"name" : "R[2]",
+					"name" : "Columna[2]",
 					"strict" : false
 				},
 				{
-					"name" : "R[3]",
+					"name" : "Columna[3]",
 					"strict" : false
 				},
 				{
-					"name" : "R[4]",
+					"name" : "Columna[4]",
 					"strict" : false
 				},
 				{
-					"name" : "R[5]",
+					"name" : "Columna[5]",
 					"strict" : false
 				},
 				{
-					"name" : "R[6]",
+					"name" : "Columna[6]",
 					"strict" : false
 				},
 				{
-					"name" : "R[7]",
+					"name" : "Columna[7]",
 					"strict" : false
 				},
 				{
-					"name" : "G[0]",
+					"name" : "Columna[8]",
 					"strict" : false
 				},
 				{
-					"name" : "G[1]",
+					"name" : "Columna[9]",
 					"strict" : false
 				},
 				{
-					"name" : "G[2]",
+					"name" : "Columna[10]",
 					"strict" : false
 				},
 				{
-					"name" : "G[3]",
+					"name" : "Fila[0]",
 					"strict" : false
 				},
 				{
-					"name" : "G[4]",
+					"name" : "Fila[1]",
 					"strict" : false
 				},
 				{
-					"name" : "G[5]",
+					"name" : "Fila[2]",
 					"strict" : false
 				},
 				{
-					"name" : "G[6]",
+					"name" : "Fila[3]",
 					"strict" : false
 				},
 				{
-					"name" : "G[7]",
+					"name" : "Fila[4]",
 					"strict" : false
 				},
 				{
-					"name" : "B[0]",
+					"name" : "Fila[5]",
 					"strict" : false
 				},
 				{
-					"name" : "B[1]",
+					"name" : "Fila[6]",
 					"strict" : false
 				},
 				{
-					"name" : "B[2]",
+					"name" : "Fila[7]",
 					"strict" : false
 				},
 				{
-					"name" : "B[3]",
+					"name" : "Fila[8]",
 					"strict" : false
 				},
 				{
-					"name" : "B[4]",
-					"strict" : false
-				},
-				{
-					"name" : "B[5]",
-					"strict" : false
-				},
-				{
-					"name" : "B[6]",
-					"strict" : false
-				},
-				{
-					"name" : "B[7]",
+					"name" : "Fila[9]",
 					"strict" : false
 				},
 				{

@@ -5,14 +5,13 @@
 // Sistemas Digitales Programables
 // Curso 2021 - 2022
 // -------------------------------------------------------------------------------------------------------------------------
-// Nombre del archivo: paso1_TB.v
+// Nombre del archivo: BARRAS_LCD_TB.v
 //
-// Descripción: Este código Verilog implementa el documento de TestBench para el paso 1 de la subtarea 3 de la tarea 2.
-// Aquí se comprobará el funcionamiento del juego de luces (medvedev más contador 10 Hz)
-//      - Funciona a flanco positivo del reloj de 50MHz
-//      - Reset asincrono y activo a nivel bajo
-//      - Enable activo a nivel lto
-//      - Salida [7:0] correspondiente al estado de los LED's
+// Descripción: Este código Verilog implementa el documento de TestBench para la subtarea 2 de la tarea 3.
+//      - Funciona a flanco positivo del reloj de 25MHz
+//      - Reset sincrono y activo a nivel alto
+//      - Enable activo a nivel alto
+//      - Salida [7:0] correspondiente a los colores R, G y B
 // -------------------------------------------------------------------------------------------------------------------------
 //      Versión: V1.0                   | Fecha Modificación: 11/11/2021
 //
