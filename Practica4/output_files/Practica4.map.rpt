@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Practica4
-Tue Dec 14 19:15:08 2021
+Tue Dec 21 17:49:05 2021
 Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
 
 
@@ -13,19 +13,22 @@ Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
+  8. State Machine - |ADC_CONTROL|FSM:Control|state
+  9. Registers Removed During Synthesis
  10. General Register Statistics
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |ADC_CONTROL
- 12. Parameter Settings for User Entity Instance: contador:ADC_CNT1
- 13. Parameter Settings for User Entity Instance: contador:ADC_CNT1_HALF
- 14. Parameter Settings for User Entity Instance: contador:ADC_CNT_80
- 15. Port Connectivity Checks: "contador:ADC_CNT_80"
- 16. Port Connectivity Checks: "contador:ADC_CNT1_HALF"
- 17. Port Connectivity Checks: "contador:ADC_CNT1"
- 18. Post-Synthesis Netlist Statistics for Top Partition
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |ADC_CONTROL
+ 13. Parameter Settings for User Entity Instance: contador:ADC_CNT1
+ 14. Parameter Settings for User Entity Instance: contador:ADC_CNT1_HALF
+ 15. Parameter Settings for User Entity Instance: contador:ADC_CNT_80
+ 16. Parameter Settings for User Entity Instance: FSM:Control
+ 17. Port Connectivity Checks: "FSM:Control"
+ 18. Port Connectivity Checks: "contador:ADC_CNT_80"
+ 19. Port Connectivity Checks: "contador:ADC_CNT1_HALF"
+ 20. Port Connectivity Checks: "contador:ADC_CNT1"
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
 
 
 
@@ -51,15 +54,15 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                                  ;
 +------------------------------------+----------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 14 19:15:07 2021                    ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 21 17:49:05 2021                    ;
 ; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition ;
 ; Revision Name                      ; Practica4                                                ;
 ; Top-level Entity Name              ; ADC_CONTROL                                              ;
 ; Family                             ; Cyclone IV E                                             ;
-; Total logic elements               ; 0                                                        ;
-;     Total combinational functions  ; 0                                                        ;
-;     Dedicated logic registers      ; 0                                                        ;
-; Total registers                    ; 0                                                        ;
+; Total logic elements               ; 91                                                       ;
+;     Total combinational functions  ; 91                                                       ;
+;     Dedicated logic registers      ; 53                                                       ;
+; Total registers                    ; 53                                                       ;
 ; Total pins                         ; 32                                                       ;
 ; Total virtual pins                 ; 0                                                        ;
 ; Total memory bits                  ; 0                                                        ;
@@ -163,10 +166,11 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -178,72 +182,78 @@ refer to the applicable agreement for further details.
 ; MathFun.vh                       ; yes             ; User Unspecified File  ; W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/MathFun.vh    ;         ;
 ; contador.v                       ; yes             ; User Verilog HDL File  ; W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v    ;         ;
 ; ADC_CONTROL.v                    ; yes             ; User Verilog HDL File  ; W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v ;         ;
+; FSM.v                            ; yes             ; User Verilog HDL File  ; W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/FSM.v         ;         ;
 +----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 32    ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; iCLK  ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 32    ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 91         ;
+;                                             ;            ;
+; Total combinational functions               ; 91         ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 41         ;
+;     -- 3 input functions                    ; 15         ;
+;     -- <=2 input functions                  ; 35         ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 70         ;
+;     -- arithmetic mode                      ; 21         ;
+;                                             ;            ;
+; Total registers                             ; 53         ;
+;     -- Dedicated logic registers            ; 53         ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 32         ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; iCLK~input ;
+; Maximum fan-out                             ; 54         ;
+; Total fan-out                               ; 517        ;
+; Average fan-out                             ; 2.49       ;
++---------------------------------------------+------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |ADC_CONTROL               ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 32   ; 0            ; |ADC_CONTROL        ; ADC_CONTROL ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                       ;
++-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Entity Name ; Library Name ;
++-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+-------------+--------------+
+; |ADC_CONTROL                ; 91 (51)             ; 53 (25)                   ; 0           ; 0            ; 0       ; 0         ; 32   ; 0            ; |ADC_CONTROL                        ; ADC_CONTROL ; work         ;
+;    |FSM:Control|            ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADC_CONTROL|FSM:Control            ; FSM         ; work         ;
+;    |contador:ADC_CNT1_HALF| ; 11 (11)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADC_CONTROL|contador:ADC_CNT1_HALF ; contador    ; work         ;
+;    |contador:ADC_CNT1|      ; 13 (13)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADC_CONTROL|contador:ADC_CNT1      ; contador    ; work         ;
+;    |contador:ADC_CNT_80|    ; 11 (11)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADC_CONTROL|contador:ADC_CNT_80    ; contador    ; work         ;
++-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; contador:ADC_CNT1|oCOUNT[5]            ; Stuck at GND due to stuck port data_in ;
-; contador:ADC_CNT1|oCOUNT[0..4,6..8]    ; Lost fanout                            ;
-; contador:ADC_CNT_80|oCOUNT[1..6]       ; Lost fanout                            ;
-; contador:ADC_CNT_80|oCOUNT[0]          ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 16 ;                                        ;
-+----------------------------------------+----------------------------------------+
+Encoding Type:  One-Hot
++------------------------------------------------------+
+; State Machine - |ADC_CONTROL|FSM:Control|state       ;
++----------+----------+----------+----------+----------+
+; Name     ; state.S3 ; state.S2 ; state.S1 ; state.S0 ;
++----------+----------+----------+----------+----------+
+; state.S0 ; 0        ; 0        ; 0        ; 0        ;
+; state.S1 ; 0        ; 0        ; 1        ; 1        ;
+; state.S2 ; 0        ; 1        ; 0        ; 1        ;
+; state.S3 ; 1        ; 0        ; 0        ; 1        ;
++----------+----------+----------+----------+----------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                            ;
-+-----------------------------+---------------------------+--------------------------------------------------------------+
-; Register name               ; Reason for Removal        ; Registers Removed due to This Register                       ;
-+-----------------------------+---------------------------+--------------------------------------------------------------+
-; contador:ADC_CNT1|oCOUNT[5] ; Stuck at GND              ; contador:ADC_CNT1|oCOUNT[8], contador:ADC_CNT1|oCOUNT[6],    ;
-;                             ; due to stuck port data_in ; contador:ADC_CNT1|oCOUNT[2], contador:ADC_CNT_80|oCOUNT[3],  ;
-;                             ;                           ; contador:ADC_CNT_80|oCOUNT[2], contador:ADC_CNT_80|oCOUNT[0] ;
-+-----------------------------+---------------------------+--------------------------------------------------------------+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; FSM:Control|state~4                   ; Lost fanout        ;
+; FSM:Control|state~5                   ; Lost fanout        ;
+; Total Number of Removed Registers = 2 ;                    ;
++---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -251,14 +261,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 53    ;
+; Number of registers using Synchronous Clear  ; 49    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 4     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 24    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; 4:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |ADC_CONTROL|contador:ADC_CNT_80|oCOUNT[0]    ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |ADC_CONTROL|contador:ADC_CNT1|oCOUNT[5]      ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |ADC_CONTROL|contador:ADC_CNT1_HALF|oCOUNT[5] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
 
 
 +-----------------------------------------------------------------------------+
@@ -306,16 +327,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "contador:ADC_CNT_80"                                                                                                                                                                       ;
-+--------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port         ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+--------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; iUP_DOWN     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; iUP_DOWN[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-; oCOUNT[6..1] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
-; oTC          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
-+--------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FSM:Control ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; S0             ; 00    ; Unsigned Binary                 ;
+; S1             ; 01    ; Unsigned Binary                 ;
+; S2             ; 10    ; Unsigned Binary                 ;
+; S3             ; 11    ; Unsigned Binary                 ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FSM:Control"                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Fin_Trans ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador:ADC_CNT_80"                                                                                                                                                                      ;
++--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port         ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; iUP_DOWN     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; iUP_DOWN[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -326,7 +367,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; iUP_DOWN     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 ; iUP_DOWN[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
 ; oCOUNT       ; Output ; Info     ; Explicitly unconnected                                                                                                                                                             ;
-; oTC          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
 +--------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -347,12 +387,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 32                          ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
-;         0 data inputs ; 1                           ;
+; cycloneiii_ff         ; 53                          ;
+;     CLR               ; 4                           ;
+;     ENA SCLR          ; 24                          ;
+;     SCLR              ; 25                          ;
+; cycloneiii_lcell_comb ; 91                          ;
+;     arith             ; 21                          ;
+;         2 data inputs ; 21                          ;
+;     normal            ; 70                          ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 15                          ;
+;         4 data inputs ; 41                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.41                        ;
 +-----------------------+-----------------------------+
 
 
@@ -371,7 +420,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
-    Info: Processing started: Tue Dec 14 19:14:53 2021
+    Info: Processing started: Tue Dec 21 17:48:55 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Practica4 -c Practica4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -379,71 +428,41 @@ Info (12021): Found 1 design units, including 1 entities, in source file contado
     Info (12023): Found entity 1: contador File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file adc_control.v
     Info (12023): Found entity 1: ADC_CONTROL File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file fsm.v
+    Info (12023): Found entity 1: FSM File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/FSM.v Line: 8
 Info (12127): Elaborating entity "ADC_CONTROL" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at ADC_CONTROL.v(37): object "ADC_DIN" assigned a value but never read File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 37
-Warning (10034): Output port "oX_COORD" at ADC_CONTROL.v(29) has no driver File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 29
-Warning (10034): Output port "oY_COORD" at ADC_CONTROL.v(30) has no driver File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 30
-Warning (10034): Output port "oADC_DIN" at ADC_CONTROL.v(26) has no driver File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 26
-Warning (10034): Output port "oSCEN" at ADC_CONTROL.v(28) has no driver File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 28
-Info (12128): Elaborating entity "contador" for hierarchy "contador:ADC_CNT1" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 40
+Warning (10230): Verilog HDL assignment warning at ADC_CONTROL.v(50): truncated value with size 32 to match size of target (1) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 50
+Info (12128): Elaborating entity "contador" for hierarchy "contador:ADC_CNT1" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 41
 Warning (10230): Verilog HDL assignment warning at contador.v(58): truncated value with size 32 to match size of target (9) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 58
 Warning (10230): Verilog HDL assignment warning at contador.v(64): truncated value with size 32 to match size of target (9) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 64
 Warning (10230): Verilog HDL assignment warning at contador.v(69): truncated value with size 32 to match size of target (9) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 69
-Info (12128): Elaborating entity "contador" for hierarchy "contador:ADC_CNT1_HALF" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 43
+Info (12128): Elaborating entity "contador" for hierarchy "contador:ADC_CNT1_HALF" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 44
 Warning (10230): Verilog HDL assignment warning at contador.v(58): truncated value with size 32 to match size of target (8) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 58
 Warning (10230): Verilog HDL assignment warning at contador.v(64): truncated value with size 32 to match size of target (8) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 64
 Warning (10230): Verilog HDL assignment warning at contador.v(69): truncated value with size 32 to match size of target (8) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 69
-Info (12128): Elaborating entity "contador" for hierarchy "contador:ADC_CNT_80" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 46
+Info (12128): Elaborating entity "contador" for hierarchy "contador:ADC_CNT_80" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 47
 Warning (10230): Verilog HDL assignment warning at contador.v(58): truncated value with size 32 to match size of target (7) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 58
 Warning (10230): Verilog HDL assignment warning at contador.v(64): truncated value with size 32 to match size of target (7) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 64
 Warning (10230): Verilog HDL assignment warning at contador.v(69): truncated value with size 32 to match size of target (7) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 69
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "trans_en" is missing source, defaulting to GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 34
+Info (12128): Elaborating entity "FSM" for hierarchy "FSM:Control" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 53
+Warning (10235): Verilog HDL Always Construct warning at FSM.v(80): variable "ADC_PENIRQ_n" is read inside the Always Construct but isn't in the Always Construct's Event Control File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/FSM.v Line: 80
+Warning (10235): Verilog HDL Always Construct warning at FSM.v(85): variable "dclk" is read inside the Always Construct but isn't in the Always Construct's Event Control File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/FSM.v Line: 85
+Warning (10235): Verilog HDL Always Construct warning at FSM.v(85): variable "fin_80" is read inside the Always Construct but isn't in the Always Construct's Event Control File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/FSM.v Line: 85
 Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "oADC_DIN" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 26
-    Warning (13410): Pin "oADC_DCLK" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 27
-    Warning (13410): Pin "oSCEN" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 28
-    Warning (13410): Pin "oX_COORD[0]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 29
-    Warning (13410): Pin "oX_COORD[1]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 29
-    Warning (13410): Pin "oX_COORD[2]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 29
-    Warning (13410): Pin "oX_COORD[3]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 29
-    Warning (13410): Pin "oX_COORD[4]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 29
-    Warning (13410): Pin "oX_COORD[5]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 29
-    Warning (13410): Pin "oX_COORD[6]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 29
-    Warning (13410): Pin "oX_COORD[7]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 29
-    Warning (13410): Pin "oX_COORD[8]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 29
-    Warning (13410): Pin "oX_COORD[9]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 29
-    Warning (13410): Pin "oX_COORD[10]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 29
-    Warning (13410): Pin "oX_COORD[11]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 29
-    Warning (13410): Pin "oY_COORD[0]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 30
-    Warning (13410): Pin "oY_COORD[1]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 30
-    Warning (13410): Pin "oY_COORD[2]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 30
-    Warning (13410): Pin "oY_COORD[3]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 30
-    Warning (13410): Pin "oY_COORD[4]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 30
-    Warning (13410): Pin "oY_COORD[5]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 30
-    Warning (13410): Pin "oY_COORD[6]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 30
-    Warning (13410): Pin "oY_COORD[7]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 30
-    Warning (13410): Pin "oY_COORD[8]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 30
-    Warning (13410): Pin "oY_COORD[9]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 30
-    Warning (13410): Pin "oY_COORD[10]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 30
-    Warning (13410): Pin "oY_COORD[11]" is stuck at GND File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 30
-Info (17049): 14 registers lost all their fanouts during netlist optimizations.
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 5 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "iCLK" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 21
-    Warning (15610): No output dependent on input pin "iRST_n" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 22
-    Warning (15610): No output dependent on input pin "iADC_DOUT" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 23
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "iADC_BUSY" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 25
-    Warning (15610): No output dependent on input pin "iADC_PENIRQ_n" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 24
-Info (21057): Implemented 32 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 123 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 27 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 52 warnings
-    Info: Peak virtual memory: 4737 megabytes
-    Info: Processing ended: Tue Dec 14 19:15:08 2021
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:19
+    Info (21061): Implemented 91 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 4788 megabytes
+    Info: Processing ended: Tue Dec 21 17:49:05 2021
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:18
 
 
