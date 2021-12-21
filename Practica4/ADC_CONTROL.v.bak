@@ -1,0 +1,33 @@
+// Ricardo Jose Colom Palero
+// Fecha: 07/01/2020
+
+module ADC_CONTROL(
+					iCLK,
+					iRST_n,
+					oADC_DIN,
+					oADC_DCLK,
+					oSCEN,
+					iADC_DOUT,
+					iADC_BUSY,
+					iADC_PENIRQ_n,
+					oX_COORD,
+					oY_COORD
+					);
+
+parameter SYSCLK_FRQ	= 50000000;
+parameter ADC_DCLK_FRQ	= 70000;
+parameter ADC_DCLK_CNT	= SYSCLK_FRQ/(ADC_DCLK_FRQ*2);
+
+input					iCLK;
+input					iRST_n;
+input					iADC_DOUT;
+input					iADC_PENIRQ_n;
+input					iADC_BUSY;
+output				oADC_DIN;
+output				oADC_DCLK;
+output				oSCEN;
+output	[11:0]	oX_COORD;
+output	[11:0]	oY_COORD;
+
+	
+endmodule
