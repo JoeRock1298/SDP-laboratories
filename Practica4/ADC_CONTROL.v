@@ -47,7 +47,7 @@ module ADC_CONTROL(
 	contador #(.fin_cuenta(80)) ADC_CNT_80 (.iCLK(iCLK), .iRST_n(iRST_n), .iENABLE(dclk), .iUP_DOWN(1), .oCOUNT(count_80), .oTC(fin_80) );
 
 	//Generador ADC_DCLK
-	assign oADC_DCLK = (iCLK && iRST_n)?count_80[0]:0;
+	assign oADC_DCLK = (iRST_n)?count_80[0]:0;
 	
 	//FSM
 	FSM Control (.CLK(iCLK), .fin_80(fin_80), .RST_n(iRST_n), .dclk(dclk), .ADC_PENIRQ_n(iADC_PENIRQ_n), .ADC_CS(oSCEN), .Ena_Trans(trans_en), .Fin_Trans(trans_eof)  );
@@ -64,23 +64,23 @@ module ADC_CONTROL(
 			begin
 			
 					case (count_80)
-						0|1:     ADC_DIN = X_CONTROL[7];
-						2|3:     ADC_DIN = X_CONTROL[6]; 
-						4|5:     ADC_DIN = X_CONTROL[5];
-						6|7:     ADC_DIN = X_CONTROL[4];
-						8|9:     ADC_DIN = X_CONTROL[3];
-						10|11:   ADC_DIN = X_CONTROL[2];
-						12|13:   ADC_DIN = X_CONTROL[1];
-						14|15:   ADC_DIN = X_CONTROL[0];
+						(count_80 == 0 || count_80 == 1)? count_80:7'bx:     ADC_DIN = X_CONTROL[7];
+						(count_80 == 2 || count_80 == 3)? count_80:7'bx:     ADC_DIN = X_CONTROL[6]; 
+						(count_80 == 4 || count_80 == 5)? count_80:7'bx:     ADC_DIN = X_CONTROL[5];
+						(count_80 == 6 || count_80 == 7)? count_80:7'bx:     ADC_DIN = X_CONTROL[4];
+						(count_80 == 8 || count_80 == 9)? count_80:7'bx:     ADC_DIN = X_CONTROL[3];
+						(count_80 == 10 || count_80 == 11)? count_80:7'bx:   ADC_DIN = X_CONTROL[2];
+						(count_80 == 12 || count_80 == 13)? count_80:7'bx:   ADC_DIN = X_CONTROL[1];
+						(count_80 == 14 || count_80 == 15)? count_80:7'bx:   ADC_DIN = X_CONTROL[0];
 				
-						32|33:   ADC_DIN = Y_CONTROL[7];
-						34|35:   ADC_DIN = Y_CONTROL[6]; 
-						36|37:   ADC_DIN = Y_CONTROL[5];
-						38|39:   ADC_DIN = Y_CONTROL[4];
-						40|41:   ADC_DIN = Y_CONTROL[3];
-						42|43: 	ADC_DIN = Y_CONTROL[2];
-						44|45: 	ADC_DIN = Y_CONTROL[1];
-						46|47: 	ADC_DIN = Y_CONTROL[0];
+						(count_80 == 32 || count_80 == 33)? count_80:7'bx:   ADC_DIN = Y_CONTROL[7];
+						(count_80 == 34 || count_80 == 35)? count_80:7'bx:   ADC_DIN = Y_CONTROL[6]; 
+						(count_80 == 36 || count_80 == 37)? count_80:7'bx:   ADC_DIN = Y_CONTROL[5];
+						(count_80 == 38 || count_80 == 39)? count_80:7'bx:   ADC_DIN = Y_CONTROL[4];
+						(count_80 == 40 || count_80 == 41)? count_80:7'bx:   ADC_DIN = Y_CONTROL[3];
+						(count_80 == 42 || count_80 == 43)? count_80:7'bx: 	ADC_DIN = Y_CONTROL[2];
+						(count_80 == 44 || count_80 == 45)? count_80:7'bx: 	ADC_DIN = Y_CONTROL[1];
+						(count_80 == 46 || count_80 == 47)? count_80:7'bx: 	ADC_DIN = Y_CONTROL[0];
 			
 						default: ADC_DIN = 0;
 					endcase

@@ -1,6 +1,6 @@
 TimeQuest Timing Analyzer report for Practica4
-Tue Dec 21 17:49:33 2021
-Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Tue Dec 21 20:53:06 2021
+Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 
 
 ---------------------
@@ -76,18 +76,18 @@ refer to the applicable agreement for further details.
 
 
 
-+------------------------------------------------------------------------------------------+
-; TimeQuest Timing Analyzer Summary                                                        ;
-+-----------------------+------------------------------------------------------------------+
-; Quartus Prime Version ; Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition ;
-; Timing Analyzer       ; TimeQuest                                                        ;
-; Revision Name         ; Practica4                                                        ;
-; Device Family         ; Cyclone IV E                                                     ;
-; Device Name           ; EP4CE115F29C7                                                    ;
-; Timing Models         ; Final                                                            ;
-; Delay Model           ; Combined                                                         ;
-; Rise/Fall Delays      ; Enabled                                                          ;
-+-----------------------+------------------------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                    ;
++-----------------------+--------------------------------------------------------------+
+; Quartus Prime Version ; Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition ;
+; Timing Analyzer       ; TimeQuest                                                    ;
+; Revision Name         ; Practica4                                                    ;
+; Device Family         ; Cyclone IV E                                                 ;
+; Device Name           ; EP4CE115F29C7                                                ;
+; Timing Models         ; Final                                                        ;
+; Delay Model           ; Combined                                                     ;
+; Rise/Fall Delays      ; Enabled                                                      ;
++-----------------------+--------------------------------------------------------------+
 
 
 +------------------------------------------+
@@ -98,12 +98,13 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.02        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.1%      ;
+;     Processor 2            ;   0.6%      ;
+;     Processors 3-6         ;   0.4%      ;
 +----------------------------+-------------+
 
 
@@ -1255,8 +1256,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
-    Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
-    Info: Processing started: Tue Dec 21 17:49:29 2021
+    Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+    Info: Processing started: Tue Dec 21 20:53:04 2021
 Info: Command: quartus_sta Practica4 -c Practica4
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1287,6 +1288,7 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -3.000             -71.105 iCLK 
+Warning (18330): Ignoring Synchronizer Identification setting Off, and using Auto instead.
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
@@ -1307,6 +1309,7 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -3.000             -71.105 iCLK 
+Warning (18330): Ignoring Synchronizer Identification setting Off, and using Auto instead.
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
@@ -1325,12 +1328,13 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -3.000             -60.145 iCLK 
+Warning (18330): Ignoring Synchronizer Identification setting Off, and using Auto instead.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4866 megabytes
-    Info: Processing ended: Tue Dec 21 17:49:33 2021
-    Info: Elapsed time: 00:00:04
+Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4859 megabytes
+    Info: Processing ended: Tue Dec 21 20:53:06 2021
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

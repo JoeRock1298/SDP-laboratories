@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE Auto
 set_global_assignment -name TOP_LEVEL_ENTITY ADC_CONTROL
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 11.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:22:45  JULY 25, 2012"
-set_global_assignment -name LAST_QUARTUS_VERSION "17.1.1 Standard Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.1.1 Lite Edition"
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_global_assignment -name ENABLE_SIGNALTAP OFF

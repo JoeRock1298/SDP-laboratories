@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Tue Dec 21 18:54:02 2021
-Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Analysis & Synthesis Status : Successful - Tue Dec 21 22:29:30 2021
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 Revision Name : Touch_Control
 Top-level Entity Name : ADC_CONTROL
 Family : Cyclone IV E
-Total logic elements : 91
-    Total combinational functions : 91
+Total logic elements : 90
+    Total combinational functions : 90
     Dedicated logic registers : 53
 Total registers : 53
 Total pins : 32

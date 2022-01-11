@@ -1,6 +1,6 @@
 Fitter report for Touch_Control
-Tue Dec 21 18:39:50 2021
-Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Tue Dec 21 22:29:35 2021
+Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 
 
 ---------------------
@@ -62,26 +62,26 @@ refer to the applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------------------------+
-; Fitter Summary                                                                                ;
-+------------------------------------+----------------------------------------------------------+
-; Fitter Status                      ; Successful - Tue Dec 21 18:39:50 2021                    ;
-; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition ;
-; Revision Name                      ; Touch_Control                                            ;
-; Top-level Entity Name              ; ADC_CONTROL                                              ;
-; Family                             ; Cyclone IV E                                             ;
-; Device                             ; EP4CE6E22C6                                              ;
-; Timing Models                      ; Final                                                    ;
-; Total logic elements               ; 91 / 6,272 ( 1 % )                                       ;
-;     Total combinational functions  ; 91 / 6,272 ( 1 % )                                       ;
-;     Dedicated logic registers      ; 53 / 6,272 ( < 1 % )                                     ;
-; Total registers                    ; 53                                                       ;
-; Total pins                         ; 32 / 92 ( 35 % )                                         ;
-; Total virtual pins                 ; 0                                                        ;
-; Total memory bits                  ; 0 / 276,480 ( 0 % )                                      ;
-; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                                           ;
-; Total PLLs                         ; 0 / 2 ( 0 % )                                            ;
-+------------------------------------+----------------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Fitter Summary                                                                            ;
++------------------------------------+------------------------------------------------------+
+; Fitter Status                      ; Successful - Tue Dec 21 22:29:35 2021                ;
+; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition ;
+; Revision Name                      ; Touch_Control                                        ;
+; Top-level Entity Name              ; ADC_CONTROL                                          ;
+; Family                             ; Cyclone IV E                                         ;
+; Device                             ; EP4CE6E22C6                                          ;
+; Timing Models                      ; Final                                                ;
+; Total logic elements               ; 90 / 6,272 ( 1 % )                                   ;
+;     Total combinational functions  ; 90 / 6,272 ( 1 % )                                   ;
+;     Dedicated logic registers      ; 53 / 6,272 ( < 1 % )                                 ;
+; Total registers                    ; 53                                                   ;
+; Total pins                         ; 32 / 92 ( 35 % )                                     ;
+; Total virtual pins                 ; 0                                                    ;
+; Total memory bits                  ; 0 / 276,480 ( 0 % )                                  ;
+; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                                       ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                                        ;
++------------------------------------+------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -166,8 +166,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 221 ) ; 0.00 % ( 0 / 221 )         ; 0.00 % ( 0 / 221 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 221 ) ; 0.00 % ( 0 / 221 )         ; 0.00 % ( 0 / 221 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 220 ) ; 0.00 % ( 0 / 220 )         ; 0.00 % ( 0 / 220 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 220 ) ; 0.00 % ( 0 / 220 )         ; 0.00 % ( 0 / 220 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -190,7 +190,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 211 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 210 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -198,7 +198,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/rama2/Downloads/Touch_alumno_restored/Touch_Control.pin.
+The pin-out file can be found in C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/Touch_Control.pin.
 
 
 +--------------------------------------------------------------------+
@@ -206,19 +206,19 @@ The pin-out file can be found in C:/Users/rama2/Downloads/Touch_alumno_restored/
 +---------------------------------------------+----------------------+
 ; Resource                                    ; Usage                ;
 +---------------------------------------------+----------------------+
-; Total logic elements                        ; 91 / 6,272 ( 1 % )   ;
-;     -- Combinational with no register       ; 38                   ;
+; Total logic elements                        ; 90 / 6,272 ( 1 % )   ;
+;     -- Combinational with no register       ; 37                   ;
 ;     -- Register only                        ; 0                    ;
 ;     -- Combinational with a register        ; 53                   ;
 ;                                             ;                      ;
 ; Logic element usage by number of LUT inputs ;                      ;
-;     -- 4 input functions                    ; 41                   ;
-;     -- 3 input functions                    ; 15                   ;
-;     -- <=2 input functions                  ; 35                   ;
+;     -- 4 input functions                    ; 40                   ;
+;     -- 3 input functions                    ; 10                   ;
+;     -- <=2 input functions                  ; 40                   ;
 ;     -- Register only                        ; 0                    ;
 ;                                             ;                      ;
 ; Logic elements by mode                      ;                      ;
-;     -- normal mode                          ; 70                   ;
+;     -- normal mode                          ; 69                   ;
 ;     -- arithmetic mode                      ; 21                   ;
 ;                                             ;                      ;
 ; Total registers*                            ; 53 / 6,684 ( < 1 % ) ;
@@ -243,12 +243,12 @@ The pin-out file can be found in C:/Users/rama2/Downloads/Touch_alumno_restored/
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )        ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )        ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )        ;
-; Average interconnect usage (total/H/V)      ; 0.3% / 0.2% / 0.3%   ;
-; Peak interconnect usage (total/H/V)         ; 1.0% / 0.9% / 1.0%   ;
+; Average interconnect usage (total/H/V)      ; 0.3% / 0.3% / 0.2%   ;
+; Peak interconnect usage (total/H/V)         ; 1.0% / 1.4% / 0.6%   ;
 ; Maximum fan-out                             ; 53                   ;
 ; Highest non-global fan-out                  ; 30                   ;
-; Total fan-out                               ; 524                  ;
-; Average fan-out                             ; 2.38                 ;
+; Total fan-out                               ; 515                  ;
+; Average fan-out                             ; 2.35                 ;
 +---------------------------------------------+----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -261,19 +261,19 @@ The pin-out file can be found in C:/Users/rama2/Downloads/Touch_alumno_restored/
 +---------------------------------------------+---------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                 ; Low                            ;
 ;                                             ;                     ;                                ;
-; Total logic elements                        ; 91 / 6272 ( 1 % )   ; 0 / 6272 ( 0 % )               ;
-;     -- Combinational with no register       ; 38                  ; 0                              ;
+; Total logic elements                        ; 90 / 6272 ( 1 % )   ; 0 / 6272 ( 0 % )               ;
+;     -- Combinational with no register       ; 37                  ; 0                              ;
 ;     -- Register only                        ; 0                   ; 0                              ;
 ;     -- Combinational with a register        ; 53                  ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic element usage by number of LUT inputs ;                     ;                                ;
-;     -- 4 input functions                    ; 41                  ; 0                              ;
-;     -- 3 input functions                    ; 15                  ; 0                              ;
-;     -- <=2 input functions                  ; 35                  ; 0                              ;
+;     -- 4 input functions                    ; 40                  ; 0                              ;
+;     -- 3 input functions                    ; 10                  ; 0                              ;
+;     -- <=2 input functions                  ; 40                  ; 0                              ;
 ;     -- Register only                        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic elements by mode                      ;                     ;                                ;
-;     -- normal mode                          ; 70                  ; 0                              ;
+;     -- normal mode                          ; 69                  ; 0                              ;
 ;     -- arithmetic mode                      ; 21                  ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Total registers                             ; 53                  ; 0                              ;
@@ -296,8 +296,8 @@ The pin-out file can be found in C:/Users/rama2/Downloads/Touch_alumno_restored/
 ;     -- Registered Output Connections        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Internal Connections                        ;                     ;                                ;
-;     -- Total Connections                    ; 519                 ; 5                              ;
-;     -- Registered Connections               ; 174                 ; 0                              ;
+;     -- Total Connections                    ; 510                 ; 5                              ;
+;     -- Registered Connections               ; 169                 ; 0                              ;
 ;                                             ;                     ;                                ;
 ; External Connections                        ;                     ;                                ;
 ;     -- Top                                  ; 0                   ; 0                              ;
@@ -330,9 +330,9 @@ The pin-out file can be found in C:/Users/rama2/Downloads/Touch_alumno_restored/
 ; Name          ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; iADC_BUSY     ; 25    ; 2        ; 0            ; 11           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
-; iADC_DOUT     ; 30    ; 2        ; 0            ; 8            ; 14           ; 24                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
-; iADC_PENIRQ_n ; 141   ; 8        ; 5            ; 24           ; 7            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
-; iCLK          ; 23    ; 1        ; 0            ; 11           ; 7            ; 54                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; iADC_DOUT     ; 136   ; 8        ; 9            ; 24           ; 7            ; 24                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; iADC_PENIRQ_n ; 1     ; 1        ; 0            ; 23           ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; iCLK          ; 23    ; 1        ; 0            ; 11           ; 7            ; 53                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
 ; iRST_n        ; 24    ; 2        ; 0            ; 11           ; 14           ; 34                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
 +---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
@@ -342,33 +342,33 @@ The pin-out file can be found in C:/Users/rama2/Downloads/Touch_alumno_restored/
 +--------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name         ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +--------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; oADC_DCLK    ; 50    ; 3        ; 13           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oADC_DIN     ; 39    ; 3        ; 1            ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oSCEN        ; 28    ; 2        ; 0            ; 9            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oX_COORD[0]  ; 46    ; 3        ; 7            ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oX_COORD[10] ; 11    ; 1        ; 0            ; 18           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oX_COORD[11] ; 43    ; 3        ; 5            ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oX_COORD[1]  ; 137   ; 8        ; 7            ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oX_COORD[2]  ; 136   ; 8        ; 9            ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oX_COORD[3]  ; 138   ; 8        ; 7            ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oX_COORD[4]  ; 54    ; 4        ; 18           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oX_COORD[5]  ; 42    ; 3        ; 3            ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oX_COORD[6]  ; 53    ; 3        ; 16           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oX_COORD[7]  ; 32    ; 2        ; 0            ; 6            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oX_COORD[8]  ; 34    ; 2        ; 0            ; 5            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oX_COORD[9]  ; 49    ; 3        ; 13           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oY_COORD[0]  ; 10    ; 1        ; 0            ; 18           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oY_COORD[10] ; 33    ; 2        ; 0            ; 6            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oY_COORD[11] ; 142   ; 8        ; 3            ; 24           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oY_COORD[1]  ; 135   ; 8        ; 11           ; 24           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oY_COORD[2]  ; 51    ; 3        ; 16           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oY_COORD[3]  ; 52    ; 3        ; 16           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oY_COORD[4]  ; 55    ; 4        ; 18           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oY_COORD[5]  ; 143   ; 8        ; 1            ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oY_COORD[6]  ; 38    ; 3        ; 1            ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oY_COORD[7]  ; 144   ; 8        ; 1            ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oY_COORD[8]  ; 44    ; 3        ; 5            ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; oY_COORD[9]  ; 31    ; 2        ; 0            ; 7            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oADC_DCLK    ; 119   ; 7        ; 23           ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oADC_DIN     ; 144   ; 8        ; 1            ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oSCEN        ; 141   ; 8        ; 5            ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oX_COORD[0]  ; 138   ; 8        ; 7            ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oX_COORD[10] ; 135   ; 8        ; 11           ; 24           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oX_COORD[11] ; 126   ; 7        ; 16           ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oX_COORD[1]  ; 125   ; 7        ; 18           ; 24           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oX_COORD[2]  ; 137   ; 8        ; 7            ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oX_COORD[3]  ; 31    ; 2        ; 0            ; 7            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oX_COORD[4]  ; 30    ; 2        ; 0            ; 8            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oX_COORD[5]  ; 133   ; 8        ; 13           ; 24           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oX_COORD[6]  ; 132   ; 8        ; 13           ; 24           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oX_COORD[7]  ; 50    ; 3        ; 13           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oX_COORD[8]  ; 128   ; 8        ; 16           ; 24           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oX_COORD[9]  ; 120   ; 7        ; 23           ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oY_COORD[0]  ; 2     ; 1        ; 0            ; 23           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oY_COORD[10] ; 124   ; 7        ; 18           ; 24           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oY_COORD[11] ; 121   ; 7        ; 23           ; 24           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oY_COORD[1]  ; 10    ; 1        ; 0            ; 18           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oY_COORD[2]  ; 11    ; 1        ; 0            ; 18           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oY_COORD[3]  ; 143   ; 8        ; 1            ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oY_COORD[4]  ; 3     ; 1        ; 0            ; 23           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oY_COORD[5]  ; 129   ; 8        ; 16           ; 24           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oY_COORD[6]  ; 142   ; 8        ; 3            ; 24           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oY_COORD[7]  ; 127   ; 7        ; 16           ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oY_COORD[8]  ; 7     ; 1        ; 0            ; 21           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; oY_COORD[9]  ; 28    ; 2        ; 0            ; 9            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +--------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -390,8 +390,10 @@ The pin-out file can be found in C:/Users/rama2/Downloads/Touch_alumno_restored/
 ; 97       ; MSEL2                       ; -                        ; -                       ; Dedicated Programming Pin ;
 ; 97       ; MSEL3                       ; -                        ; -                       ; Dedicated Programming Pin ;
 ; 101      ; DIFFIO_R3n, nCEO            ; Use as programming pin   ; ~ALTERA_nCEO~           ; Dual Purpose Pin          ;
-; 137      ; DATA5                       ; Use as regular IO        ; oX_COORD[1]             ; Dual Purpose Pin          ;
-; 138      ; DATA6                       ; Use as regular IO        ; oX_COORD[3]             ; Dual Purpose Pin          ;
+; 132      ; DIFFIO_T10n, DATA2          ; Use as regular IO        ; oX_COORD[6]             ; Dual Purpose Pin          ;
+; 133      ; DIFFIO_T10p, DATA3          ; Use as regular IO        ; oX_COORD[5]             ; Dual Purpose Pin          ;
+; 137      ; DATA5                       ; Use as regular IO        ; oX_COORD[2]             ; Dual Purpose Pin          ;
+; 138      ; DATA6                       ; Use as regular IO        ; oX_COORD[0]             ; Dual Purpose Pin          ;
 +----------+-----------------------------+--------------------------+-------------------------+---------------------------+
 
 
@@ -400,14 +402,14 @@ The pin-out file can be found in C:/Users/rama2/Downloads/Touch_alumno_restored/
 +----------+-------------------+---------------+--------------+
 ; I/O Bank ; Usage             ; VCCIO Voltage ; VREF Voltage ;
 +----------+-------------------+---------------+--------------+
-; 1        ; 7 / 11 ( 64 % )   ; 3.3V          ; --           ;
-; 2        ; 8 / 8 ( 100 % )   ; 3.3V          ; --           ;
-; 3        ; 11 / 11 ( 100 % ) ; 3.3V          ; --           ;
-; 4        ; 2 / 14 ( 14 % )   ; 3.3V          ; --           ;
+; 1        ; 11 / 11 ( 100 % ) ; 3.3V          ; --           ;
+; 2        ; 5 / 8 ( 63 % )    ; 3.3V          ; --           ;
+; 3        ; 1 / 11 ( 9 % )    ; 3.3V          ; --           ;
+; 4        ; 0 / 14 ( 0 % )    ; 3.3V          ; --           ;
 ; 5        ; 0 / 13 ( 0 % )    ; 3.3V          ; --           ;
 ; 6        ; 1 / 10 ( 10 % )   ; 3.3V          ; --           ;
-; 7        ; 0 / 13 ( 0 % )    ; 3.3V          ; --           ;
-; 8        ; 8 / 12 ( 67 % )   ; 3.3V          ; --           ;
+; 7        ; 7 / 13 ( 54 % )   ; 3.3V          ; --           ;
+; 8        ; 12 / 12 ( 100 % ) ; 3.3V          ; --           ;
 +----------+-------------------+---------------+--------------+
 
 
@@ -416,17 +418,17 @@ The pin-out file can be found in C:/Users/rama2/Downloads/Touch_alumno_restored/
 +----------+------------+----------+-----------------------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
 ; Location ; Pad Number ; I/O Bank ; Pin Name/Usage                                            ; Dir.   ; I/O Standard ; Voltage ; I/O Type   ; User Assignment ; Bus Hold ; Weak Pull Up ;
 +----------+------------+----------+-----------------------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
-; 1        ; 0          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; 2        ; 1          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; 3        ; 2          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; 1        ; 0          ; 1        ; iADC_PENIRQ_n                                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 2        ; 1          ; 1        ; oY_COORD[0]                                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 3        ; 2          ; 1        ; oY_COORD[4]                                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; 4        ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 5        ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; 6        ; 5          ; 1        ; ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP     ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; On           ;
-; 7        ; 6          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; 7        ; 6          ; 1        ; oY_COORD[8]                                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; 8        ; 7          ; 1        ; ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; On           ;
 ; 9        ; 9          ; 1        ; ^nSTATUS                                                  ;        ;              ;         ; --         ;                 ; --       ; --           ;
-; 10       ; 13         ; 1        ; oY_COORD[0]                                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 11       ; 14         ; 1        ; oX_COORD[10]                                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 10       ; 13         ; 1        ; oY_COORD[1]                                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 11       ; 14         ; 1        ; oY_COORD[2]                                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; 12       ; 15         ; 1        ; ~ALTERA_DCLK~                                             ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; On           ;
 ; 13       ; 16         ; 1        ; ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; On           ;
 ; 14       ; 17         ; 1        ; ^nCONFIG                                                  ;        ;              ;         ; --         ;                 ; --       ; --           ;
@@ -443,34 +445,34 @@ The pin-out file can be found in C:/Users/rama2/Downloads/Touch_alumno_restored/
 ; 25       ; 26         ; 2        ; iADC_BUSY                                                 ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; 26       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 27       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 28       ; 31         ; 2        ; oSCEN                                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 28       ; 31         ; 2        ; oY_COORD[9]                                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; 29       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; 30       ; 34         ; 2        ; iADC_DOUT                                                 ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 31       ; 36         ; 2        ; oY_COORD[9]                                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 32       ; 39         ; 2        ; oX_COORD[7]                                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 33       ; 40         ; 2        ; oY_COORD[10]                                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 34       ; 41         ; 2        ; oX_COORD[8]                                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 30       ; 34         ; 2        ; oX_COORD[4]                                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 31       ; 36         ; 2        ; oX_COORD[3]                                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 32       ; 39         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; 33       ; 40         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; 34       ; 41         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; 35       ;            ; --       ; VCCA1                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; 36       ;            ;          ; GNDA1                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 37       ;            ;          ; VCCD_PLL1                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; 38       ; 45         ; 3        ; oY_COORD[6]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 39       ; 46         ; 3        ; oADC_DIN                                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 38       ; 45         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; 39       ; 46         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; 40       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 41       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 42       ; 52         ; 3        ; oX_COORD[5]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 43       ; 53         ; 3        ; oX_COORD[11]                                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 44       ; 54         ; 3        ; oY_COORD[8]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 42       ; 52         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; 43       ; 53         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; 44       ; 54         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; 45       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; 46       ; 58         ; 3        ; oX_COORD[0]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 46       ; 58         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; 47       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 48       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 49       ; 68         ; 3        ; oX_COORD[9]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 50       ; 69         ; 3        ; oADC_DCLK                                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 51       ; 70         ; 3        ; oY_COORD[2]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 52       ; 72         ; 3        ; oY_COORD[3]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 53       ; 73         ; 3        ; oX_COORD[6]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 54       ; 74         ; 4        ; oX_COORD[4]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 55       ; 75         ; 4        ; oY_COORD[4]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 49       ; 68         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; 50       ; 69         ; 3        ; oX_COORD[7]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 51       ; 70         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; 52       ; 72         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; 53       ; 73         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; 54       ; 74         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; 55       ; 75         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; 56       ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 57       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 58       ; 80         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -535,32 +537,32 @@ The pin-out file can be found in C:/Users/rama2/Downloads/Touch_alumno_restored/
 ; 116      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; 117      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 118      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 119      ; 163        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; 120      ; 164        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; 121      ; 165        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; 119      ; 163        ; 7        ; oADC_DCLK                                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 120      ; 164        ; 7        ; oX_COORD[9]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 121      ; 165        ; 7        ; oY_COORD[11]                                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; 122      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 123      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 124      ; 173        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; 125      ; 174        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; 126      ; 175        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; 127      ; 176        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; 128      ; 177        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; 129      ; 178        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; 124      ; 173        ; 7        ; oY_COORD[10]                                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 125      ; 174        ; 7        ; oX_COORD[1]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 126      ; 175        ; 7        ; oX_COORD[11]                                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 127      ; 176        ; 7        ; oY_COORD[7]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 128      ; 177        ; 8        ; oX_COORD[8]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 129      ; 178        ; 8        ; oY_COORD[5]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; 130      ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 131      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 132      ; 181        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; 133      ; 182        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; 132      ; 181        ; 8        ; oX_COORD[6]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 133      ; 182        ; 8        ; oX_COORD[5]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; 134      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; 135      ; 185        ; 8        ; oY_COORD[1]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 136      ; 187        ; 8        ; oX_COORD[2]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 137      ; 190        ; 8        ; oX_COORD[1]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 138      ; 191        ; 8        ; oX_COORD[3]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 135      ; 185        ; 8        ; oX_COORD[10]                                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 136      ; 187        ; 8        ; iADC_DOUT                                                 ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 137      ; 190        ; 8        ; oX_COORD[2]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 138      ; 191        ; 8        ; oX_COORD[0]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; 139      ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 140      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 141      ; 195        ; 8        ; iADC_PENIRQ_n                                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 142      ; 201        ; 8        ; oY_COORD[11]                                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 143      ; 202        ; 8        ; oY_COORD[5]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 144      ; 203        ; 8        ; oY_COORD[7]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 141      ; 195        ; 8        ; oSCEN                                                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 142      ; 201        ; 8        ; oY_COORD[6]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 143      ; 202        ; 8        ; oY_COORD[3]                                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 144      ; 203        ; 8        ; oADC_DIN                                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; EPAD     ;            ;          ; GND                                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
 +----------+------------+----------+-----------------------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
@@ -626,8 +628,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; oY_COORD[9]   ; Missing location assignment ;
 ; oY_COORD[10]  ; Missing location assignment ;
 ; oY_COORD[11]  ; Missing location assignment ;
-; iCLK          ; Missing location assignment ;
 ; iRST_n        ; Missing location assignment ;
+; iCLK          ; Missing location assignment ;
 ; iADC_PENIRQ_n ; Missing location assignment ;
 ; iADC_DOUT     ; Missing location assignment ;
 +---------------+-----------------------------+
@@ -638,7 +640,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node  ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                 ; Entity Name ; Library Name ;
 +-----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------+-------------+--------------+
-; |ADC_CONTROL                ; 91 (51)     ; 53 (25)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 32   ; 0            ; 38 (26)      ; 0 (0)             ; 53 (25)          ; |ADC_CONTROL                        ; ADC_CONTROL ; work         ;
+; |ADC_CONTROL                ; 90 (50)     ; 53 (25)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 32   ; 0            ; 37 (25)      ; 0 (0)             ; 53 (25)          ; |ADC_CONTROL                        ; ADC_CONTROL ; work         ;
 ;    |FSM:Control|            ; 5 (5)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; |ADC_CONTROL|FSM:Control            ; FSM         ; work         ;
 ;    |contador:ADC_CNT1_HALF| ; 11 (11)     ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 8 (8)            ; |ADC_CONTROL|contador:ADC_CNT1_HALF ; contador    ; work         ;
 ;    |contador:ADC_CNT1|      ; 13 (13)     ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 9 (9)            ; |ADC_CONTROL|contador:ADC_CNT1      ; contador    ; work         ;
@@ -680,9 +682,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; oY_COORD[9]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; oY_COORD[10]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; oY_COORD[11]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; iCLK          ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 ; iRST_n        ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; iADC_PENIRQ_n ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; iCLK          ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; iADC_PENIRQ_n ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; iADC_DOUT     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 +---------------+----------+---------------+---------------+-----------------------+-----+------+
 
@@ -693,11 +695,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout            ; Pad To Core Index ; Setting ;
 +--------------------------------+-------------------+---------+
 ; iADC_BUSY                      ;                   ;         ;
-; iCLK                           ;                   ;         ;
 ; iRST_n                         ;                   ;         ;
+; iCLK                           ;                   ;         ;
 ; iADC_PENIRQ_n                  ;                   ;         ;
-;      - FSM:Control|Selector1~0 ; 0                 ; 6       ;
-;      - FSM:Control|Selector0~0 ; 0                 ; 6       ;
+;      - FSM:Control|Selector1~0 ; 1                 ; 6       ;
+;      - FSM:Control|Selector0~0 ; 1                 ; 6       ;
 ; iADC_DOUT                      ;                   ;         ;
 ;      - X_COORDaux~0            ; 0                 ; 6       ;
 ;      - X_COORDaux~1            ; 0                 ; 6       ;
@@ -726,19 +728,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------+-------------------+---------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                             ;
-+-------------------------------------+------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
-; Name                                ; Location         ; Fan-Out ; Usage                     ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-------------------------------------+------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
-; contador:ADC_CNT1_HALF|oCOUNT[5]~12 ; LCCOMB_X6_Y8_N20 ; 8       ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; contador:ADC_CNT1|oCOUNT[5]~11      ; LCCOMB_X7_Y9_N0  ; 17      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; contador:ADC_CNT_80|oCOUNT[0]~10    ; LCCOMB_X7_Y9_N28 ; 16      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
-; contador:ADC_CNT_80|oCOUNT[0]~9     ; LCCOMB_X7_Y8_N30 ; 7       ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; iCLK                                ; PIN_23           ; 53      ; Clock                     ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; iRST_n                              ; PIN_24           ; 31      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; iRST_n                              ; PIN_24           ; 4       ; Async. clear              ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-+-------------------------------------+------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                               ;
++-------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
+; Name                                ; Location           ; Fan-Out ; Usage                     ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
+; contador:ADC_CNT1_HALF|oCOUNT[5]~12 ; LCCOMB_X10_Y20_N26 ; 8       ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; contador:ADC_CNT1|oCOUNT[5]~11      ; LCCOMB_X6_Y20_N28  ; 17      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; contador:ADC_CNT_80|oCOUNT[0]~10    ; LCCOMB_X6_Y20_N0   ; 16      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
+; contador:ADC_CNT_80|oCOUNT[0]~9     ; LCCOMB_X9_Y20_N0   ; 7       ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; iCLK                                ; PIN_23             ; 53      ; Clock                     ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; iRST_n                              ; PIN_24             ; 31      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; iRST_n                              ; PIN_24             ; 4       ; Async. clear              ; yes    ; Global Clock         ; GCLK4            ; --                        ;
++-------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------+
@@ -746,7 +748,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name   ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; iCLK   ; PIN_23   ; 53      ; 28                                   ; Global Clock         ; GCLK2            ; --                        ;
+; iCLK   ; PIN_23   ; 53      ; 29                                   ; Global Clock         ; GCLK2            ; --                        ;
 ; iRST_n ; PIN_24   ; 4       ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
 +--------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
@@ -756,21 +758,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------+
 ; Routing Resource Type ; Usage                 ;
 +-----------------------+-----------------------+
-; Block interconnects   ; 98 / 32,401 ( < 1 % ) ;
-; C16 interconnects     ; 7 / 1,326 ( < 1 % )   ;
-; C4 interconnects      ; 53 / 21,816 ( < 1 % ) ;
-; Direct links          ; 28 / 32,401 ( < 1 % ) ;
+; Block interconnects   ; 92 / 32,401 ( < 1 % ) ;
+; C16 interconnects     ; 4 / 1,326 ( < 1 % )   ;
+; C4 interconnects      ; 31 / 21,816 ( < 1 % ) ;
+; Direct links          ; 21 / 32,401 ( < 1 % ) ;
 ; Global clocks         ; 2 / 10 ( 20 % )       ;
-; Local interconnects   ; 52 / 10,320 ( < 1 % ) ;
-; R24 interconnects     ; 5 / 1,289 ( < 1 % )   ;
-; R4 interconnects      ; 49 / 28,186 ( < 1 % ) ;
+; Local interconnects   ; 53 / 10,320 ( < 1 % ) ;
+; R24 interconnects     ; 6 / 1,289 ( < 1 % )   ;
+; R4 interconnects      ; 69 / 28,186 ( < 1 % ) ;
 +-----------------------+-----------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 13.00) ; Number of LABs  (Total = 7) ;
+; Number of Logic Elements  (Average = 12.86) ; Number of LABs  (Total = 7) ;
 +---------------------------------------------+-----------------------------+
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
@@ -784,10 +786,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 10                                          ; 1                           ;
 ; 11                                          ; 0                           ;
 ; 12                                          ; 0                           ;
-; 13                                          ; 0                           ;
+; 13                                          ; 1                           ;
 ; 14                                          ; 0                           ;
-; 15                                          ; 2                           ;
-; 16                                          ; 3                           ;
+; 15                                          ; 0                           ;
+; 16                                          ; 4                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -806,7 +808,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 20.57) ; Number of LABs  (Total = 7) ;
+; Number of Signals Sourced  (Average = 20.43) ; Number of LABs  (Total = 7) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
@@ -830,12 +832,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 19                                           ; 0                           ;
 ; 20                                           ; 0                           ;
 ; 21                                           ; 0                           ;
-; 22                                           ; 0                           ;
-; 23                                           ; 2                           ;
-; 24                                           ; 0                           ;
-; 25                                           ; 1                           ;
-; 26                                           ; 1                           ;
-; 27                                           ; 1                           ;
+; 22                                           ; 1                           ;
+; 23                                           ; 1                           ;
+; 24                                           ; 1                           ;
+; 25                                           ; 0                           ;
+; 26                                           ; 0                           ;
+; 27                                           ; 2                           ;
 +----------------------------------------------+-----------------------------+
 
 
@@ -851,10 +853,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 4                                               ; 1                           ;
 ; 5                                               ; 0                           ;
 ; 6                                               ; 1                           ;
-; 7                                               ; 0                           ;
-; 8                                               ; 1                           ;
-; 9                                               ; 1                           ;
-; 10                                              ; 0                           ;
+; 7                                               ; 1                           ;
+; 8                                               ; 0                           ;
+; 9                                               ; 0                           ;
+; 10                                              ; 1                           ;
 ; 11                                              ; 1                           ;
 ; 12                                              ; 1                           ;
 +-------------------------------------------------+-----------------------------+
@@ -863,25 +865,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 9.00) ; Number of LABs  (Total = 7) ;
+; Number of Distinct Inputs  (Average = 8.86) ; Number of LABs  (Total = 7) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
-; 4                                           ; 1                           ;
+; 4                                           ; 2                           ;
 ; 5                                           ; 1                           ;
-; 6                                           ; 1                           ;
+; 6                                           ; 0                           ;
 ; 7                                           ; 0                           ;
 ; 8                                           ; 0                           ;
-; 9                                           ; 1                           ;
-; 10                                          ; 0                           ;
-; 11                                          ; 1                           ;
+; 9                                           ; 0                           ;
+; 10                                          ; 1                           ;
+; 11                                          ; 0                           ;
 ; 12                                          ; 1                           ;
-; 13                                          ; 0                           ;
-; 14                                          ; 0                           ;
-; 15                                          ; 0                           ;
-; 16                                          ; 1                           ;
+; 13                                          ; 1                           ;
+; 14                                          ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -973,8 +973,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; oY_COORD[9]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; oY_COORD[10]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; oY_COORD[11]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; iCLK               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; iRST_n             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; iCLK               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; iADC_PENIRQ_n      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; iADC_DOUT          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
@@ -1025,6 +1025,7 @@ Info (119004): Automatically selected device EP4CE6E22C6 for design Touch_Contro
 Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
 Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
+Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
     Info (176445): Device EP4CE10E22C6 is compatible
     Info (176445): Device EP4CE15E22C6 is compatible
@@ -1042,23 +1043,21 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node iCLK~input (placed in PIN 23 (CLK1, DIFFCLK_0n)) File: C:/Users/rama2/Downloads/Touch_alumno_restored/ADC_CONTROL.v Line: 21
+Info (176353): Automatically promoted node iCLK~input (placed in PIN 23 (CLK1, DIFFCLK_0n)) File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
-    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node oADC_DCLK~0 File: C:/Users/rama2/Downloads/Touch_alumno_restored/ADC_CONTROL.v Line: 27
-Info (176353): Automatically promoted node iRST_n~input (placed in PIN 24 (CLK2, DIFFCLK_1p)) File: C:/Users/rama2/Downloads/Touch_alumno_restored/ADC_CONTROL.v Line: 22
+Info (176353): Automatically promoted node iRST_n~input (placed in PIN 24 (CLK2, DIFFCLK_1p)) File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 22
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node ADC_DIN File: C:/Users/rama2/Downloads/Touch_alumno_restored/ADC_CONTROL.v Line: 56
-        Info (176357): Destination node X_COORDaux[0] File: C:/Users/rama2/Downloads/Touch_alumno_restored/ADC_CONTROL.v Line: 94
-        Info (176357): Destination node X_COORDaux[1] File: C:/Users/rama2/Downloads/Touch_alumno_restored/ADC_CONTROL.v Line: 94
-        Info (176357): Destination node X_COORDaux[2] File: C:/Users/rama2/Downloads/Touch_alumno_restored/ADC_CONTROL.v Line: 94
-        Info (176357): Destination node X_COORDaux[3] File: C:/Users/rama2/Downloads/Touch_alumno_restored/ADC_CONTROL.v Line: 94
-        Info (176357): Destination node X_COORDaux[4] File: C:/Users/rama2/Downloads/Touch_alumno_restored/ADC_CONTROL.v Line: 94
-        Info (176357): Destination node X_COORDaux[5] File: C:/Users/rama2/Downloads/Touch_alumno_restored/ADC_CONTROL.v Line: 94
-        Info (176357): Destination node X_COORDaux[6] File: C:/Users/rama2/Downloads/Touch_alumno_restored/ADC_CONTROL.v Line: 94
-        Info (176357): Destination node X_COORDaux[7] File: C:/Users/rama2/Downloads/Touch_alumno_restored/ADC_CONTROL.v Line: 94
-        Info (176357): Destination node X_COORDaux[8] File: C:/Users/rama2/Downloads/Touch_alumno_restored/ADC_CONTROL.v Line: 94
+        Info (176357): Destination node ADC_DIN File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 56
+        Info (176357): Destination node X_COORDaux[0] File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 94
+        Info (176357): Destination node X_COORDaux[1] File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 94
+        Info (176357): Destination node X_COORDaux[2] File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 94
+        Info (176357): Destination node X_COORDaux[3] File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 94
+        Info (176357): Destination node X_COORDaux[4] File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 94
+        Info (176357): Destination node X_COORDaux[5] File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 94
+        Info (176357): Destination node X_COORDaux[6] File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 94
+        Info (176357): Destination node X_COORDaux[7] File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 94
+        Info (176357): Destination node X_COORDaux[8] File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 94
         Info (176358): Non-global destination nodes limited to 10 nodes
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -1076,7 +1075,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  9 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  13 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  12 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1085,26 +1084,26 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X0_Y0 to location X10_Y11
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X0_Y12 to location X10_Y24
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.11 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.09 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (169177): 5 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin iADC_BUSY uses I/O standard 3.3-V LVTTL at 25 File: C:/Users/rama2/Downloads/Touch_alumno_restored/ADC_CONTROL.v Line: 25
-    Info (169178): Pin iCLK uses I/O standard 3.3-V LVTTL at 23 File: C:/Users/rama2/Downloads/Touch_alumno_restored/ADC_CONTROL.v Line: 21
-    Info (169178): Pin iRST_n uses I/O standard 3.3-V LVTTL at 24 File: C:/Users/rama2/Downloads/Touch_alumno_restored/ADC_CONTROL.v Line: 22
-    Info (169178): Pin iADC_PENIRQ_n uses I/O standard 3.3-V LVTTL at 141 File: C:/Users/rama2/Downloads/Touch_alumno_restored/ADC_CONTROL.v Line: 24
-    Info (169178): Pin iADC_DOUT uses I/O standard 3.3-V LVTTL at 30 File: C:/Users/rama2/Downloads/Touch_alumno_restored/ADC_CONTROL.v Line: 23
-Info (144001): Generated suppressed messages file C:/Users/rama2/Downloads/Touch_alumno_restored/Touch_Control.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5679 megabytes
-    Info: Processing ended: Tue Dec 21 18:39:50 2021
+    Info (169178): Pin iADC_BUSY uses I/O standard 3.3-V LVTTL at 25 File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 25
+    Info (169178): Pin iRST_n uses I/O standard 3.3-V LVTTL at 24 File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 22
+    Info (169178): Pin iCLK uses I/O standard 3.3-V LVTTL at 23 File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 21
+    Info (169178): Pin iADC_PENIRQ_n uses I/O standard 3.3-V LVTTL at 1 File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 24
+    Info (169178): Pin iADC_DOUT uses I/O standard 3.3-V LVTTL at 136 File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 23
+Info (144001): Generated suppressed messages file C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/Touch_Control.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 5621 megabytes
+    Info: Processing ended: Tue Dec 21 22:29:35 2021
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:05
 
@@ -1112,6 +1111,6 @@ Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/rama2/Downloads/Touch_alumno_restored/Touch_Control.fit.smsg.
+The suppressed messages can be found in C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/Touch_Control.fit.smsg.
 
 

@@ -7,71 +7,71 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/simulation/modelsim
+Z0 dC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/simulation/modelsim
 vADC_CONTROL
-Z1 !s110 1640109377
+Z1 !s110 1640122241
 !i10b 1
-!s100 ^Na7d]ZjdoNBh67ZXd0_o2
-I3B8Wf20bDFBM89R4eS?OL2
+!s100 dT=b4ZH@GijXN]BNb@G6H2
+IH3A4[a>jkP[>V8oOZ<T:_2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1640105710
-8W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v
-FW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v
+w1640122162
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v
 L0 2
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1640109377.000000
-!s107 W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4|W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v|
+Z4 !s108 1640122241.000000
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v|
 !i113 1
 Z5 o-vlog01compat -work work
-Z6 !s92 -vlog01compat -work work {+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4}
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4
 Z7 tCvgOpt 0
 n@a@d@c_@c@o@n@t@r@o@l
 vcontador
-R1
+Z8 !s110 1640122244
 !i10b 1
 !s100 A9>E?R@n=c@EPzNj`_K>M1
-I_T=oTEAnQVfnO<LcoMLgT0
+I2TV3dH6SB6eeZSfVGA1z50
 R2
 R0
-w1637080653
-8W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v
-FW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v
-FW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/MathFun.vh
+Z9 w1640116136
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/contador.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/contador.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/MathFun.vh
 L0 27
 R3
 r1
 !s85 0
 31
 R4
-!s107 W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/MathFun.vh|W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4|W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v|
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/MathFun.vh|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/contador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/contador.v|
 !i113 1
 R5
 R6
 R7
 vEMULE_ADC
-Z8 !s110 1640109378
+R8
 !i10b 1
 !s100 UaiHJ:fjeGoEG7E[mW0DN1
-IFG]kQURa<MZON=62>z:Oc0
+IGmeVn;ih0;0EUR3gkg45d3
 R2
 R0
-Z9 w1578405516
-Z10 8W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/EMULE_ADC.vo
-Z11 FW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/EMULE_ADC.vo
+R9
+Z10 8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/EMULE_ADC.vo
+Z11 FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/EMULE_ADC.vo
 L0 31
 R3
 r1
 !s85 0
 31
-R4
-Z12 !s107 W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/EMULE_ADC.vo|
-Z13 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4|W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/EMULE_ADC.vo|
+Z12 !s108 1640122244.000000
+Z13 !s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/EMULE_ADC.vo|
+Z14 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/EMULE_ADC.vo|
 !i113 1
 R5
 R6
@@ -81,20 +81,20 @@ vFSM
 R1
 !i10b 1
 !s100 lA2=kC<M5R73Dd>AL>cHE0
-I]_[i3;SO:>Q<GI:kn^QCT3
+IFoTD:UiOL1NY6cbPL=DcN3
 R2
 R0
-w1640108375
-8W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/FSM.v
-FW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/FSM.v
+w1640117131
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/FSM.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/FSM.v
 L0 8
 R3
 r1
 !s85 0
 31
 R4
-!s107 W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/FSM.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4|W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/FSM.v|
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/FSM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/FSM.v|
 !i113 1
 R5
 R6
@@ -104,7 +104,7 @@ vhard_block
 R8
 !i10b 1
 !s100 >laX15THYXa=cXPBVzSI80
-IeNEF<8:;g=;OG;e7mKZoT2
+IIS@XbEKIi3ld;RWJ8]gB=3
 R2
 R0
 R9
@@ -115,9 +115,9 @@ R3
 r1
 !s85 0
 31
-R4
 R12
 R13
+R14
 !i113 1
 R5
 R6
@@ -126,20 +126,20 @@ vMFB
 R8
 !i10b 1
 !s100 d1Ac^>T8QTPDP;kcGZ2]T2
-IT84g`WB8]=3nJK<NBWf@B1
+In7Hi4k:YlcI@6j^i`F4II1
 R2
 R0
-w1513091802
-8W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/MFB.v
-FW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/MFB.v
+R9
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/MFB.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/MFB.v
 L0 14
 R3
 r1
 !s85 0
 31
-Z14 !s108 1640109378.000000
-!s107 W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/MFB.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4|W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/MFB.v|
+R12
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/MFB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/MFB.v|
 !i113 1
 R5
 R6
@@ -149,20 +149,20 @@ vtb_Touch_Control
 R8
 !i10b 1
 !s100 n]o>90UPC=oieVmW29O6@2
-Iod]g]LkRMN;6a>V3z^`ZW3
+I7Ac__D=IU`P07HJd:@=d=2
 R2
 R0
-w1513091848
-8W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/tb_Touch_Control.v
-FW:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/tb_Touch_Control.v
+R9
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/tb_Touch_Control.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/tb_Touch_Control.v
 L0 18
 R3
 r1
 !s85 0
 31
-R14
-!s107 W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/tb_Touch_Control.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4|W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/tb_Touch_Control.v|
+R12
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/tb_Touch_Control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/tb_Touch_Control.v|
 !i113 1
 R5
 R6

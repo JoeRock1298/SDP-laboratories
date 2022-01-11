@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Touch_Control
-Tue Dec 21 18:54:02 2021
-Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Tue Dec 21 22:29:30 2021
+Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 
 
 ---------------------
@@ -52,24 +52,24 @@ refer to the applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                                  ;
-+------------------------------------+----------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 21 18:54:02 2021                    ;
-; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition ;
-; Revision Name                      ; Touch_Control                                            ;
-; Top-level Entity Name              ; ADC_CONTROL                                              ;
-; Family                             ; Cyclone IV E                                             ;
-; Total logic elements               ; 91                                                       ;
-;     Total combinational functions  ; 91                                                       ;
-;     Dedicated logic registers      ; 53                                                       ;
-; Total registers                    ; 53                                                       ;
-; Total pins                         ; 32                                                       ;
-; Total virtual pins                 ; 0                                                        ;
-; Total memory bits                  ; 0                                                        ;
-; Embedded Multiplier 9-bit elements ; 0                                                        ;
-; Total PLLs                         ; 0                                                        ;
-+------------------------------------+----------------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                              ;
++------------------------------------+------------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Dec 21 22:29:30 2021                ;
+; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition ;
+; Revision Name                      ; Touch_Control                                        ;
+; Top-level Entity Name              ; ADC_CONTROL                                          ;
+; Family                             ; Cyclone IV E                                         ;
+; Total logic elements               ; 90                                                   ;
+;     Total combinational functions  ; 90                                                   ;
+;     Dedicated logic registers      ; 53                                                   ;
+; Total registers                    ; 53                                                   ;
+; Total pins                         ; 32                                                   ;
+; Total virtual pins                 ; 0                                                    ;
+; Total memory bits                  ; 0                                                    ;
+; Embedded Multiplier 9-bit elements ; 0                                                    ;
+; Total PLLs                         ; 0                                                    ;
++------------------------------------+------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -174,16 +174,16 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                          ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------+---------+
-; MathFun.vh                       ; yes             ; User Unspecified File  ; W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/MathFun.vh    ;         ;
-; contador.v                       ; yes             ; User Verilog HDL File  ; W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v    ;         ;
-; ADC_CONTROL.v                    ; yes             ; User Verilog HDL File  ; W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v ;         ;
-; FSM.v                            ; yes             ; User Verilog HDL File  ; W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/FSM.v         ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------+---------+
+; MathFun.vh                       ; yes             ; User Unspecified File  ; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/MathFun.vh    ;         ;
+; contador.v                       ; yes             ; User Verilog HDL File  ; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/contador.v    ;         ;
+; ADC_CONTROL.v                    ; yes             ; User Verilog HDL File  ; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v ;         ;
+; FSM.v                            ; yes             ; User Verilog HDL File  ; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/FSM.v         ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -191,16 +191,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 91         ;
+; Estimated Total logic elements              ; 90         ;
 ;                                             ;            ;
-; Total combinational functions               ; 91         ;
+; Total combinational functions               ; 90         ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 41         ;
-;     -- 3 input functions                    ; 15         ;
-;     -- <=2 input functions                  ; 35         ;
+;     -- 4 input functions                    ; 40         ;
+;     -- 3 input functions                    ; 10         ;
+;     -- <=2 input functions                  ; 40         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 70         ;
+;     -- normal mode                          ; 69         ;
 ;     -- arithmetic mode                      ; 21         ;
 ;                                             ;            ;
 ; Total registers                             ; 53         ;
@@ -212,9 +212,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; iCLK~input ;
-; Maximum fan-out                             ; 54         ;
-; Total fan-out                               ; 517        ;
-; Average fan-out                             ; 2.49       ;
+; Maximum fan-out                             ; 53         ;
+; Total fan-out                               ; 508        ;
+; Average fan-out                             ; 2.45       ;
 +---------------------------------------------+------------+
 
 
@@ -223,7 +223,7 @@ refer to the applicable agreement for further details.
 +-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Entity Name ; Library Name ;
 +-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+-------------+--------------+
-; |ADC_CONTROL                ; 91 (51)             ; 53 (25)                   ; 0           ; 0            ; 0       ; 0         ; 32   ; 0            ; |ADC_CONTROL                        ; ADC_CONTROL ; work         ;
+; |ADC_CONTROL                ; 90 (50)             ; 53 (25)                   ; 0           ; 0            ; 0       ; 0         ; 32   ; 0            ; |ADC_CONTROL                        ; ADC_CONTROL ; work         ;
 ;    |FSM:Control|            ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADC_CONTROL|FSM:Control            ; FSM         ; work         ;
 ;    |contador:ADC_CNT1_HALF| ; 11 (11)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADC_CONTROL|contador:ADC_CNT1_HALF ; contador    ; work         ;
 ;    |contador:ADC_CNT1|      ; 13 (13)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADC_CONTROL|contador:ADC_CNT1      ; contador    ; work         ;
@@ -391,17 +391,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     CLR               ; 4                           ;
 ;     ENA SCLR          ; 24                          ;
 ;     SCLR              ; 25                          ;
-; cycloneiii_lcell_comb ; 91                          ;
+; cycloneiii_lcell_comb ; 90                          ;
 ;     arith             ; 21                          ;
 ;         2 data inputs ; 21                          ;
-;     normal            ; 70                          ;
+;     normal            ; 69                          ;
 ;         1 data inputs ; 4                           ;
-;         2 data inputs ; 10                          ;
-;         3 data inputs ; 15                          ;
-;         4 data inputs ; 41                          ;
+;         2 data inputs ; 15                          ;
+;         3 data inputs ; 10                          ;
+;         4 data inputs ; 40                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.41                        ;
+; Average LUT depth     ; 2.40                        ;
 +-----------------------+-----------------------------+
 
 
@@ -419,58 +419,58 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
-    Info: Processing started: Tue Dec 21 18:53:52 2021
+    Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+    Info: Processing started: Tue Dec 21 22:29:22 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Touch_Control -c Touch_Control
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file mfb.v
-    Info (12023): Found entity 1: MFB File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/MFB.v Line: 14
+    Info (12023): Found entity 1: MFB File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/MFB.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file tb_touch_control.v
-    Info (12023): Found entity 1: tb_Touch_Control File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/tb_Touch_Control.v Line: 18
+    Info (12023): Found entity 1: tb_Touch_Control File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/tb_Touch_Control.v Line: 18
 Info (12021): Found 1 design units, including 1 entities, in source file contador.v
-    Info (12023): Found entity 1: contador File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 27
+    Info (12023): Found entity 1: contador File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/contador.v Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file adc_control.v
-    Info (12023): Found entity 1: ADC_CONTROL File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 2
+    Info (12023): Found entity 1: ADC_CONTROL File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file fsm.v
-    Info (12023): Found entity 1: FSM File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/FSM.v Line: 8
+    Info (12023): Found entity 1: FSM File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/FSM.v Line: 8
 Info (12127): Elaborating entity "ADC_CONTROL" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at ADC_CONTROL.v(50): truncated value with size 32 to match size of target (1) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 50
-Info (12128): Elaborating entity "contador" for hierarchy "contador:ADC_CNT1" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 41
-Warning (10230): Verilog HDL assignment warning at contador.v(58): truncated value with size 32 to match size of target (9) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 58
-Warning (10230): Verilog HDL assignment warning at contador.v(64): truncated value with size 32 to match size of target (9) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 64
-Warning (10230): Verilog HDL assignment warning at contador.v(69): truncated value with size 32 to match size of target (9) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 69
-Info (12128): Elaborating entity "contador" for hierarchy "contador:ADC_CNT1_HALF" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 44
-Warning (10230): Verilog HDL assignment warning at contador.v(58): truncated value with size 32 to match size of target (8) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 58
-Warning (10230): Verilog HDL assignment warning at contador.v(64): truncated value with size 32 to match size of target (8) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 64
-Warning (10230): Verilog HDL assignment warning at contador.v(69): truncated value with size 32 to match size of target (8) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 69
-Info (12128): Elaborating entity "contador" for hierarchy "contador:ADC_CNT_80" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 47
-Warning (10230): Verilog HDL assignment warning at contador.v(58): truncated value with size 32 to match size of target (7) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 58
-Warning (10230): Verilog HDL assignment warning at contador.v(64): truncated value with size 32 to match size of target (7) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 64
-Warning (10230): Verilog HDL assignment warning at contador.v(69): truncated value with size 32 to match size of target (7) File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/contador.v Line: 69
-Info (12128): Elaborating entity "FSM" for hierarchy "FSM:Control" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 53
+Warning (10230): Verilog HDL assignment warning at ADC_CONTROL.v(50): truncated value with size 32 to match size of target (1) File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 50
+Info (12128): Elaborating entity "contador" for hierarchy "contador:ADC_CNT1" File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 41
+Warning (10230): Verilog HDL assignment warning at contador.v(58): truncated value with size 32 to match size of target (9) File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/contador.v Line: 58
+Warning (10230): Verilog HDL assignment warning at contador.v(64): truncated value with size 32 to match size of target (9) File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/contador.v Line: 64
+Warning (10230): Verilog HDL assignment warning at contador.v(69): truncated value with size 32 to match size of target (9) File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/contador.v Line: 69
+Info (12128): Elaborating entity "contador" for hierarchy "contador:ADC_CNT1_HALF" File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 44
+Warning (10230): Verilog HDL assignment warning at contador.v(58): truncated value with size 32 to match size of target (8) File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/contador.v Line: 58
+Warning (10230): Verilog HDL assignment warning at contador.v(64): truncated value with size 32 to match size of target (8) File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/contador.v Line: 64
+Warning (10230): Verilog HDL assignment warning at contador.v(69): truncated value with size 32 to match size of target (8) File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/contador.v Line: 69
+Info (12128): Elaborating entity "contador" for hierarchy "contador:ADC_CNT_80" File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 47
+Warning (10230): Verilog HDL assignment warning at contador.v(58): truncated value with size 32 to match size of target (7) File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/contador.v Line: 58
+Warning (10230): Verilog HDL assignment warning at contador.v(64): truncated value with size 32 to match size of target (7) File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/contador.v Line: 64
+Warning (10230): Verilog HDL assignment warning at contador.v(69): truncated value with size 32 to match size of target (7) File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/contador.v Line: 69
+Info (12128): Elaborating entity "FSM" for hierarchy "FSM:Control" File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 53
 Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/Touch_Control.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/Touch_Control.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "iADC_BUSY" File: W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/ADC_CONTROL.v Line: 25
-Info (21057): Implemented 123 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "iADC_BUSY" File: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v Line: 25
+Info (21057): Implemented 122 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 27 output pins
-    Info (21061): Implemented 91 logic cells
+    Info (21061): Implemented 90 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4785 megabytes
-    Info: Processing ended: Tue Dec 21 18:54:02 2021
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Peak virtual memory: 4769 megabytes
+    Info: Processing ended: Tue Dec 21 22:29:30 2021
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:15
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in W:/www/MUISE/Sistemas digitales programables/Practica1 Subir/SDP-laboratories/Practica4/Touch_Control.map.smsg.
+The suppressed messages can be found in C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/Touch_Control.map.smsg.
 
 

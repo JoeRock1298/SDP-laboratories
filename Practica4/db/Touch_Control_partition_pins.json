@@ -112,11 +112,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "iCLK",
+					"name" : "iRST_n",
 					"strict" : false
 				},
 				{
-					"name" : "iRST_n",
+					"name" : "iCLK",
 					"strict" : false
 				},
 				{
