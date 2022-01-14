@@ -1,16 +1,16 @@
-Fitter Status : Successful - Tue Dec 21 22:29:35 2021
-Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+Fitter Status : Successful - Fri Jan 14 18:56:04 2022
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
 Revision Name : Touch_Control
 Top-level Entity Name : ADC_CONTROL
 Family : Cyclone IV E
-Device : EP4CE6E22C6
+Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 90 / 6,272 ( 1 % )
-    Total combinational functions : 90 / 6,272 ( 1 % )
-    Dedicated logic registers : 53 / 6,272 ( < 1 % )
-Total registers : 53
-Total pins : 32 / 92 ( 35 % )
+Total logic elements : 979 / 114,480 ( < 1 % )
+    Total combinational functions : 727 / 114,480 ( < 1 % )
+    Dedicated logic registers : 684 / 114,480 ( < 1 % )
+Total registers : 684
+Total pins : 88 / 529 ( 17 % )
 Total virtual pins : 0
-Total memory bits : 0 / 276,480 ( 0 % )
-Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
-Total PLLs : 0 / 2 ( 0 % )
+Total memory bits : 294,912 / 3,981,312 ( 7 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

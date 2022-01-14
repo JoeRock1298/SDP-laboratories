@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Tue Dec 21 20:52:45 2021
-Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+Analysis & Synthesis Status : Successful - Fri Jan 14 18:50:22 2022
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
 Revision Name : Practica4
 Top-level Entity Name : ADC_CONTROL
 Family : Cyclone IV E
-Total logic elements : 91
-    Total combinational functions : 91
-    Dedicated logic registers : 53
-Total registers : 53
-Total pins : 32
+Total logic elements : 995
+    Total combinational functions : 725
+    Dedicated logic registers : 684
+Total registers : 684
+Total pins : 88
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 294,912
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0
