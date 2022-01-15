@@ -1,6 +1,6 @@
 EDA Netlist Writer report for Practica4
-Fri Jan 14 18:50:44 2022
-Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Sat Jan 15 12:33:25 2022
+Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 
 
 ---------------------
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Jan 14 18:50:44 2022 ;
+; EDA Netlist Writer Status ; Successful - Sat Jan 15 12:33:25 2022 ;
 ; Revision Name             ; Practica4                             ;
 ; Top-level Entity Name     ; ADC_CONTROL                           ;
 ; Family                    ; Cyclone IV E                          ;
@@ -66,20 +66,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                                                              ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                                                         ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/jororoc/Desktop/SDP-laboratories-Practica4/SDP-laboratories-Practica4_mejoras/Practica4/simulation/modelsim/Practica4_7_1200mv_85c_slow.vo     ;
-; C:/Users/jororoc/Desktop/SDP-laboratories-Practica4/SDP-laboratories-Practica4_mejoras/Practica4/simulation/modelsim/Practica4_7_1200mv_0c_slow.vo      ;
-; C:/Users/jororoc/Desktop/SDP-laboratories-Practica4/SDP-laboratories-Practica4_mejoras/Practica4/simulation/modelsim/Practica4_min_1200mv_0c_fast.vo    ;
-; C:/Users/jororoc/Desktop/SDP-laboratories-Practica4/SDP-laboratories-Practica4_mejoras/Practica4/simulation/modelsim/Practica4.vo                       ;
-; C:/Users/jororoc/Desktop/SDP-laboratories-Practica4/SDP-laboratories-Practica4_mejoras/Practica4/simulation/modelsim/Practica4_7_1200mv_85c_v_slow.sdo  ;
-; C:/Users/jororoc/Desktop/SDP-laboratories-Practica4/SDP-laboratories-Practica4_mejoras/Practica4/simulation/modelsim/Practica4_7_1200mv_0c_v_slow.sdo   ;
-; C:/Users/jororoc/Desktop/SDP-laboratories-Practica4/SDP-laboratories-Practica4_mejoras/Practica4/simulation/modelsim/Practica4_min_1200mv_0c_v_fast.sdo ;
-; C:/Users/jororoc/Desktop/SDP-laboratories-Practica4/SDP-laboratories-Practica4_mejoras/Practica4/simulation/modelsim/Practica4_v.sdo                    ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                           ;
++----------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                      ;
++----------------------------------------------------------------------------------------------------------------------+
+; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/simulation/modelsim/Practica4_7_1200mv_85c_slow.vo     ;
+; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/simulation/modelsim/Practica4_7_1200mv_0c_slow.vo      ;
+; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/simulation/modelsim/Practica4_min_1200mv_0c_fast.vo    ;
+; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/simulation/modelsim/Practica4.vo                       ;
+; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/simulation/modelsim/Practica4_7_1200mv_85c_v_slow.sdo  ;
+; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/simulation/modelsim/Practica4_7_1200mv_0c_v_slow.sdo   ;
+; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/simulation/modelsim/Practica4_min_1200mv_0c_v_fast.sdo ;
+; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/simulation/modelsim/Practica4_v.sdo                    ;
++----------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -87,22 +87,22 @@ refer to the applicable agreement for further details.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
-    Info: Processing started: Fri Jan 14 18:50:42 2022
+    Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+    Info: Processing started: Sat Jan 15 12:33:24 2022
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Practica4 -c Practica4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file Practica4_7_1200mv_85c_slow.vo in folder "C:/Users/jororoc/Desktop/SDP-laboratories-Practica4/SDP-laboratories-Practica4_mejoras/Practica4/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Practica4_7_1200mv_0c_slow.vo in folder "C:/Users/jororoc/Desktop/SDP-laboratories-Practica4/SDP-laboratories-Practica4_mejoras/Practica4/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Practica4_min_1200mv_0c_fast.vo in folder "C:/Users/jororoc/Desktop/SDP-laboratories-Practica4/SDP-laboratories-Practica4_mejoras/Practica4/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Practica4.vo in folder "C:/Users/jororoc/Desktop/SDP-laboratories-Practica4/SDP-laboratories-Practica4_mejoras/Practica4/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Practica4_7_1200mv_85c_v_slow.sdo in folder "C:/Users/jororoc/Desktop/SDP-laboratories-Practica4/SDP-laboratories-Practica4_mejoras/Practica4/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Practica4_7_1200mv_0c_v_slow.sdo in folder "C:/Users/jororoc/Desktop/SDP-laboratories-Practica4/SDP-laboratories-Practica4_mejoras/Practica4/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Practica4_min_1200mv_0c_v_fast.sdo in folder "C:/Users/jororoc/Desktop/SDP-laboratories-Practica4/SDP-laboratories-Practica4_mejoras/Practica4/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Practica4_v.sdo in folder "C:/Users/jororoc/Desktop/SDP-laboratories-Practica4/SDP-laboratories-Practica4_mejoras/Practica4/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Practica4_7_1200mv_85c_slow.vo in folder "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Practica4_7_1200mv_0c_slow.vo in folder "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Practica4_min_1200mv_0c_fast.vo in folder "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Practica4.vo in folder "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Practica4_7_1200mv_85c_v_slow.sdo in folder "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Practica4_7_1200mv_0c_v_slow.sdo in folder "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Practica4_min_1200mv_0c_v_fast.sdo in folder "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Practica4_v.sdo in folder "C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4671 megabytes
-    Info: Processing ended: Fri Jan 14 18:50:44 2022
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 4644 megabytes
+    Info: Processing ended: Sat Jan 15 12:33:25 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

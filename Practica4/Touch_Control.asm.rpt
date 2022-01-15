@@ -1,6 +1,6 @@
 Assembler report for Touch_Control
-Fri Jan 14 18:56:08 2022
-Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Sat Jan 15 12:39:35 2022
+Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 
 
 ---------------------
@@ -11,7 +11,7 @@ Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
   3. Assembler Settings
   4. Assembler Encrypted IP Cores Summary
   5. Assembler Generated Files
-  6. Assembler Device Options: C:/Users/jororoc/Desktop/SDP-laboratories-Practica4/SDP-laboratories-Practica4_mejoras/Practica4/Touch_Control.sof
+  6. Assembler Device Options: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/Touch_Control.sof
   7. Assembler Messages
 
 
@@ -38,9 +38,9 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Jan 14 18:56:08 2022 ;
+; Assembler Status      ; Successful - Sat Jan 15 12:39:35 2022 ;
 ; Revision Name         ; Touch_Control                         ;
-; Top-level Entity Name ; ADC_CONTROL                           ;
+; Top-level Entity Name ; ADC_CONTROL_mejorado                  ;
 ; Family                ; Cyclone IV E                          ;
 ; Device                ; EP4CE115F29C7                         ;
 +-----------------------+---------------------------------------+
@@ -63,23 +63,23 @@ refer to the applicable agreement for further details.
 +--------+------------------------+--------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                          ;
-+--------------------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                          ;
-+--------------------------------------------------------------------------------------------------------------------+
-; C:/Users/jororoc/Desktop/SDP-laboratories-Practica4/SDP-laboratories-Practica4_mejoras/Practica4/Touch_Control.sof ;
-+--------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Assembler Generated Files                                                       ;
++---------------------------------------------------------------------------------+
+; File Name                                                                       ;
++---------------------------------------------------------------------------------+
+; C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/Touch_Control.sof ;
++---------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/jororoc/Desktop/SDP-laboratories-Practica4/SDP-laboratories-Practica4_mejoras/Practica4/Touch_Control.sof ;
-+----------------+-----------------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                                     ;
-+----------------+-----------------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x006174E9                                                                                                                  ;
-; Checksum       ; 0x006174E9                                                                                                                  ;
-+----------------+-----------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/Touch_Control.sof ;
++----------------+------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                  ;
++----------------+------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x0061A9A1                                                                               ;
+; Checksum       ; 0x0061A9A1                                                                               ;
++----------------+------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -87,15 +87,15 @@ refer to the applicable agreement for further details.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
-    Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
-    Info: Processing started: Fri Jan 14 18:56:05 2022
+    Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+    Info: Processing started: Sat Jan 15 12:39:32 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Touch_Control -c Touch_Control
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4691 megabytes
-    Info: Processing ended: Fri Jan 14 18:56:08 2022
+    Info: Peak virtual memory: 4686 megabytes
+    Info: Processing ended: Sat Jan 15 12:39:35 2022
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

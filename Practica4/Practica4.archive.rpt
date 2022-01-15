@@ -1,0 +1,103 @@
+Archive Project report for Practica4
+Sat Jan 15 12:36:59 2022
+Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Sat Jan 15 12:36:59 2022 ;
+; Revision Name          ; Practica4                             ;
+; Top-level Entity Name  ; ADC_CONTROL                           ;
+; Family                 ; Cyclone IV E                          ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Service request' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+    Info: Report files
+    Info: Programming output files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/Subtarea1.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'Practica4.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4836 megabytes
+    Info: Processing ended: Sat Jan 15 12:36:59 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------------+
+; Files Archived                     ;
++------------------------------------+
+; File Name                          ;
++------------------------------------+
+; ADC_CONTROL.v                      ;
+; assignment_defaults.qdf            ;
+; captura_serie2.stp                 ;
+; contador.v                         ;
+; EMULE_ADC.vo                       ;
+; FSM.v                              ;
+; MathFun.vh                         ;
+; MFB.v                              ;
+; output_files/Practica4.asm.rpt     ;
+; output_files/Practica4.eda.rpt     ;
+; output_files/Practica4.fit.rpt     ;
+; output_files/Practica4.fit.smsg    ;
+; output_files/Practica4.fit.summary ;
+; output_files/Practica4.flow.rpt    ;
+; output_files/Practica4.jdi         ;
+; output_files/Practica4.map.rpt     ;
+; output_files/Practica4.map.smsg    ;
+; output_files/Practica4.map.summary ;
+; output_files/Practica4.pin         ;
+; output_files/Practica4.sld         ;
+; output_files/Practica4.sof         ;
+; output_files/Practica4.sta.rpt     ;
+; output_files/Practica4.sta.summary ;
+; Practica4.qpf                      ;
+; Practica4.qsf                      ;
+; tb_Touch_Control.v                 ;
++------------------------------------+
+
+

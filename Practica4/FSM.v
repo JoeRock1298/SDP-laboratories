@@ -1,9 +1,25 @@
-// Quartus Prime Verilog Template
-// 4-State Moore state machine
-
-// A Moore machine's outputs are dependent only on the current state.
-// The output is written only when the state changes.  (State
-// transitions are synchronous.)
+// -------------------------------------------------------------------------------------------------------------------------
+// Nombre del archivo: FSM.v
+//
+// Descripción: Código de verilog que contendrá la implementación de la máquina de estados que controlará la comunicación 
+// con el ADC que incoprora la pantalla táctil de la placa de desarrollo. Sus funcionalidades son:
+//      - CLK, Reloj activo por flanco de subida de 50MHz
+//      - fin_80, Enable activo a nivel bajo. Nos indicará cuando el contador de semiciclos llega a su fin
+//      - RST_n, activo a nivel bajo, sincrono que se conectara al contador
+//		  - dclk, Señal de sincronización de la comunicación con el ADC
+//		  - SCEN, Señal de selección de inicio de la comunicación con al ADC
+//		  - ADC_PENIRQ_n, Señal de interrupción del ADC activo a nivel bajo
+//		  - ADC_CS, Señal de selección del ADC.
+//		  - Ena_Trans, Flag de habilicatión de la comunicación
+//		  - Fin_trans, Flag del final de la transmisión
+//
+// -------------------------------------------------------------------------------------------------------------------------
+//      Versión: V1.0                   | Fecha Modificación: 15/12/2021
+//
+//      Autor: Jose Luis Rocabado Rocha
+//		  Autor: Rafael Matevosyan
+//
+// -------------------------------------------------------------------------------------------------------------------------
 
 module FSM
 (

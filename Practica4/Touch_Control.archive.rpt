@@ -1,0 +1,110 @@
+Archive Project report for Touch_Control
+Sat Jan 15 12:40:26 2022
+Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Sat Jan 15 12:40:26 2022 ;
+; Revision Name          ; Touch_Control                         ;
+; Top-level Entity Name  ; ADC_CONTROL_mejorado                  ;
+; Family                 ; Cyclone IV E                          ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Service request' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+    Info: Report files
+    Info: Programming output files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/Subtarea2.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'Touch_Control.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4840 megabytes
+    Info: Processing ended: Sat Jan 15 12:40:26 2022
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+
++---------------------------------------+
+; Files Archived                        ;
++---------------------------------------+
+; File Name                             ;
++---------------------------------------+
+; ADC_CONTROL_mejorado.v                ;
+; assignment_defaults.qdf               ;
+; captura_serie.stp                     ;
+; captura_serie2.stp                    ;
+; contador.v                            ;
+; conversion_7segmentos.v               ;
+; db/captura_serie2_auto_stripped.stp   ;
+; EMULE_ADC.vo                          ;
+; FSM.v                                 ;
+; FSM_mejorado.v                        ;
+; HEX.v                                 ;
+; MathFun.vh                            ;
+; MFB.v                                 ;
+; tb_Touch_Control.v                    ;
+; Touch_Control.asm.rpt                 ;
+; Touch_Control.eda.rpt                 ;
+; Touch_Control.fit.rpt                 ;
+; Touch_Control.fit.smsg                ;
+; Touch_Control.fit.summary             ;
+; Touch_Control.flow.rpt                ;
+; Touch_Control.jdi                     ;
+; Touch_Control.map.rpt                 ;
+; Touch_Control.map.smsg                ;
+; Touch_Control.map.summary             ;
+; Touch_Control.pin                     ;
+; Touch_Control.qpf                     ;
+; Touch_Control.qsf                     ;
+; Touch_Control.restore.rpt             ;
+; Touch_Control.sld                     ;
+; Touch_Control.sof                     ;
+; Touch_Control.sta.rpt                 ;
+; Touch_Control.sta.summary             ;
+; Touch_Control_assignment_defaults.qdf ;
++---------------------------------------+
+
+

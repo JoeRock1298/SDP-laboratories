@@ -7,209 +7,164 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/simulation/modelsim
+Z0 dC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/simulation/modelsim
 vADC_CONTROL
-Z1 !s110 1641918475
+Z1 !s110 1642246423
 !i10b 1
-!s100 g83^63JY53njAOX_SH9:<0
-Iza1]Ga`XmS]Smg_<Wjm@_0
+!s100 D8`=B3bV<n>8k``PG?^eA2
+IA]W4X70W7kXc2IdgCe7=93
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1641917080
-8C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/ADC_CONTROL.v
-FC:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/ADC_CONTROL.v
-L0 2
-Z3 OV;L;10.5b;63
+w1642243508
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v
+Z3 L0 31
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1641918475.000000
-!s107 C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/ADC_CONTROL.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4|C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/ADC_CONTROL.v|
+Z5 !s108 1642246423.000000
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/ADC_CONTROL.v|
 !i113 1
-Z5 o-vlog01compat -work work
-Z6 !s92 -vlog01compat -work work +incdir+C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4
-Z7 tCvgOpt 0
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4
+Z8 tCvgOpt 0
 n@a@d@c_@c@o@n@t@r@o@l
 vcontador
 R1
 !i10b 1
 !s100 A9>E?R@n=c@EPzNj`_K>M1
-I33_gGIKiUS;BQcQb1VnN10
+I2TV3dH6SB6eeZSfVGA1z50
 R2
 R0
-Z8 w1641914738
-8C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/contador.v
-FC:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/contador.v
-FC:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/MathFun.vh
+Z9 w1641914740
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/contador.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/contador.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/MathFun.vh
 L0 27
-R3
+R4
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/MathFun.vh|C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/contador.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4|C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/contador.v|
-!i113 1
 R5
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/MathFun.vh|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/contador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/contador.v|
+!i113 1
 R6
 R7
-vconversion_7segmentos
-R1
-!i10b 1
-!s100 =ASga^^60W35GX4l7C@;e0
-IUIL?1m^;7WXeOkf9Png6n2
-R2
-R0
-w1641916693
-8C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/conversion_7segmentos.v
-FC:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/conversion_7segmentos.v
-L0 1
-R3
-r1
-!s85 0
-31
-R4
-!s107 C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/conversion_7segmentos.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4|C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/conversion_7segmentos.v|
-!i113 1
-R5
-R6
-R7
+R8
 vEMULE_ADC
 R1
 !i10b 1
 !s100 UaiHJ:fjeGoEG7E[mW0DN1
-I>7>JcDIcT5d[e_69ijLd31
+IGmeVn;ih0;0EUR3gkg45d3
 R2
 R0
-R8
-Z9 8C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/EMULE_ADC.vo
-Z10 FC:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/EMULE_ADC.vo
-L0 31
+R9
+Z10 8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/EMULE_ADC.vo
+Z11 FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/EMULE_ADC.vo
 R3
+R4
 r1
 !s85 0
 31
-R4
-Z11 !s107 C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/EMULE_ADC.vo|
-Z12 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4|C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/EMULE_ADC.vo|
-!i113 1
 R5
+Z12 !s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/EMULE_ADC.vo|
+Z13 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/EMULE_ADC.vo|
+!i113 1
 R6
 R7
+R8
 n@e@m@u@l@e_@a@d@c
 vFSM
 R1
 !i10b 1
-!s100 lA2=kC<M5R73Dd>AL>cHE0
-IBKOF0mIT?_PJe<b6GDjR62
+!s100 ;G?dP9KNJiCP]bZzGVi0T3
+Ij4UF:7IAEaS0bWzb64=d11
 R2
 R0
-R8
-8C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/FSM.v
-FC:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/FSM.v
-L0 8
-R3
+w1642240185
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/FSM.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/FSM.v
+L0 24
+R4
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/FSM.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4|C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/FSM.v|
-!i113 1
 R5
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/FSM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/FSM.v|
+!i113 1
 R6
 R7
+R8
 n@f@s@m
 vhard_block
 R1
 !i10b 1
 !s100 >laX15THYXa=cXPBVzSI80
-I@:UJ>nze2oR76[K4ZbjDO2
+IIS@XbEKIi3ld;RWJ8]gB=3
 R2
 R0
-R8
 R9
 R10
-L0 2921
-R3
-r1
-!s85 0
-31
-R4
 R11
-R12
-!i113 1
-R5
-R6
-R7
-vHEX
-R1
-!i10b 1
-!s100 QT65HoG<RIPadKj_iVYTY2
-I4V4GnNW5o>V[UAm^mC^eE3
-R2
-R0
-w1641914721
-8C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/HEX.v
-FC:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/HEX.v
-L0 1
-R3
+L0 2921
+R4
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/HEX.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4|C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/HEX.v|
-!i113 1
 R5
+R12
+R13
+!i113 1
 R6
 R7
-n@h@e@x
+R8
 vMFB
 R1
 !i10b 1
 !s100 d1Ac^>T8QTPDP;kcGZ2]T2
-I82b3^n5hzTgTQiKlGcCai1
+In7Hi4k:YlcI@6j^i`F4II1
 R2
 R0
-R8
-8C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/MFB.v
-FC:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/MFB.v
+R9
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/MFB.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/MFB.v
 L0 14
-R3
+R4
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/MFB.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4|C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/MFB.v|
-!i113 1
 R5
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/MFB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/MFB.v|
+!i113 1
 R6
 R7
+R8
 n@m@f@b
 vtb_Touch_Control
 R1
 !i10b 1
-!s100 n]o>90UPC=oieVmW29O6@2
-If92kPHaSKAJUQmRMhIf8H0
+!s100 c1Hcb4LY>jmQT6AeYgMEj1
+IBz<IX]C=kkH7QmVFO9czJ2
 R2
 R0
-R8
-8C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/tb_Touch_Control.v
-FC:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/tb_Touch_Control.v
+w1642244284
+8C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/tb_Touch_Control.v
+FC:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/tb_Touch_Control.v
 L0 18
-R3
+R4
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/tb_Touch_Control.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4|C:/Users/rama2/Desktop/SDP-laboratories-Practica4/Practica4/tb_Touch_Control.v|
-!i113 1
 R5
+!s107 C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/tb_Touch_Control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4|C:/Users/jose_/Dropbox/Pepelu/UPV/MUISE/SDP-Verilog/Practica4/tb_Touch_Control.v|
+!i113 1
 R6
 R7
+R8
 ntb_@touch_@control

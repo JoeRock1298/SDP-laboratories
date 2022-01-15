@@ -129,12 +129,38 @@ initial          // CASOS DE TEST
 		MFB.comprueba;
 	join
 	repeat (200) @(negedge CLOCK_50);
+	repeat (200) @(negedge CLOCK_50);
 	
 	
 	///////////////////////////////////////////////////////////////	
 	// CASO 2. Envio de tres datos seguidos. 
 	
-
+	// Primer dato
+	DATOX = 12'h75F;
+	DATOY = 12'h75F;
+	fork
+		MFB.gen_conversion(DATOX,DATOY);
+		MFB.comprueba;
+	join
+	repeat (200) @(negedge CLOCK_50);
+	
+	// Segundo dato
+	DATOX = 12'h69F;
+	DATOY = 12'hFFF;
+	fork
+		MFB.gen_conversion(DATOX,DATOY);
+		MFB.comprueba;
+	join
+	repeat (200) @(negedge CLOCK_50);
+	
+	// Tercer dato
+	DATOX = 12'hFFF;
+	DATOY = 12'h420;
+	fork
+		MFB.gen_conversion(DATOX,DATOY);
+		MFB.comprueba;
+	join
+	repeat (200) @(negedge CLOCK_50);
 	
 	//////////////////////////////////////////////////////////////////
 	

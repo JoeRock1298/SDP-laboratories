@@ -63,7 +63,7 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 CHIP  "Touch_Control"  ASSIGNED TO AN: EP4CE115F29C7
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
@@ -115,7 +115,7 @@ VCCIO4                       : AA18      : power  :                   : 3.3V    
 Y_COORD_D[1]                 : AA19      : output : 3.3-V LVTTL       :         : 4         : Y              
 GNDA4                        : AA20      : gnd    :                   :         :           :                
 H3[3]                        : AA21      : output : 3.3-V LVTTL       :         : 4         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA22      :        :                   :         : 5         :                
+oY_COORD[2]                  : AA22      : output : 3.3-V LVTTL       :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA23      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA24      :        :                   :         : 5         :                
 X_COORD_D[14]                : AA25      : output : 3.3-V LVTTL       :         : 5         : Y              
@@ -144,12 +144,12 @@ Y_COORD_D[0]                 : AB19      : output : 3.3-V LVTTL       :         
 H3[2]                        : AB20      : output : 3.3-V LVTTL       :         : 4         : Y              
 iADC_BUSY                    : AB21      : input  : 3.3-V LVTTL       :         : 4         : Y              
 iADC_PENIRQ_n                : AB22      : input  : 3.3-V LVTTL       :         : 4         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB23      :        :                   :         : 5         :                
-oX_COORD[5]                  : AB24      : output : 3.3-V LVTTL       :         : 5         : N              
+oX_COORD[1]                  : AB23      : output : 3.3-V LVTTL       :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB24      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB25      :        :                   :         : 5         :                
-oX_COORD[10]                 : AB26      : output : 3.3-V LVTTL       :         : 5         : N              
-oX_COORD[11]                 : AB27      : output : 3.3-V LVTTL       :         : 5         : N              
-oX_COORD[8]                  : AB28      : output : 3.3-V LVTTL       :         : 5         : N              
+oX_COORD[11]                 : AB26      : output : 3.3-V LVTTL       :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB27      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB28      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC1       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC2       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC3       :        :                   :         : 2         :                
@@ -168,16 +168,16 @@ iADC_DOUT                    : AC15      : input  : 3.3-V LVTTL       :         
 GND                          : AC16      : gnd    :                   :         :           :                
 Y_COORD_D[20]                : AC17      : output : 3.3-V LVTTL       :         : 4         : Y              
 Y_COORD_D[8]                 : AC18      : output : 3.3-V LVTTL       :         : 4         : Y              
-oY_COORD[5]                  : AC19      : output : 3.3-V LVTTL       :         : 4         : N              
+oX_COORD[2]                  : AC19      : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : AC20      : gnd    :                   :         :           :                
 oADC_DCLK                    : AC21      : output : 3.3-V LVTTL       :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC22      :        :                   :         : 4         :                
 GND                          : AC23      : gnd    :                   :         :           :                
-oX_COORD[7]                  : AC24      : output : 3.3-V LVTTL       :         : 5         : N              
-oX_COORD[6]                  : AC25      : output : 3.3-V LVTTL       :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC24      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC25      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC26      :        :                   :         : 5         :                
-oX_COORD[9]                  : AC27      : output : 3.3-V LVTTL       :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC28      :        :                   :         : 5         :                
+oX_COORD[10]                 : AC27      : output : 3.3-V LVTTL       :         : 5         : N              
+oX_COORD[9]                  : AC28      : output : 3.3-V LVTTL       :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD1       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD2       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD3       :        :                   :         : 2         :                
@@ -196,13 +196,13 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AD15      :        :                   :      
 VCCIO4                       : AD16      : power  :                   : 3.3V    : 4         :                
 H3[7]                        : AD17      : output : 3.3-V LVTTL       :         : 4         : Y              
 Y_COORD_D[7]                 : AD18      : output : 3.3-V LVTTL       :         : 4         : Y              
-oY_COORD[4]                  : AD19      : output : 3.3-V LVTTL       :         : 4         : N              
+oX_COORD[3]                  : AD19      : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : AD20      : power  :                   : 3.3V    : 4         :                
-oY_COORD[2]                  : AD21      : output : 3.3-V LVTTL       :         : 4         : N              
+oX_COORD[0]                  : AD21      : output : 3.3-V LVTTL       :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD22      :        :                   :         : 4         :                
 VCCIO4                       : AD23      : power  :                   : 3.3V    : 4         :                
 H3[4]                        : AD24      : output : 3.3-V LVTTL       :         : 4         : Y              
-oY_COORD[11]                 : AD25      : output : 3.3-V LVTTL       :         : 4         : N              
+oY_COORD[3]                  : AD25      : output : 3.3-V LVTTL       :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD26      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD27      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD28      :        :                   :         : 5         :                
@@ -226,12 +226,12 @@ H3[8]                        : AE17      : output : 3.3-V LVTTL       :         
 Y_COORD_D[6]                 : AE18      : output : 3.3-V LVTTL       :         : 4         : Y              
 Y_COORD_D[4]                 : AE19      : output : 3.3-V LVTTL       :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE20      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE21      :        :                   :         : 4         :                
-oY_COORD[9]                  : AE22      : output : 3.3-V LVTTL       :         : 4         : N              
+oY_COORD[6]                  : AE21      : output : 3.3-V LVTTL       :         : 4         : N              
+oY_COORD[1]                  : AE22      : output : 3.3-V LVTTL       :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE23      :        :                   :         : 4         :                
-oY_COORD[3]                  : AE24      : output : 3.3-V LVTTL       :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE25      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE26      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE24      :        :                   :         : 4         :                
+oY_COORD[8]                  : AE25      : output : 3.3-V LVTTL       :         : 4         : N              
+oX_COORD[4]                  : AE26      : output : 3.3-V LVTTL       :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE27      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE28      :        :                   :         : 5         :                
 GND                          : AF1       : gnd    :                   :         :           :                
@@ -253,13 +253,13 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AF16      :        :                   :      
 H3[11]                       : AF17      : output : 3.3-V LVTTL       :         : 4         : Y              
 Y_COORD_D[12]                : AF18      : output : 3.3-V LVTTL       :         : 4         : Y              
 Y_COORD_D[5]                 : AF19      : output : 3.3-V LVTTL       :         : 4         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF20      :        :                   :         : 4         :                
-oY_COORD[1]                  : AF21      : output : 3.3-V LVTTL       :         : 4         : N              
-oY_COORD[10]                 : AF22      : output : 3.3-V LVTTL       :         : 4         : N              
+oY_COORD[9]                  : AF20      : output : 3.3-V LVTTL       :         : 4         : N              
+oY_COORD[7]                  : AF21      : output : 3.3-V LVTTL       :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF22      :        :                   :         : 4         :                
 H3[5]                        : AF23      : output : 3.3-V LVTTL       :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF24      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF25      :        :                   :         : 4         :                
-oY_COORD[0]                  : AF26      : output : 3.3-V LVTTL       :         : 4         : N              
+oY_COORD[10]                 : AF25      : output : 3.3-V LVTTL       :         : 4         : N              
+oY_COORD[5]                  : AF26      : output : 3.3-V LVTTL       :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF27      :        :                   :         : 5         :                
 GND                          : AF28      : gnd    :                   :         :           :                
 VCCIO2                       : AG1       : power  :                   : 3.3V    : 2         :                
@@ -286,7 +286,7 @@ Y_COORD_D[2]                 : AG21      : output : 3.3-V LVTTL       :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG22      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG23      :        :                   :         : 4         :                
 GND                          : AG24      : gnd    :                   :         :           :                
-oY_COORD[6]                  : AG25      : output : 3.3-V LVTTL       :         : 4         : N              
+oY_COORD[0]                  : AG25      : output : 3.3-V LVTTL       :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG26      :        :                   :         : 4         :                
 GND                          : AG27      : gnd    :                   :         :           :                
 VCCIO5                       : AG28      : power  :                   : 3.3V    : 5         :                
@@ -310,10 +310,10 @@ Y_COORD_D[13]                : AH18      : output : 3.3-V LVTTL       :         
 Y_COORD_D[10]                : AH19      : output : 3.3-V LVTTL       :         : 4         : Y              
 VCCIO4                       : AH20      : power  :                   : 3.3V    : 4         :                
 Y_COORD_D[3]                 : AH21      : output : 3.3-V LVTTL       :         : 4         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH22      :        :                   :         : 4         :                
+oY_COORD[11]                 : AH22      : output : 3.3-V LVTTL       :         : 4         : N              
 oSCEN                        : AH23      : output : 3.3-V LVTTL       :         : 4         : Y              
 VCCIO4                       : AH24      : power  :                   : 3.3V    : 4         :                
-oY_COORD[7]                  : AH25      : output : 3.3-V LVTTL       :         : 4         : N              
+oY_COORD[4]                  : AH25      : output : 3.3-V LVTTL       :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH26      :        :                   :         : 4         :                
 VCCIO4                       : AH27      : power  :                   : 3.3V    : 4         :                
 VCCIO1                       : B1        : power  :                   : 3.3V    : 1         :                
@@ -757,7 +757,7 @@ VCCINT                       : U18       : power  :                   : 1.2V    
 GND                          : U19       : gnd    :                   :         :           :                
 VCCINT                       : U20       : power  :                   : 1.2V    :           :                
 H3[1]                        : U21       : output : 3.3-V LVTTL       :         : 5         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : U22       :        :                   :         : 5         :                
+oX_COORD[6]                  : U22       : output : 3.3-V LVTTL       :         : 5         : N              
 X_COORD_D[12]                : U23       : output : 3.3-V LVTTL       :         : 5         : Y              
 X_COORD_D[13]                : U24       : output : 3.3-V LVTTL       :         : 5         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : U25       :        :                   :         : 5         :                
@@ -785,13 +785,13 @@ GND                          : V18       : gnd    :                   :         
 VCCINT                       : V19       : power  :                   : 1.2V    :           :                
 GND                          : V20       : gnd    :                   :         :           :                
 H3[0]                        : V21       : output : 3.3-V LVTTL       :         : 5         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : V22       :        :                   :         : 5         :                
+oX_COORD[5]                  : V22       : output : 3.3-V LVTTL       :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V23       :        :                   :         : 5         :                
-oX_COORD[0]                  : V24       : output : 3.3-V LVTTL       :         : 5         : N              
-oX_COORD[4]                  : V25       : output : 3.3-V LVTTL       :         : 5         : N              
-oX_COORD[3]                  : V26       : output : 3.3-V LVTTL       :         : 5         : N              
-oX_COORD[1]                  : V27       : output : 3.3-V LVTTL       :         : 5         : N              
-oX_COORD[2]                  : V28       : output : 3.3-V LVTTL       :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V24       :        :                   :         : 5         :                
+oX_COORD[7]                  : V25       : output : 3.3-V LVTTL       :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V26       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V27       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V28       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W1        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W2        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W3        :        :                   :         : 2         :                
@@ -835,14 +835,14 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : Y12       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y13       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y14       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y15       :        :                   :         : 3         :                
-oY_COORD[8]                  : Y16       : output : 3.3-V LVTTL       :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y16       :        :                   :         : 4         :                
 oADC_DIN                     : Y17       : output : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : Y18       : gnd    :                   :         :           :                
 H3[6]                        : Y19       : output : 3.3-V LVTTL       :         : 4         : Y              
 VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
 VCCA4                        : Y21       : power  :                   : 2.5V    :           :                
 X_COORD_D[8]                 : Y22       : output : 3.3-V LVTTL       :         : 5         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y23       :        :                   :         : 5         :                
+oX_COORD[8]                  : Y23       : output : 3.3-V LVTTL       :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y24       :        :                   :         : 5         :                
 X_COORD_D[16]                : Y25       : output : 3.3-V LVTTL       :         : 5         : Y              
 X_COORD_D[18]                : Y26       : output : 3.3-V LVTTL       :         : 5         : Y              

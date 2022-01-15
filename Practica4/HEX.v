@@ -1,3 +1,24 @@
+// -------------------------------------------------------------------------------------------------------------------------
+// Universitat Politècnica de València
+// Escuela Técnica Superior de Ingenieros de Telecomunicación
+// -------------------------------------------------------------------------------------------------------------------------
+// Sistemas Digitales Programables
+// Curso 2021 - 2022
+// -------------------------------------------------------------------------------------------------------------------------
+// Nombre del archivo: HEX.v
+//
+// Descripción: Decodificador de hexadecimal a 7 segmentos. Funcionalidades:
+//      - hex_digit, Entrada de señal exadecimal
+//      - seg_x, [a-g]. Salidas correspondientes a los segmentos del display
+//
+// -------------------------------------------------------------------------------------------------------------------------
+//      Versión: V1.0                   | Fecha Modificación: 27/10/2021
+//
+//      Autor: Jose Luis Rocabado Rocha
+//		  Autor: Rafael Matevosyan
+//
+// -------------------------------------------------------------------------------------------------------------------------
+
 module HEX ( 
     input [3:0] hex_digit,
     output seg_a, 
@@ -7,6 +28,7 @@ module HEX (
 	 output seg_e, 
 	 output seg_f, 
 	 output seg_g);  //funciones de salida
+	 
     reg [6:0] segment_data; //definimos reg al utilizarlo dentro de un always
 
     always@(hex_digit) //lista de sensibilidad

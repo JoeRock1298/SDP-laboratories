@@ -1,3 +1,32 @@
+// -------------------------------------------------------------------------------------------------------------------------
+// Universitat Politècnica de València
+// Escuela Técnica Superior de Ingenieros de Telecomunicación
+// -------------------------------------------------------------------------------------------------------------------------
+// Sistemas Digitales Programables
+// Curso 2021 - 2022
+// -------------------------------------------------------------------------------------------------------------------------
+// Nombre del archivo: ADC_CONTROL.v
+//
+// Descripción: Código de verilog que contendrá la implementación necesaria para la comunicación con el ADC que incoprora la
+// pantalla táctil de la placa de desarrollo. Contiene el primer diseño de la subtarea 1 de la práctica 4.
+// Sus funcionalidades son:
+//      - RST_n, activo a nivel bajo, sincrono que se conectara al contador
+//      - CLK, Reloj activo por flanco de subida de 50MHz
+//      - ADC_DIN, Señal de petición de datos al ADC
+//		  - ADC_DCLK, Señal de sincronización de la comunicación con el ADC
+//		  - SCEN, Señal de selección de inicio de la comunicación con al ADC
+//		  - ADC_DOUT, Señal de recepción de datos del ADC
+//		  - ADC_BUSY, Flag de estado del ADC. En este diseño no se utiliza
+//		  - PENIRQ, Señal de interrupción que indica que la pantalla ha sido presionada
+//		  - X_COORD, YCOORD, Corrdenadas leeidas del ADC
+//
+// -------------------------------------------------------------------------------------------------------------------------
+//      Versión: V1.0                   | Fecha Modificación: 15/12/2021
+//
+//      Autor: Jose Luis Rocabado Rocha
+//		  Autor: Rafael Matevosyan
+//
+// -------------------------------------------------------------------------------------------------------------------------
 
 module ADC_CONTROL(
 					iCLK,
@@ -9,10 +38,7 @@ module ADC_CONTROL(
 					iADC_BUSY,
 					iADC_PENIRQ_n,
 					oX_COORD,
-					oY_COORD,
-					X_COORD_D, 
-					Y_COORD_D,
-					H3
+					oY_COORD
 					);
 
 	parameter SYSCLK_FRQ	= 50000000;
@@ -31,15 +57,10 @@ module ADC_CONTROL(
 	output			oSCEN;
 	output	[11:0]	oX_COORD;
 	output	[11:0]	oY_COORD;
-	output   [20:0] X_COORD_D, Y_COORD_D;
-	output	[13:0]	H3;
 
 	//Wires
 	wire trans_en, trans_eof, half_dclk, dclk, fin_80;  
 	wire [6:0] count_80; 
-	wire [11:0] testX = 12'h76F;
-	wire [11:0] testy = 12'h76F;
-	wire wait_en, wait_irq; // this is part of the upgrade
 	
 	reg ADC_DIN;
 	reg [11:0]	X_COORDaux, Y_COORDaux;
@@ -58,14 +79,8 @@ module ADC_CONTROL(
 	assign oADC_DCLK = (iRST_n)?count_80[0]:0;
 	
 	//FSM
-	//FSM Control (.CLK(iCLK), .fin_80(fin_80), .RST_n(iRST_n), .dclk(dclk), .ADC_PENIRQ_n(iADC_PENIRQ_n), .ADC_CS(oSCEN), .Ena_Trans(trans_en), .Fin_Trans(trans_eof)  );
+	FSM Control (.CLK(iCLK), .fin_80(fin_80), .RST_n(iRST_n), .dclk(dclk), .ADC_PENIRQ_n(iADC_PENIRQ_n), .ADC_CS(oSCEN), .Ena_Trans(trans_en), .Fin_Trans(trans_eof)  );
 	
-	//upgraded FSM
-	FSM_mejorado Control (.CLK(iCLK), .fin_80(fin_80), .RST_n(iRST_n), .dclk(dclk), .ADC_PENIRQ_n(iADC_PENIRQ_n),
-								 .Wait_irq(wait_irq), .ADC_CS(oSCEN), .Ena_Trans(trans_en), .Fin_Trans(trans_eof), .Wait_en(wait_en));
-	
-	//Decodificador
-	conversion_7segmentos decodificador ( .X_COORD(X_COORDaux), .Y_COORD(Y_COORDaux), .X_COORD_D(X_COORD_D), .Y_COORD_D(Y_COORD_D), .H3(H3));
 	
 	//Generador ADC_DIN
 	always @(posedge iCLK) 
@@ -202,10 +217,5 @@ module ADC_CONTROL(
 		
 		assign oX_COORD = X_COORDaux;
 		assign oY_COORD = Y_COORDaux;
-
-	
-	//Adding upgrades
-	contador #(.fin_cuenta(25000000)) HALF_S_CNT (.iCLK(iCLK), .iRST_n(iRST_n), .iENABLE(wait_en), .iUP_DOWN(1), .oCOUNT(), .oTC(wait_irq)); 
-	
 	
 endmodule

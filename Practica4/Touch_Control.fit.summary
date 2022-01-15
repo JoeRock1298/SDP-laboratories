@@ -1,7 +1,7 @@
-Fitter Status : Successful - Fri Jan 14 18:56:04 2022
-Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+Fitter Status : Successful - Sat Jan 15 12:39:31 2022
+Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 Revision Name : Touch_Control
-Top-level Entity Name : ADC_CONTROL
+Top-level Entity Name : ADC_CONTROL_mejorado
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final

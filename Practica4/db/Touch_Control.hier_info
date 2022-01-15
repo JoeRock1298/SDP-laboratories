@@ -1,9 +1,9 @@
-|ADC_CONTROL
+|ADC_CONTROL_mejorado
 iCLK => iCLK.IN5
 iRST_n => iRST_n.IN5
-oADC_DIN <= ADC_DIN.DB_MAX_OUTPUT_PORT_TYPE
-oADC_DCLK <= oADC_DCLK.DB_MAX_OUTPUT_PORT_TYPE
-oSCEN <= FSM_mejorado:Control.ADC_CS
+oADC_DIN << ADC_DIN.DB_MAX_OUTPUT_PORT_TYPE
+oADC_DCLK << oADC_DCLK.DB_MAX_OUTPUT_PORT_TYPE
+oSCEN << FSM_mejorado:Control.ADC_CS
 iADC_DOUT => X_COORDaux.DATAB
 iADC_DOUT => X_COORDaux.DATAB
 iADC_DOUT => X_COORDaux.DATAB
@@ -30,89 +30,89 @@ iADC_DOUT => Y_COORDaux.DATAB
 iADC_DOUT => Y_COORDaux.DATAB
 iADC_BUSY => ~NO_FANOUT~
 iADC_PENIRQ_n => iADC_PENIRQ_n.IN1
-oX_COORD[0] <= X_COORDaux[0].DB_MAX_OUTPUT_PORT_TYPE
-oX_COORD[1] <= X_COORDaux[1].DB_MAX_OUTPUT_PORT_TYPE
-oX_COORD[2] <= X_COORDaux[2].DB_MAX_OUTPUT_PORT_TYPE
-oX_COORD[3] <= X_COORDaux[3].DB_MAX_OUTPUT_PORT_TYPE
-oX_COORD[4] <= X_COORDaux[4].DB_MAX_OUTPUT_PORT_TYPE
-oX_COORD[5] <= X_COORDaux[5].DB_MAX_OUTPUT_PORT_TYPE
-oX_COORD[6] <= X_COORDaux[6].DB_MAX_OUTPUT_PORT_TYPE
-oX_COORD[7] <= X_COORDaux[7].DB_MAX_OUTPUT_PORT_TYPE
-oX_COORD[8] <= X_COORDaux[8].DB_MAX_OUTPUT_PORT_TYPE
-oX_COORD[9] <= X_COORDaux[9].DB_MAX_OUTPUT_PORT_TYPE
-oX_COORD[10] <= X_COORDaux[10].DB_MAX_OUTPUT_PORT_TYPE
-oX_COORD[11] <= X_COORDaux[11].DB_MAX_OUTPUT_PORT_TYPE
-oY_COORD[0] <= Y_COORDaux[0].DB_MAX_OUTPUT_PORT_TYPE
-oY_COORD[1] <= Y_COORDaux[1].DB_MAX_OUTPUT_PORT_TYPE
-oY_COORD[2] <= Y_COORDaux[2].DB_MAX_OUTPUT_PORT_TYPE
-oY_COORD[3] <= Y_COORDaux[3].DB_MAX_OUTPUT_PORT_TYPE
-oY_COORD[4] <= Y_COORDaux[4].DB_MAX_OUTPUT_PORT_TYPE
-oY_COORD[5] <= Y_COORDaux[5].DB_MAX_OUTPUT_PORT_TYPE
-oY_COORD[6] <= Y_COORDaux[6].DB_MAX_OUTPUT_PORT_TYPE
-oY_COORD[7] <= Y_COORDaux[7].DB_MAX_OUTPUT_PORT_TYPE
-oY_COORD[8] <= Y_COORDaux[8].DB_MAX_OUTPUT_PORT_TYPE
-oY_COORD[9] <= Y_COORDaux[9].DB_MAX_OUTPUT_PORT_TYPE
-oY_COORD[10] <= Y_COORDaux[10].DB_MAX_OUTPUT_PORT_TYPE
-oY_COORD[11] <= Y_COORDaux[11].DB_MAX_OUTPUT_PORT_TYPE
-X_COORD_D[0] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[1] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[2] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[3] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[4] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[5] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[6] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[7] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[8] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[9] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[10] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[11] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[12] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[13] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[14] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[15] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[16] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[17] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[18] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[19] <= conversion_7segmentos:decodificador.X_COORD_D
-X_COORD_D[20] <= conversion_7segmentos:decodificador.X_COORD_D
-Y_COORD_D[0] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[1] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[2] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[3] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[4] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[5] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[6] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[7] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[8] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[9] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[10] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[11] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[12] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[13] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[14] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[15] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[16] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[17] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[18] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[19] <= conversion_7segmentos:decodificador.Y_COORD_D
-Y_COORD_D[20] <= conversion_7segmentos:decodificador.Y_COORD_D
-H3[0] <= conversion_7segmentos:decodificador.H3
-H3[1] <= conversion_7segmentos:decodificador.H3
-H3[2] <= conversion_7segmentos:decodificador.H3
-H3[3] <= conversion_7segmentos:decodificador.H3
-H3[4] <= conversion_7segmentos:decodificador.H3
-H3[5] <= conversion_7segmentos:decodificador.H3
-H3[6] <= conversion_7segmentos:decodificador.H3
-H3[7] <= conversion_7segmentos:decodificador.H3
-H3[8] <= conversion_7segmentos:decodificador.H3
-H3[9] <= conversion_7segmentos:decodificador.H3
-H3[10] <= conversion_7segmentos:decodificador.H3
-H3[11] <= conversion_7segmentos:decodificador.H3
-H3[12] <= conversion_7segmentos:decodificador.H3
-H3[13] <= conversion_7segmentos:decodificador.H3
+oX_COORD[0] << X_COORDaux[0].DB_MAX_OUTPUT_PORT_TYPE
+oX_COORD[1] << X_COORDaux[1].DB_MAX_OUTPUT_PORT_TYPE
+oX_COORD[2] << X_COORDaux[2].DB_MAX_OUTPUT_PORT_TYPE
+oX_COORD[3] << X_COORDaux[3].DB_MAX_OUTPUT_PORT_TYPE
+oX_COORD[4] << X_COORDaux[4].DB_MAX_OUTPUT_PORT_TYPE
+oX_COORD[5] << X_COORDaux[5].DB_MAX_OUTPUT_PORT_TYPE
+oX_COORD[6] << X_COORDaux[6].DB_MAX_OUTPUT_PORT_TYPE
+oX_COORD[7] << X_COORDaux[7].DB_MAX_OUTPUT_PORT_TYPE
+oX_COORD[8] << X_COORDaux[8].DB_MAX_OUTPUT_PORT_TYPE
+oX_COORD[9] << X_COORDaux[9].DB_MAX_OUTPUT_PORT_TYPE
+oX_COORD[10] << X_COORDaux[10].DB_MAX_OUTPUT_PORT_TYPE
+oX_COORD[11] << X_COORDaux[11].DB_MAX_OUTPUT_PORT_TYPE
+oY_COORD[0] << Y_COORDaux[0].DB_MAX_OUTPUT_PORT_TYPE
+oY_COORD[1] << Y_COORDaux[1].DB_MAX_OUTPUT_PORT_TYPE
+oY_COORD[2] << Y_COORDaux[2].DB_MAX_OUTPUT_PORT_TYPE
+oY_COORD[3] << Y_COORDaux[3].DB_MAX_OUTPUT_PORT_TYPE
+oY_COORD[4] << Y_COORDaux[4].DB_MAX_OUTPUT_PORT_TYPE
+oY_COORD[5] << Y_COORDaux[5].DB_MAX_OUTPUT_PORT_TYPE
+oY_COORD[6] << Y_COORDaux[6].DB_MAX_OUTPUT_PORT_TYPE
+oY_COORD[7] << Y_COORDaux[7].DB_MAX_OUTPUT_PORT_TYPE
+oY_COORD[8] << Y_COORDaux[8].DB_MAX_OUTPUT_PORT_TYPE
+oY_COORD[9] << Y_COORDaux[9].DB_MAX_OUTPUT_PORT_TYPE
+oY_COORD[10] << Y_COORDaux[10].DB_MAX_OUTPUT_PORT_TYPE
+oY_COORD[11] << Y_COORDaux[11].DB_MAX_OUTPUT_PORT_TYPE
+X_COORD_D[0] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[1] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[2] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[3] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[4] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[5] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[6] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[7] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[8] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[9] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[10] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[11] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[12] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[13] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[14] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[15] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[16] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[17] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[18] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[19] << conversion_7segmentos:decodificador.X_COORD_D
+X_COORD_D[20] << conversion_7segmentos:decodificador.X_COORD_D
+Y_COORD_D[0] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[1] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[2] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[3] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[4] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[5] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[6] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[7] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[8] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[9] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[10] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[11] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[12] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[13] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[14] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[15] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[16] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[17] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[18] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[19] << conversion_7segmentos:decodificador.Y_COORD_D
+Y_COORD_D[20] << conversion_7segmentos:decodificador.Y_COORD_D
+H3[0] << conversion_7segmentos:decodificador.H3
+H3[1] << conversion_7segmentos:decodificador.H3
+H3[2] << conversion_7segmentos:decodificador.H3
+H3[3] << conversion_7segmentos:decodificador.H3
+H3[4] << conversion_7segmentos:decodificador.H3
+H3[5] << conversion_7segmentos:decodificador.H3
+H3[6] << conversion_7segmentos:decodificador.H3
+H3[7] << conversion_7segmentos:decodificador.H3
+H3[8] << conversion_7segmentos:decodificador.H3
+H3[9] << conversion_7segmentos:decodificador.H3
+H3[10] << conversion_7segmentos:decodificador.H3
+H3[11] << conversion_7segmentos:decodificador.H3
+H3[12] << conversion_7segmentos:decodificador.H3
+H3[13] << conversion_7segmentos:decodificador.H3
 
 
-|ADC_CONTROL|contador:ADC_CNT1
+|ADC_CONTROL_mejorado|contador:ADC_CNT1
 iCLK => oCOUNT[0]~reg0.CLK
 iCLK => oCOUNT[1]~reg0.CLK
 iCLK => oCOUNT[2]~reg0.CLK
@@ -161,7 +161,7 @@ oCOUNT[8] <= oCOUNT[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 oTC <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ADC_CONTROL|contador:ADC_CNT1_HALF
+|ADC_CONTROL_mejorado|contador:ADC_CNT1_HALF
 iCLK => oCOUNT[0]~reg0.CLK
 iCLK => oCOUNT[1]~reg0.CLK
 iCLK => oCOUNT[2]~reg0.CLK
@@ -205,7 +205,7 @@ oCOUNT[7] <= oCOUNT[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 oTC <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ADC_CONTROL|contador:ADC_CNT_80
+|ADC_CONTROL_mejorado|contador:ADC_CNT_80
 iCLK => oCOUNT[0]~reg0.CLK
 iCLK => oCOUNT[1]~reg0.CLK
 iCLK => oCOUNT[2]~reg0.CLK
@@ -244,7 +244,7 @@ oCOUNT[6] <= oCOUNT[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 oTC <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ADC_CONTROL|FSM_mejorado:Control
+|ADC_CONTROL_mejorado|FSM_mejorado:Control
 CLK => state~1.DATAIN
 fin_80 => always2.IN0
 RST_n => state~3.DATAIN
@@ -259,7 +259,7 @@ Fin_Trans <= Fin_Trans.DB_MAX_OUTPUT_PORT_TYPE
 Wait_en <= Wait_en.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ADC_CONTROL|conversion_7segmentos:decodificador
+|ADC_CONTROL_mejorado|conversion_7segmentos:decodificador
 X_COORD[0] => X_COORD[0].IN1
 X_COORD[1] => X_COORD[1].IN1
 X_COORD[2] => X_COORD[2].IN1
@@ -342,7 +342,7 @@ H3[12] <= HEX:H7.seg_f
 H3[13] <= HEX:H7.seg_g
 
 
-|ADC_CONTROL|conversion_7segmentos:decodificador|HEX:X0
+|ADC_CONTROL_mejorado|conversion_7segmentos:decodificador|HEX:X0
 hex_digit[0] => Decoder0.IN3
 hex_digit[1] => Decoder0.IN2
 hex_digit[2] => Decoder0.IN1
@@ -356,7 +356,7 @@ seg_f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
 seg_g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ADC_CONTROL|conversion_7segmentos:decodificador|HEX:X1
+|ADC_CONTROL_mejorado|conversion_7segmentos:decodificador|HEX:X1
 hex_digit[0] => Decoder0.IN3
 hex_digit[1] => Decoder0.IN2
 hex_digit[2] => Decoder0.IN1
@@ -370,7 +370,7 @@ seg_f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
 seg_g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ADC_CONTROL|conversion_7segmentos:decodificador|HEX:X2
+|ADC_CONTROL_mejorado|conversion_7segmentos:decodificador|HEX:X2
 hex_digit[0] => Decoder0.IN3
 hex_digit[1] => Decoder0.IN2
 hex_digit[2] => Decoder0.IN1
@@ -384,7 +384,7 @@ seg_f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
 seg_g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ADC_CONTROL|conversion_7segmentos:decodificador|HEX:Y0
+|ADC_CONTROL_mejorado|conversion_7segmentos:decodificador|HEX:Y0
 hex_digit[0] => Decoder0.IN3
 hex_digit[1] => Decoder0.IN2
 hex_digit[2] => Decoder0.IN1
@@ -398,7 +398,7 @@ seg_f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
 seg_g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ADC_CONTROL|conversion_7segmentos:decodificador|HEX:Y1
+|ADC_CONTROL_mejorado|conversion_7segmentos:decodificador|HEX:Y1
 hex_digit[0] => Decoder0.IN3
 hex_digit[1] => Decoder0.IN2
 hex_digit[2] => Decoder0.IN1
@@ -412,7 +412,7 @@ seg_f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
 seg_g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ADC_CONTROL|conversion_7segmentos:decodificador|HEX:Y2
+|ADC_CONTROL_mejorado|conversion_7segmentos:decodificador|HEX:Y2
 hex_digit[0] => Decoder0.IN3
 hex_digit[1] => Decoder0.IN2
 hex_digit[2] => Decoder0.IN1
@@ -426,7 +426,7 @@ seg_f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
 seg_g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ADC_CONTROL|conversion_7segmentos:decodificador|HEX:H2
+|ADC_CONTROL_mejorado|conversion_7segmentos:decodificador|HEX:H2
 hex_digit[0] => Decoder0.IN3
 hex_digit[1] => Decoder0.IN2
 hex_digit[2] => Decoder0.IN1
@@ -440,7 +440,7 @@ seg_f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
 seg_g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ADC_CONTROL|conversion_7segmentos:decodificador|HEX:H7
+|ADC_CONTROL_mejorado|conversion_7segmentos:decodificador|HEX:H7
 hex_digit[0] => Decoder0.IN3
 hex_digit[1] => Decoder0.IN2
 hex_digit[2] => Decoder0.IN1
@@ -454,7 +454,7 @@ seg_f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
 seg_g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ADC_CONTROL|contador:HALF_S_CNT
+|ADC_CONTROL_mejorado|contador:HALF_S_CNT
 iCLK => oCOUNT[0]~reg0.CLK
 iCLK => oCOUNT[1]~reg0.CLK
 iCLK => oCOUNT[2]~reg0.CLK
